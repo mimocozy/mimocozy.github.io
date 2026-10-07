@@ -47,6 +47,10 @@
     .col p, .book p { color:var(--muted); font-size:13px; margin:0 0 8px; }
     .pill { display:inline-block; background:#f7eee8; border-radius:999px; padding:6px 10px; font-size:13px; font-weight:800; }
     .books { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:8px; }
+    .about-grid article { background:#fff; border:1px solid var(--line); border-radius:18px; padding:16px 18px; }
+    .about-grid h3 { margin:0 0 6px; font-size:18px; }
+    .about-grid p { margin:0; color:var(--muted); }
     .book { display:grid; grid-template-columns:150px 1fr; gap:12px; padding:12px; align-items:center; }
     #collections { display:none; }
     body.cols-open #collections { display:block; }
@@ -72,7 +76,7 @@
       nav { display:none; position:absolute; top:74px; left:0; right:0; background:#fffaf7; flex-direction:column; padding:14px 18px; }
       nav.open { display:flex; }
       .burger { display:block; }
-      .hero, .books, .split, .book, .social, .peeks { grid-template-columns:1fr; }
+      .hero, .books, .split, .book, .social, .peeks, .about-grid { grid-template-columns:1fr; }
       .cols { grid-template-columns:1fr; }
       .col img { height:auto; aspect-ratio:3/4; object-fit:cover; object-position:center; }
       .hero-art { order:-1; }
@@ -92,7 +96,6 @@
         <a href="#books" data-t="books">Books</a>
         <a href="#collections" id="open-cols" data-t="cols">Collections</a>
         <a href="#about" data-t="about">About</a>
-        <a href="#contact" data-t="contact">Contact</a>
       </nav>
       <div class="tools">
         <div class="langs">
@@ -214,7 +217,7 @@
           <button type="button"><img src="assets/halloween/pumpkin-page.jpg" alt="Pumpkin Parade page" /></button>
         </div>
       </div>
-      <div class="social" id="contact">
+      <div class="social" id="social">
         <div>
           <h2 data-t="color">Color with Mimocozy</h2>
           <p data-t="colorsub">Follow for coloring inspiration, new releases and cozy moments.</p>
@@ -228,7 +231,16 @@
       <div><strong data-t="news">Join our cozy letters</strong><div class="sub" data-t="newssub">Be the first to know about new books, special offers and cozy news.</div></div>
       <form id="news"><input type="email" required data-ph="email" placeholder="Your email address" /><button class="btn" data-t="sub">Subscribe →</button></form>
     </section>
-    <section id="about"><h2 data-t="about">About</h2><p data-t="aboutp">Mimocozy makes cozy coloring books for quiet evenings. Original pages, calm stories, and a cat who would rather read.</p></section>
+    <section id="about" class="about">
+      <h2 data-t="about">About</h2>
+      <p class="lede" data-t="aboutlead">Welcome to the world of Mimocozy. Cozy coloring books and little moments of joy.</p>
+      <div class="about-grid">
+        <article><h3 data-t="a1t">A quieter kind of color</h3><p data-t="a1">Mimocozy makes pages for slow evenings: original scenes, calm stories and room to breathe. Creativity, comfort and coloring, one small moment at a time.</p></article>
+        <article><h3 data-t="a2t">The cat in the books</h3><p data-t="a2">A sleepy cat keeps watch over the shelves. He would rather nap than rush, and every book begins with that same feeling: stay a little longer.</p></article>
+        <article><h3 data-t="a3t">Different worlds</h3><p data-t="a3">Seoul between scenes, a spooky-cute Halloween, the tiny world of Brambleboo, and Slow Life days by the sea, the fire or the garden. Different places, the same cozy feeling.</p></article>
+        <article><h3 data-t="a4t">Made to color slowly</h3><p data-t="a4">Each book is a short story you finish with pencils. Some are already on Amazon. Others are almost ready, waiting in Coming soon until the pages are published.</p></article>
+      </div>
+    </section>
   </main>
   <footer class="wrap">
     <img src="assets/mimocozy-logo-transparent.png" alt="Mimocozy" style="width:140px" />
