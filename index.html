@@ -47,9 +47,9 @@
     .col p, .book p { color:var(--muted); font-size:13px; margin:0 0 8px; }
     .pill { display:inline-block; background:#f7eee8; border-radius:999px; padding:6px 10px; font-size:13px; font-weight:800; }
     .books { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-    .pub-split { display:none; grid-column:1 / -1; margin:22px 0 4px; }
-    .pub-split.on { display:block; }
-    .pub-split span { font-family:Fraunces,serif; font-size:28px; color:var(--ink); }
+    .pub-split { display:none; grid-column:1 / -1; align-items:center; gap:12px; margin:6px 0; color:var(--muted); font-size:14px; letter-spacing:.04em; }
+    .pub-split.on { display:flex; }
+    .pub-split:before, .pub-split:after { content:""; flex:1; height:1px; background:var(--line); }
     .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:8px; }
     .about-grid article { background:#fff; border:1px solid var(--line); border-radius:18px; padding:16px 18px; }
     .supply-card { min-height:220px; border-radius:18px; background:linear-gradient(160deg,#f6e7d8,#efe2ef 55%,#f7f1e8); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; color:#6b4b3e; }
@@ -161,11 +161,11 @@
           <div class="carousel" data-imgs="assets/slow/tropical-cover.jpg,assets/slides/tropical-1.jpg,assets/slides/tropical-2.jpg,assets/slides/tropical-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/slow/tropical-cover.jpg" alt="Slow Life: Tropical Days" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Slow Life: Tropical Days</h3><p data-t="b11">A sunny veranda, a quiet sea and a cat in the chair. Coming soon.</p><span class="pill" data-t="rel1">October 11</span></div>
         </article>
-        <article class="book" data-cols="brambleboo soon" data-name="brambleboo little lanterns part two">
+        <article class="book" data-cols="brambleboo soon" data-feat="1" data-name="brambleboo little lanterns part two">
           <div class="carousel" data-imgs="assets/brambleboo/lanterns2-cover.jpg,assets/slides/lanterns2-1.jpg,assets/slides/lanterns2-2.jpg,assets/slides/lanterns2-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/brambleboo/lanterns2-cover.jpg" alt="Brambleboo's Little Lanterns Part 2" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Brambleboo's Little Lanterns, Part 2</h3><p data-t="b20">Brambleboo shares his last lantern and friendship lights the way home. Coming soon.</p><span class="pill" data-t="rel2">October 18</span></div>
         </article>
-        <article class="book" data-cols="slow soon" data-name="slow life cozy spring days">
+        <article class="book" data-feat="1" data-cols="slow soon" data-name="slow life cozy spring days">
           <div class="carousel" data-imgs="assets/slow/spring-cover.jpg,assets/slides/spring-1.jpg,assets/slides/spring-2.jpg,assets/slides/spring-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/slow/spring-cover.jpg" alt="Slow Life: Cozy Spring Days" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Slow Life: Cozy Spring Days</h3><p data-t="b12">Flower-filled gardens, quiet village shops and a gentle pause. Coming soon.</p><span class="pill" data-t="rel2">October 18</span></div>
         </article>
