@@ -8,505 +8,374 @@
   <meta name="apple-mobile-web-app-title" content="Mimocozy" />
   <meta property="og:site_name" content="Mimocozy" />
   <meta property="og:title" content="Mimocozy" />
-  <meta property="og:description" content="Cozy coloring books and little moments of joy." />
+  <meta property="og:description" content="Cozy coloring books for a calmer, happier you." />
   <meta property="og:image" content="/og.jpg" />
   <meta property="x:game:image" content="/x-banner.jpg" />
   <script>
     (function () {
       var host = location.host;
       if (!host) return;
-      var ogImage = "https://" + host + "/og.jpg";
-      var xBanner = "https://" + host + "/x-banner.jpg";
       var og = document.querySelector('meta[property="og:image"]');
-      if (og) og.content = ogImage;
-      var xCard = { property: "x:game:image", content: xBanner };
-      var xMeta = document.querySelector('meta[property="x:game:image"]');
-      if (xMeta) xMeta.setAttribute(xCard.property, xCard.content);
+      if (og) og.content = "https://" + host + "/og.jpg";
+      var x = document.querySelector('meta[property="x:game:image"]');
+      if (x) x.content = "https://" + host + "/x-banner.jpg";
     })();
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito:wght@500;650;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --purple: #8a5a3b;
-      --purple-deep: #6b4228;
-      --pink: #e7a090;
-      --ink: #5c3a2a;
+      --cream: #f7f1ea;
+      --paper: #fffaf6;
+      --blush: #f3e4dc;
+      --rose: #c98984;
+      --ink: #4a342c;
+      --muted: #8a6d62;
+      --choco: #6b4638;
+      --line: #eadfd6;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      min-height: 100vh;
-      font-family: "Nunito", sans-serif;
       color: var(--ink);
-      background:
-        radial-gradient(circle at 12% 18%, #fff 0 2px, transparent 3px),
-        radial-gradient(circle at 80% 30%, #fff 0 2px, transparent 3px),
-        radial-gradient(#f0ddd2 1px, transparent 1.4px),
-        linear-gradient(180deg, #fffaf4 0%, #f8efe6 55%, #f6e4d8 100%);
-      background-size: 100% 100%, 100% 100%, 22px 22px, auto;
+      background: var(--cream);
+      font-family: Nunito, sans-serif;
+      font-weight: 650;
     }
-    .page { width: min(980px, calc(100% - 28px)); margin: 28px auto 48px; }
-    .sparkle { position: fixed; color: #f9a8d4; font-size: 18px; pointer-events: none; }
-    .header, .product, .note {
-      background: #fff;
-      border-radius: 28px;
-      box-shadow: 0 10px 30px rgba(138, 90, 59, .1);
+    a { color: inherit; }
+    img { max-width: 100%; }
+    .wrap { width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
+    .serif { font-family: "Cormorant Garamond", serif; font-weight: 500; }
+    header.nav {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(255, 250, 246, .92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
     }
-    .header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 14px;
-      padding: 22px 18px 18px;
-      text-align: center;
+    .nav-inner { display: flex; align-items: center; gap: 18px; min-height: 78px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .brand img { width: 138px; height: auto; }
+    .sign { display: block; color: var(--muted); font-size: 12px; letter-spacing: .04em; margin-top: -4px; }
+    .menu { display: flex; gap: 22px; margin: 0 auto; }
+    .menu a { text-decoration: none; font-size: 14px; color: var(--choco); }
+    .menu a:hover { color: var(--rose); }
+    .tools { display: flex; align-items: center; gap: 10px; }
+    .search {
+      border: 1px solid var(--line); background: #fff; border-radius: 999px;
+      padding: 8px 12px; font: inherit; width: 140px; color: var(--ink);
     }
-    .header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      padding: 14px 12px 12px;
-      text-align: center;
-      overflow: visible;
+    .langs { display: flex; background: var(--blush); border-radius: 999px; padding: 3px; }
+    .langs button {
+      border: 0; background: transparent; border-radius: 999px; padding: 6px 10px;
+      font: inherit; cursor: pointer; color: var(--choco);
     }
-    .brand-lockup {
-      width: min(520px, 100%);
-      height: auto;
-      max-height: none;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
+    .langs button.on { background: var(--choco); color: #fff; }
+    .burger { display: none; border: 0; background: transparent; font-size: 22px; cursor: pointer; }
+    .hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 42px; align-items: center; padding: 64px 0 36px; }
+    h1 { font-size: 68px; line-height: .92; margin: 0 0 14px; color: var(--choco); }
+    .lede { font-size: 18px; color: var(--muted); margin: 0 0 22px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+      background: var(--choco); color: #fff; border-radius: 999px; padding: 12px 18px;
+      border: 0; font: inherit; cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease;
     }
-    .brand-sub {
-      margin: 0 0 2px;
-      font-family: "Baloo 2", sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      color: #a56b52;
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(74, 52, 44, .12); }
+    .btn.soft { background: transparent; color: var(--choco); border: 1px solid var(--choco); }
+    .perks { display: flex; gap: 16px; margin-top: 22px; color: var(--muted); font-size: 14px; flex-wrap: wrap; }
+    .hero-visual { position: relative; }
+    .hero-visual img.still { width: 100%; border-radius: 28px; display: block; }
+    .spine {
+      position: absolute; left: 18px; bottom: 18px; background: rgba(255,250,246,.9);
+      border-radius: 14px; padding: 10px 12px; font-size: 13px; color: var(--choco);
     }
-    .brand-row { display: flex; flex-direction: column; align-items: center; gap: 2px; }
-    .brand-name {
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2px;
-      font-family: "Baloo 2", sans-serif;
-      font-size: 46px;
-      line-height: 1;
-      color: #6b4228;
+    section { padding: 42px 0; }
+    .kicker { letter-spacing: .08em; text-transform: uppercase; font-size: 12px; color: var(--rose); margin: 0 0 6px; }
+    h2 { font-size: 46px; margin: 0; color: var(--choco); }
+    .sub { color: var(--muted); margin: 8px 0 22px; }
+    .grid { display: grid; gap: 16px; }
+    .cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .cols-2 { grid-template-columns: 1.1fr .9fr; }
+    .card, .book, .peek {
+      background: var(--paper); border-radius: 22px; overflow: hidden;
+      box-shadow: 0 8px 24px rgba(74, 52, 44, .04);
+      transition: transform .2s ease;
     }
-    .logo-slot {
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      overflow: hidden;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 1px;
+    .card:hover, .book:hover, .peek:hover { transform: translateY(-3px); }
+    .card img, .book img, .peek img { width: 100%; height: 180px; object-fit: cover; display: block; background: #fff; }
+    .book img { height: 280px; object-fit: contain; background: #fff; padding: 12px; }
+    .card div, .book div { padding: 16px 16px 18px; }
+    h3 { margin: 0 0 6px; font-size: 28px; }
+    p { line-height: 1.5; }
+    .link { color: var(--choco); font-weight: 800; text-decoration: none; }
+    .book .meta { color: var(--rose); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+    .peeks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .peek { border: 0; padding: 0; cursor: pointer; background: #fff; }
+    .peek img { height: 240px; object-fit: cover; }
+    .community { background: #f6e7e1; border-radius: 28px; padding: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+    .community img { border-radius: 20px; }
+    .row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .letter { background: #f8e8e3; border-radius: 28px; padding: 28px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 18px; align-items: center; }
+    form { display: flex; gap: 8px; }
+    input[type="email"] { flex: 1; border: 1px solid var(--line); border-radius: 999px; padding: 12px 14px; font: inherit; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); }
+    .foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .foot a { text-decoration: none; margin-right: 12px; }
+    .lightbox {
+      position: fixed; inset: 0; background: rgba(42, 28, 24, .72); display: none;
+      align-items: center; justify-content: center; z-index: 30; padding: 20px;
     }
-    .logo-slot img {
-      width: 58px;
-      height: 58px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    .brand-sub {
-      margin: 2px 0 0;
-      font-family: "Baloo 2", sans-serif;
-      font-size: 18px;
-      color: #a56b52;
-    }
-    .bubble {
-      width: min(460px, 100%);
-      margin-top: 2px;
-      border: 1.5px dashed #e7cbb8;
-      background: #fff8f2;
-      color: #6b4228;
-      border-radius: 18px;
-      padding: 14px 16px;
-      font-weight: 800;
-      line-height: 1.7;
-      text-align: left;
-    }
-    .bubble div { display: flex; gap: 10px; align-items: center; }
-    .side { display: flex; flex-direction: column; align-items: center; gap: 12px; }
-    .langs { display: flex; align-items: center; background: #f6e7dc; border-radius: 999px; padding: 4px; gap: 4px; }
-    .lang {
-      border: 0; cursor: pointer; border-radius: 999px;
-      padding: 6px 14px; font-weight: 800; background: transparent; color: #8a5a3b;
-    }
-    .lang.active { background: #8a5a3b; color: #fff; }
-    .lang-split { width: 1px; height: 18px; background: #e4d3c6; }
-    .socials { display: flex; flex-wrap: nowrap; gap: 10px; justify-content: center; }
-    .tiktok, .insta {
-      display: inline-flex; align-items: center; gap: 6px;
-      color: #fff; text-decoration: none; white-space: nowrap;
-      border-radius: 999px; padding: 8px 14px; font-weight: 800; font-size: 14px;
-    }
-    .tiktok { background: #111; }
-    .tiktok svg, .insta svg { width: 16px; height: 16px; display: block; flex: none; }
-    .insta { background: linear-gradient(135deg, #f9ce34, #ee2a7b 55%, #6228d7); }
-    .note {
-      margin-top: 14px;
-      background: #fff8e8;
-      border-radius: 999px;
-      text-align: center;
-      padding: 10px 16px;
-      font-weight: 800;
-      color: #7c5a12;
-      font-size: 14px;
-    }
-    .product {
-      margin-top: 16px;
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 28px;
-      padding: 22px;
-      align-items: center;
-    }
-    .cover-wrap { position: relative; width: 100%; }
-    .cover-stage {
-      position: relative;
-      overflow: hidden;
-      border-radius: 16px;
-      box-shadow: 0 12px 24px rgba(49, 16, 90, .18);
-      background: #faf7ff;
-      aspect-ratio: 3 / 4;
-    }
-    .cover {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      background: #fff;
-    }
-    .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 38px;
-      height: 38px;
-      border: 0;
-      border-radius: 50%;
-      background: #fff;
-      color: var(--purple);
-      font-size: 22px;
-      font-weight: 800;
-      line-height: 1;
-      cursor: pointer;
-      box-shadow: 0 4px 14px rgba(49, 16, 90, .25);
-      z-index: 2;
-    }
-    .arrow.prev { left: 8px; }
-    .arrow.next { right: 8px; }
-    .dots {
-      display: flex;
-      justify-content: center;
-      gap: 6px;
-      margin-top: 10px;
-    }
-    .dots button {
-      width: 8px;
-      height: 8px;
-      border: 0;
-      border-radius: 50%;
-      background: #ddd6fe;
-      padding: 0;
-      cursor: pointer;
-    }
-    .dots button.on { background: var(--pink); }
-    .badge {
-      display: inline-block;
-      background: #fce7f3;
-      color: #be185d;
-      border-radius: 999px;
-      padding: 4px 10px;
-      font-size: 13px;
-      font-weight: 800;
-    }
-    .meta { color: #8b7aa3; font-weight: 700; font-size: 14px; margin-left: 8px; }
-    h2 {
-      margin: 10px 0 4px;
-      font-family: "Baloo 2", sans-serif;
-      font-size: 36px;
-      color: var(--purple);
-    }
-    .sub { margin: 0 0 10px; color: #c4846c; font-weight: 800; }
-    .desc { margin: 0; line-height: 1.45; font-weight: 700; color: #4c3b66; }
-    .more {
-      display: inline-block; margin-top: 8px; color: #db2777;
-      font-weight: 800; background: none; border: 0; cursor: pointer; padding: 0;
-      text-decoration: underline; text-underline-offset: 3px;
-    }
-    .extra { display: none; margin-top: 8px; }
-    .extra.open { display: block; }
-    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
-    .pill {
-      border-radius: 999px; padding: 6px 12px; font-size: 13px; font-weight: 800;
-      background: #fff6ef; color: #8a5a3b; border: 1px solid #f0ddd2;
-    }
-    .pill.teal { background: #ecfeff; color: #0f766e; border-color: #a5f3fc; }
-    .pill.pink { background: #fdf2f8; color: #be185d; border-color: #fbcfe8; }
-    .pill.gold { background: #fffbeb; color: #a16207; border-color: #fde68a; }
-    .buy {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: linear-gradient(180deg, #e7b3a4, #d98978);
-      color: #fff; text-decoration: none; font-weight: 800;
-      border-radius: 999px; padding: 12px 22px; font-size: 18px;
-      box-shadow: 0 8px 0 #a86b5c;
-    }
-    .samples { display: flex; gap: 8px; margin-top: 10px; }
-    .samples img { width: 86px; height: 112px; object-fit: cover; border-radius: 8px; border: 1px solid #e9d5ff; }
-    @media (max-width: 760px) {
-      .product { grid-template-columns: 1fr; }
-      .side { align-items: center; }
-      .socials { justify-content: center; }
-      .brand-name { font-size: 36px; }
-      h2 { font-size: 30px; }
-      .note { border-radius: 18px; }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: min(860px, 100%); max-height: 88vh; border-radius: 16px; background: #fff; }
+    .hidden { display: none !important; }
+    @media (max-width: 860px) {
+      .menu { display: none; position: absolute; top: 78px; left: 0; right: 0; background: var(--paper); flex-direction: column; padding: 16px 22px 20px; border-bottom: 1px solid var(--line); }
+      .menu.open { display: flex; }
+      .burger { display: block; }
+      .search { display: none; }
+      .hero, .cols-3, .cols-2, .peeks, .community, .letter { grid-template-columns: 1fr; }
+      h1 { font-size: 46px; }
+      h2 { font-size: 36px; }
+      .nav-inner { min-height: 68px; }
     }
   </style>
 </head>
 <body>
-  <div class="sparkle" style="top:70px;left:24px">✦</div>
-  <div class="sparkle" style="top:180px;right:36px">♥</div>
-  <div class="sparkle" style="bottom:80px;right:48px">✦</div>
-  <main class="page">
-    <header class="header">
-      <img class="brand-lockup" src="assets/mimocozy-wordmark.jpg" alt="Mimocozy" />
-      <div class="brand-sub" id="brand-sub"></div>
-      <div class="bubble" id="tagline"></div>
-      <div class="side">
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home">
+        <span>
+          <img src="assets/mimocozy-wordmark.jpg" alt="Mimocozy" />
+          <span class="sign" data-t="sign">Cute pages. Calm moments.</span>
+        </span>
+      </a>
+      <nav class="menu" id="menu">
+        <a href="#home" data-t="navHome">Home</a>
+        <a href="#books" data-t="navBooks">Books</a>
+        <a href="#collections" data-t="navCol">Collections</a>
+        <a href="#about" data-t="navAbout">About</a>
+        <a href="#contact" data-t="navContact">Contact</a>
+      </nav>
+      <div class="tools">
+        <input class="search" id="search" type="search" data-ph="search" placeholder="Search" />
         <div class="langs">
-          <button class="lang active" id="btn-pt" type="button">🇵🇹 PT</button>
-          <span class="lang-split"></span>
-          <button class="lang" id="btn-en" type="button">🇬🇧 EN</button>
+          <button type="button" id="btn-pt" class="on">PT</button>
+          <button type="button" id="btn-en">EN</button>
         </div>
-        <div class="socials">
-          <a class="tiktok" href="https://www.tiktok.com/@creative.pages.co" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.5 3c.4 2.4 1.8 4.1 4.1 4.5v2.4c-1.4 0-2.7-.4-3.9-1.2v6.6c0 3.4-2.6 6.2-6.1 6.2S2.5 18.7 2.5 15.3c0-3.3 2.5-6 5.8-6.2v2.6c-1.6.2-2.8 1.6-2.8 3.6 0 2 1.6 3.6 3.6 3.6s3.5-1.6 3.5-3.6V3h1.9z"/></svg> TikTok</a>
-          <a class="insta" href="https://www.instagram.com/creativepagescoloring" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 3h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm8 2H8a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3zm-4 3.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 1.6a2.2 2.2 0 1 0 2.2 2.2 2.2 2.2 0 0 0-2.2-2.2zM17.2 6.6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg> Instagram</a>
-        </div>
+        <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div class="note" id="note"></div>
-
-    <section class="product">
-      <div class="cover-wrap">
-        <div class="cover-stage">
-          <img class="cover" id="cover" src="assets/seoul-product-cover.jpg" alt="Seoul Between Scenes, Book Two" />
-          <button class="arrow prev" id="prev" type="button" aria-label="Página anterior">‹</button>
-          <button class="arrow next" id="next" type="button" aria-label="Página seguinte">›</button>
-        </div>
-        <div class="dots" id="dots"></div>
-      </div>
+  <main class="wrap" id="home">
+    <section class="hero">
       <div>
-        <div>
-          <span class="badge" id="badge"></span>
-          <span class="meta" id="meta"></span>
+        <p class="kicker">Mimocozy</p>
+        <h1 class="serif" data-t="heroTitle">A little color goes a long way</h1>
+        <p class="lede" data-t="heroText">Cozy coloring books for a calmer, happier you.</p>
+        <a class="btn" href="#books" data-t="explore">Explore the Books →</a>
+        <div class="perks">
+          <span data-t="perk1">Relax your mind</span>
+          <span data-t="perk2">Spark your creativity</span>
+          <span data-t="perk3">Enjoy little moments</span>
         </div>
-        <h2>Seoul Between Scenes</h2>
-        <p class="sub" id="sub"></p>
-        <p class="desc" id="desc"></p>
-        <button class="more" id="more" type="button"></button>
-        <div class="extra" id="extra">
-          <p class="desc" id="desc-more"></p>
-          <div class="samples">
-            <img src="assets/seoul-cover.jpg" alt="Amostra da capa interior" />
-            <img src="assets/seoul-title.jpg" alt="Amostra da página de título" />
-            <img src="assets/seoul-scene.jpg" alt="Amostra da cena da roda-gigante" />
-          </div>
-        </div>
-        <div class="pills" id="pills"></div>
-        <a class="buy" href="https://amzn.eu/d/078evWEV" target="_blank" rel="noopener">👜 <span id="buy"></span></a>
+      </div>
+      <div class="hero-visual">
+        <img class="still" src="assets/hero-still.jpg" alt="" />
+        <div class="spine">Good books<br>Cozy moments<br>Brighter days</div>
       </div>
     </section>
 
-    <section class="product">
-      <div class="cover-wrap">
-        <div class="cover-stage">
-          <img class="cover" id="cover-5" src="assets/book5/page-1.jpg" alt="Seoul After the Cut, Book Five" />
-          <button class="arrow prev" id="prev-5" type="button" aria-label="Página anterior">‹</button>
-          <button class="arrow next" id="next-5" type="button" aria-label="Página seguinte">›</button>
-        </div>
-        <div class="dots" id="dots-5"></div>
+    <section id="collections">
+      <p class="kicker" data-t="colKicker">Our Collections</p>
+      <h2 class="serif" data-t="colTitle">Our Collections</h2>
+      <p class="sub" data-t="colSub">Different worlds, the same cozy feeling.</p>
+      <div class="grid cols-3">
+        <article class="card"><img src="assets/seoul-product-cover.jpg" alt="" /><div><h3 class="serif">K-Drama</h3><p data-t="c1">Romantic scenes, beautiful places and everyday magic.</p><a class="link" href="#books">Explore →</a></div></article>
+        <article class="card"><img src="assets/cover-halloween.jpg" alt="" /><div><h3 class="serif">Halloween</h3><p data-t="c2">Spooky-cute adventures full of charm.</p><a class="link" href="#books">Explore →</a></div></article>
+        <article class="card"><img src="assets/cover-gnomes.jpg" alt="" /><div><h3 class="serif">Brambleboo</h3><p data-t="c3">Adorable stories in magical settings.</p><a class="link" href="#books">Explore →</a></div></article>
+        <article class="card"><img src="assets/cover-animals.jpg" alt="" /><div><h3 class="serif">Slow Life</h3><p data-t="c4">Peaceful places, cozy days and simple joys.</p><a class="link" href="#books">Explore →</a></div></article>
+        <article class="card"><img src="assets/cover-mandalas.jpg" alt="" /><div><h3 class="serif" data-t="c5t">More to come</h3><p data-t="c5">New stories, new characters and more cozy moments.</p><a class="link" href="#contact">Explore →</a></div></article>
       </div>
+    </section>
+
+    <section id="books">
+      <p class="kicker" data-t="bookKicker">Featured Books</p>
+      <h2 class="serif" data-t="bookTitle">Featured Books</h2>
+      <p class="sub" data-t="bookSub">Discover our latest releases.</p>
+      <div class="grid cols-2" id="book-list">
+        <article class="book" data-name="seoul between scenes k-drama">
+          <img src="assets/seoul-product-cover.jpg" alt="Seoul Between Scenes" />
+          <div>
+            <p class="meta">K-Drama Collection</p>
+            <h3 class="serif">Seoul Between Scenes</h3>
+            <p data-t="b1">Romantic city views, cozy moments and everyday beauty in Seoul.</p>
+            <a class="btn" href="https://amzn.eu/d/078evWEV" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a>
+          </div>
+        </article>
+        <article class="book" data-name="seoul after the cut k-drama">
+          <img src="assets/book5/page-1.jpg" alt="Seoul After the Cut" />
+          <div>
+            <p class="meta">K-Drama Collection</p>
+            <h3 class="serif">Seoul After the Cut</h3>
+            <p data-t="b2">The kiss they cut, the rainy city, and the scene you still want to color.</p>
+            <a class="btn" href="https://amzn.eu/d/09oG4UHr" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="inside">
+      <p class="kicker">Inside</p>
+      <h2 class="serif" data-t="inTitle">Inside our books</h2>
+      <p class="sub" data-t="inSub">Take a peek and see the cozy details.</p>
+      <div class="peeks">
+        <button class="peek" type="button"><img src="assets/miolo/page-1.jpg" alt="Coloring page" /></button>
+        <button class="peek" type="button"><img src="assets/miolo/page-2.jpg" alt="Coloring page" /></button>
+        <button class="peek" type="button"><img src="assets/book5/page-2.jpg" alt="Coloring page" /></button>
+        <button class="peek" type="button"><img src="assets/book5/page-3.jpg" alt="Coloring page" /></button>
+      </div>
+    </section>
+
+    <section class="community" id="social">
       <div>
-        <div>
-          <span class="badge" id="badge-5"></span>
-          <span class="meta" id="meta-5"></span>
+        <h2 class="serif" data-t="socTitle">Color with Mimocozy</h2>
+        <p data-t="socText">Follow for coloring inspiration, new releases and cozy moments.</p>
+        <div class="row">
+          <a class="btn" href="https://www.tiktok.com/@creative.pages.co" target="_blank" rel="noopener">TikTok</a>
+          <a class="btn soft" href="https://www.instagram.com/creativepagescoloring" target="_blank" rel="noopener">Instagram</a>
         </div>
-        <h2>Seoul After the Cut</h2>
-        <p class="sub" id="sub-5"></p>
-        <p class="desc" id="desc-5"></p>
-        <button class="more" id="more-5" type="button"></button>
-        <div class="extra" id="extra-5">
-          <p class="desc" id="desc-more-5"></p>
-        </div>
-        <div class="pills" id="pills-5"></div>
-        <a class="buy" href="https://amzn.eu/d/09oG4UHr" target="_blank" rel="noopener">👜 <span id="buy-5"></span></a>
       </div>
+      <img src="assets/community.jpg" alt="" />
+    </section>
+
+    <section>
+      <div class="letter">
+        <div>
+          <h2 class="serif" data-t="newsTitle">Join our cozy letters</h2>
+          <p data-t="newsText">Be the first to know about new books, special offers and cozy news.</p>
+        </div>
+        <form id="news">
+          <input type="email" required data-ph="email" placeholder="Your email address" />
+          <button class="btn" type="submit" data-t="subBtn">Subscribe →</button>
+        </form>
+      </div>
+      <p id="thanks" class="hidden" data-t="thanks">Thank you. You are on the list.</p>
+    </section>
+
+    <section id="about">
+      <h2 class="serif" data-t="aboutTitle">About</h2>
+      <p data-t="aboutText">Mimocozy makes cozy coloring books for quiet evenings and little pockets of joy. Original pages, calm stories, and a cat who would rather read than rush.</p>
+    </section>
+    <section id="contact">
+      <h2 class="serif" data-t="navContact">Contact</h2>
+      <p data-t="contactText">Say hello on TikTok or Instagram. We read every note.</p>
     </section>
   </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <img src="assets/mimocozy-wordmark.jpg" alt="Mimocozy" style="width:150px" />
+        <div class="sign" data-t="sign">Cute pages. Calm moments.</div>
+        <p>© 2026 Mimocozy. All rights reserved.</p>
+        <p data-t="bye">Color a kinder tomorrow.</p>
+      </div>
+      <div>
+        <a href="#home" data-t="navHome">Home</a>
+        <a href="#books" data-t="navBooks">Books</a>
+        <a href="#collections" data-t="navCol">Collections</a>
+        <a href="#about" data-t="navAbout">About</a>
+        <a href="#contact" data-t="navContact">Contact</a>
+        <p>
+          <a href="https://www.tiktok.com/@creative.pages.co" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.instagram.com/creativepagescoloring" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://amzn.eu/d/078evWEV" target="_blank" rel="noopener">Amazon</a>
+        </p>
+        <p>PT | EN</p>
+      </div>
+    </div>
+  </footer>
+  <div class="lightbox" id="light"><img alt="" /></div>
   <script>
     const copy = {
       pt: {
-        tag: '<div>🎨 Livros para colorir aconchegantes</div><div>✨ Páginas fofas, momentos calmos</div><div>🤎 Bem-vinda ao Mimocozy</div>',
-        brandSub: 'Livros para colorir',
-        note: "🌐 O botão abre a Amazon — se estiveres noutro país, a Amazon pode sugerir-te a tua loja local.",
-        badge: "✦ Love in Seoul · Livro 2",
-        meta: "Livro em inglês · 82 páginas · capa mole",
-        sub: "✦ livro para colorir inspirado em K-dramas ✦",
-        desc: "Algumas histórias acabam no ecrã. Outras ficam contigo entre cenas. Entra no ambiente romântico de Seul com o segundo volume desta coleção de livros para colorir inspirada em K-dramas: 36 ilustrações originais com momentos que qualquer fã reconhece — voltas na roda-…",
-        more: "Ler mais",
-        less: "Ler menos",
-        descMore: "Voltas na roda-gigante que não anda, o jantar do contrato, o beijo na testa, a chuva na rua e o amanhecer na ponte. Traço original, não copiado de nenhuma série. Para colorir como te lembras: azul-noite no autocarro, dourado no contrato rasgado, blush no gancho do cabelo.",
-        pills: [
-          ["36 ilustrações originais", ""],
-          ["Formato grande 21,6 × 27,9 cm", "teal"],
-          ["Traço limpo e muito espaço para colorir", "pink"],
-          ["Para adolescentes, adultos e fãs de dramas", "gold"]
-        ],
-        buy: "Ver na Amazon",
-        badge5: "✦ Seoul After the Cut · Livro 5",
-        meta5: "Livro em inglês · 84 páginas · capa mole",
-        sub5: "✦ livro para colorir inspirado em K-dramas ✦",
-        desc5: "A sala de reuniões já está acesa. Os gémeos já trocaram de lugar. Já sabes que cortaram o beijo — e mesmo assim queres colorir essa cena. Seoul After the Cut é o quinto volume: o que ficou fora da edição final.",
-        descMore5: "Press play. Algumas cenas merecem uma segunda tomada: o beijo na chuva, o claquete, a cidade depois do corte. Traço original para colorir, não copiado de nenhuma série.",
-        pills5: [
-          ["Livro 5 da coleção", ""],
-          ["Cenas cortadas do drama", "teal"],
-          ["Traço limpo para colorir", "pink"],
-          ["Para fãs de K-dramas", "gold"]
-        ]
+        sign: "Páginas fofas. Momentos calmos.",
+        navHome: "Início", navBooks: "Livros", navCol: "Coleções", navAbout: "Sobre", navContact: "Contacto",
+        search: "Pesquisar", heroTitle: "Um pouco de cor vai longe",
+        heroText: "Livros para colorir aconchegantes, para um dia mais calmo e mais feliz.",
+        explore: "Explorar os livros →", perk1: "Acalma a mente", perk2: "Acende a criatividade", perk3: "Saboreia os pequenos momentos",
+        colTitle: "As nossas coleções", colSub: "Mundos diferentes, o mesmo sentimento cozy.",
+        c1: "Cenas românticas, lugares bonitos e magia do quotidiano.",
+        c2: "Aventuras spooky-cute, cheias de charme.",
+        c3: "Histórias adoráveis em cenários mágicos.",
+        c4: "Lugares calmos, dias aconchegantes e alegrias simples.",
+        c5t: "Em breve", c5: "Novas histórias, novas personagens e mais momentos cozy.",
+        bookTitle: "Livros em destaque", bookSub: "Descobre as novidades.",
+        b1: "Vistas da cidade, momentos cozy e a beleza do dia a dia em Seul.",
+        b2: "O beijo que cortaram, a cidade à chuva e a cena que ainda queres colorir.",
+        amazon: "Ver na Amazon →", inTitle: "Dentro dos livros", inSub: "Espreita os detalhes.",
+        socTitle: "Colorir com a Mimocozy", socText: "Segue para inspiração, novidades e momentos cozy.",
+        newsTitle: "As nossas cartas cozy", newsText: "Sê a primeira a saber de livros novos, ofertas e novidades.",
+        email: "O teu email", subBtn: "Subscrever →", thanks: "Obrigada. Ficaste na lista.",
+        aboutTitle: "Sobre", aboutText: "A Mimocozy faz livros para colorir para noites calmas e pequenos bolsos de alegria. Páginas originais, histórias tranquilas, e um gato que prefere ler a apressar-se.",
+        contactText: "Diz olá no TikTok ou no Instagram. Lemos cada recado.",
+        bye: "Colorir um amanhã mais gentil."
       },
       en: {
-        tag: '<div>🎨 Cozy coloring books</div><div>✨ Cute pages, calm moments</div><div>🤎 Welcome to Mimocozy</div>',
-        brandSub: 'Cozy Coloring Books',
-        note: "🌐 The button opens Amazon — in another country, Amazon may suggest your local store.",
-        badge: "✦ Love in Seoul · Book 2",
-        meta: "Book in English · 82 pages · paperback",
-        sub: "✦ a coloring book inspired by K-dramas ✦",
-        desc: "Some stories end on the screen. Others stay with you between scenes. Step into romantic Seoul with the second volume of this K-drama inspired coloring collection: 36 original illustrations of moments any fan already knows — Ferris wheel rides…",
-        more: "Read more",
-        less: "Read less",
-        descMore: "The Ferris wheel that will not move, the contract dinner, the forehead kiss, rain on the street and dawn on the bridge. Original line art, not copied from any series. Color them the way you remember them.",
-        pills: [
-          ["36 original illustrations", ""],
-          ["Large format 8.5 × 11 in", "teal"],
-          ["Clean lines and plenty of room to color", "pink"],
-          ["For teens, adults and drama fans", "gold"]
-        ],
-        buy: "See on Amazon",
-        badge5: "✦ Seoul After the Cut · Book 5",
-        meta5: "Book in English · 84 pages · paperback",
-        sub5: "✦ a coloring book inspired by K-dramas ✦",
-        desc5: "The boardroom is already lit. The twins have already switched. You already know they cut the kiss — and you still want to color it. Seoul After the Cut is book five: what was left out of the final edit.",
-        descMore5: "Press play. Some moments deserve a second take: the kiss in the rain, the clapperboard, the city after the cut. Original line art, not copied from any series.",
-        pills5: [
-          ["Book 5 of the collection", ""],
-          ["Scenes cut from the drama", "teal"],
-          ["Clean lines to color", "pink"],
-          ["For K-drama fans", "gold"]
-        ]
+        sign: "Cute pages. Calm moments.",
+        navHome: "Home", navBooks: "Books", navCol: "Collections", navAbout: "About", navContact: "Contact",
+        search: "Search", heroTitle: "A little color goes a long way",
+        heroText: "Cozy coloring books for a calmer, happier you.",
+        explore: "Explore the Books →", perk1: "Relax your mind", perk2: "Spark your creativity", perk3: "Enjoy little moments",
+        colTitle: "Our Collections", colSub: "Different worlds, the same cozy feeling.",
+        c1: "Romantic scenes, beautiful places and everyday magic.",
+        c2: "Spooky-cute adventures full of charm.",
+        c3: "Adorable stories in magical settings.",
+        c4: "Peaceful places, cozy days and simple joys.",
+        c5t: "More to come", c5: "New stories, new characters and more cozy moments.",
+        bookTitle: "Featured Books", bookSub: "Discover our latest releases.",
+        b1: "Romantic city views, cozy moments and everyday beauty in Seoul.",
+        b2: "The kiss they cut, the rainy city, and the scene you still want to color.",
+        amazon: "View on Amazon →", inTitle: "Inside our books", inSub: "Take a peek and see the cozy details.",
+        socTitle: "Color with Mimocozy", socText: "Follow for coloring inspiration, new releases and cozy moments.",
+        newsTitle: "Join our cozy letters", newsText: "Be the first to know about new books, special offers and cozy news.",
+        email: "Your email address", subBtn: "Subscribe →", thanks: "Thank you. You are on the list.",
+        aboutTitle: "About", aboutText: "Mimocozy makes cozy coloring books for quiet evenings and little pockets of joy. Original pages, calm stories, and a cat who would rather read than rush.",
+        contactText: "Say hello on TikTok or Instagram. We read every note.",
+        bye: "Color a kinder tomorrow."
       }
     };
     let lang = "pt";
-    const extra = document.getElementById("extra");
-    const more = document.getElementById("more");
     function render() {
       const t = copy[lang];
-      document.getElementById("tagline").innerHTML = t.tag;
-      document.getElementById("brand-sub").textContent = t.brandSub;
-      document.getElementById("note").textContent = t.note;
-      document.getElementById("badge").textContent = t.badge;
-      document.getElementById("meta").textContent = t.meta;
-      document.getElementById("sub").textContent = t.sub;
-      document.getElementById("desc").textContent = t.desc;
-      document.getElementById("desc-more").textContent = t.descMore;
-      document.getElementById("buy").textContent = t.buy;
-      document.getElementById("badge-5").textContent = t.badge5;
-      document.getElementById("meta-5").textContent = t.meta5;
-      document.getElementById("sub-5").textContent = t.sub5;
-      document.getElementById("desc-5").textContent = t.desc5;
-      document.getElementById("desc-more-5").textContent = t.descMore5;
-      document.getElementById("buy-5").textContent = t.buy;
-      document.getElementById("more-5").textContent = document.getElementById("extra-5").classList.contains("open") ? t.less : t.more;
-      document.getElementById("pills-5").innerHTML = t.pills5.map(([label, kind]) =>
-        `<span class="pill ${kind}">${label}</span>`).join("");
-      more.textContent = extra.classList.contains("open") ? t.less : t.more;
-      document.getElementById("pills").innerHTML = t.pills.map(([label, kind]) =>
-        `<span class="pill ${kind}">${label}</span>`).join("");
+      document.querySelectorAll("[data-t]").forEach((el) => { el.textContent = t[el.dataset.t] || el.textContent; });
+      document.querySelectorAll("[data-ph]").forEach((el) => { el.placeholder = t[el.dataset.ph]; });
       document.documentElement.lang = lang;
+      document.getElementById("btn-pt").classList.toggle("on", lang === "pt");
+      document.getElementById("btn-en").classList.toggle("on", lang === "en");
     }
-    more.onclick = () => {
-      extra.classList.toggle("open");
-      more.textContent = extra.classList.contains("open") ? copy[lang].less : copy[lang].more;
+    document.getElementById("btn-pt").onclick = () => { lang = "pt"; render(); };
+    document.getElementById("btn-en").onclick = () => { lang = "en"; render(); };
+    document.getElementById("burger").onclick = () => document.getElementById("menu").classList.toggle("open");
+    document.getElementById("search").oninput = (e) => {
+      const q = e.target.value.toLowerCase();
+      document.querySelectorAll(".book").forEach((b) => b.classList.toggle("hidden", q && !b.dataset.name.includes(q)));
     };
-    const extra5 = document.getElementById("extra-5");
-    const more5 = document.getElementById("more-5");
-    more5.onclick = () => {
-      extra5.classList.toggle("open");
-      more5.textContent = extra5.classList.contains("open") ? copy[lang].less : copy[lang].more;
+    const light = document.getElementById("light");
+    document.querySelectorAll(".peek").forEach((b) => b.onclick = () => {
+      light.querySelector("img").src = b.querySelector("img").src;
+      light.classList.add("open");
+    });
+    light.onclick = () => light.classList.remove("open");
+    document.getElementById("news").onsubmit = (e) => {
+      e.preventDefault();
+      document.getElementById("thanks").classList.remove("hidden");
+      e.target.reset();
     };
-    function setLang(next) {
-      lang = next;
-      document.getElementById("btn-pt").classList.toggle("active", lang === "pt");
-      document.getElementById("btn-en").classList.toggle("active", lang === "en");
-      render();
-    }
-    document.getElementById("btn-pt").onclick = () => setLang("pt");
-    document.getElementById("btn-en").onclick = () => setLang("en");
     render();
-
-    function setupCarousel(imgId, prevId, nextId, dotsId, slides) {
-      const cover = document.getElementById(imgId);
-      const dots = document.getElementById(dotsId);
-      let index = 0;
-      slides.forEach((_, i) => {
-        const b = document.createElement("button");
-        b.type = "button";
-        b.setAttribute("aria-label", "Página " + (i + 1));
-        b.onclick = () => show(i);
-        dots.appendChild(b);
-      });
-      function show(i) {
-        index = (i + slides.length) % slides.length;
-        cover.src = slides[index].src;
-        cover.alt = slides[index].alt;
-        [...dots.children].forEach((d, n) => d.classList.toggle("on", n === index));
-      }
-      document.getElementById(prevId).onclick = () => show(index - 1);
-      document.getElementById(nextId).onclick = () => show(index + 1);
-      let touchX = 0;
-      cover.addEventListener("touchstart", (e) => { touchX = e.changedTouches[0].clientX; }, { passive: true });
-      cover.addEventListener("touchend", (e) => {
-        const dx = e.changedTouches[0].clientX - touchX;
-        if (Math.abs(dx) > 40) show(index + (dx < 0 ? 1 : -1));
-      });
-      show(0);
-    }
-    setupCarousel("cover", "prev", "next", "dots", [
-      { src: "assets/seoul-product-cover.jpg", alt: "Capa de Seoul Between Scenes" },
-      { src: "assets/miolo/page-1.jpg", alt: "Página do miolo" },
-      { src: "assets/miolo/page-2.jpg", alt: "Página do miolo" },
-      { src: "assets/miolo/page-3.jpg", alt: "Página do miolo" },
-      { src: "assets/miolo/page-4.jpg", alt: "Página do miolo" },
-      { src: "assets/miolo/page-5.jpg", alt: "Página do miolo" },
-      { src: "assets/miolo/page-6.jpg", alt: "Página do miolo" }
-    ]);
-    setupCarousel("cover-5", "prev-5", "next-5", "dots-5", [
-      { src: "assets/book5/page-1.jpg", alt: "Capa de Seoul After the Cut" },
-      { src: "assets/book5/page-2.jpg", alt: "Página do miolo" },
-      { src: "assets/book5/page-3.jpg", alt: "Página do miolo" },
-      { src: "assets/book5/page-4.jpg", alt: "Página do miolo" },
-      { src: "assets/book5/page-5.jpg", alt: "Página do miolo" },
-      { src: "assets/book5/page-6.jpg", alt: "Página do miolo" }
-    ]);
   </script>
 </body>
 </html>
