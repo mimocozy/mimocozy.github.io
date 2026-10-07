@@ -23,11 +23,10 @@
     nav { display:flex; gap:18px; margin-left:8px; font-weight:800; font-size:14px; }
     nav a.active { border-bottom:2px solid var(--btn); }
     .tools { margin-left:auto; display:flex; align-items:center; gap:10px; }
-    .search { border:0; background:#fff; border-radius:999px; padding:8px 12px; width:42px; }
-    .langs { background:#fff; border-radius:999px; padding:4px; display:flex; gap:4px; }
-    .langs button { border:0; background:transparent; border-radius:999px; padding:6px 10px; font:inherit; font-weight:800; cursor:pointer; }
+    .langs { background:#fff; border-radius:12px; padding:3px; display:flex; gap:2px; height:40px; align-items:center; }
+    .langs button { border:0; background:transparent; border-radius:10px; padding:0 8px; height:34px; font:inherit; font-size:13px; font-weight:800; cursor:pointer; }
     .langs button.on { background:var(--btn); color:#fff; }
-    .burger { display:none; border:0; background:#fff; border-radius:12px; padding:8px 10px; font-size:18px; }
+    .burger { display:none; border:0; background:#fff; border-radius:12px; width:40px; height:40px; font-size:18px; }
     .hero { display:grid; grid-template-columns:1fr 1.05fr; gap:22px; padding:28px 0 10px; align-items:center; }
     h1 { font-family:Fraunces,serif; font-size:62px; line-height:.92; margin:0 0 10px; }
     .lede { color:var(--muted); margin:0 0 18px; }
@@ -93,7 +92,6 @@
         <a href="#contact" data-t="contact">Contact</a>
       </nav>
       <div class="tools">
-        <input class="search" id="q" type="search" aria-label="Search" />
         <div class="langs">
           <button id="pt" class="on" type="button">🇵🇹 PT</button>
           <button id="en" type="button">🇬🇧 EN</button>
@@ -222,7 +220,7 @@
     let filter = "all";
     const names = { kdrama:"K-Drama", halloween:"Halloween", brambleboo:"Brambleboo", slow:"Slow Life", soon: lang==="pt"?"Em breve":"Coming soon" };
     function apply() {
-      const q = (document.getElementById("q").value || "").toLowerCase();
+      const q = "";
       let shown = 0;
       document.querySelectorAll(".book").forEach(b => {
         const cols = (b.dataset.cols || "").split(" ");
