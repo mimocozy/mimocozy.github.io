@@ -125,8 +125,8 @@
     </section>
     <section id="books">
       <h2 data-t="feat">Featured Books</h2>
-      <p class="sub" data-t="colsub">Different worlds, the same cozy feeling.</p>
-      <p class="sub" data-t="featsub">Discover our latest releases.</p>
+      <p class="sub" id="books-feel" data-t="colsub">Different worlds, the same cozy feeling.</p>
+      <p class="sub" id="books-news" data-t="featsub">Discover our latest releases.</p>
       <div class="books">
         <p id="empty" hidden data-t="empty">No books in this collection yet.</p>
         <article class="book" data-feat="1" data-cols="kdrama" data-name="seoul between scenes">
@@ -266,7 +266,7 @@
         if (ok) shown++;
       });
       const title = document.querySelector("#books h2");
-      const sub = document.querySelector("#books .sub");
+      const sub = document.getElementById("books-news");
       if (filter === "all") { title.dataset.t = "feat"; sub.dataset.t = "featsub"; render(); }
       else {
         title.removeAttribute("data-t"); sub.removeAttribute("data-t");
