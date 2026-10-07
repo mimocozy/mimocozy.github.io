@@ -47,9 +47,9 @@
     .col p, .book p { color:var(--muted); font-size:13px; margin:0 0 8px; }
     .pill { display:inline-block; background:#f7eee8; border-radius:999px; padding:6px 10px; font-size:13px; font-weight:800; }
     .books { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-    .pub-split { display:none; grid-column:1 / -1; align-items:center; gap:12px; margin:6px 0; color:var(--muted); font-size:14px; letter-spacing:.04em; }
-    .pub-split.on { display:flex; }
-    .pub-split:before, .pub-split:after { content:""; flex:1; height:1px; background:var(--line); }
+    .pub-split { display:none; grid-column:1 / -1; margin:22px 0 4px; }
+    .pub-split.on { display:block; }
+    .pub-split span { font-family:Fraunces,serif; font-size:28px; color:var(--ink); }
     .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:8px; }
     .about-grid article { background:#fff; border:1px solid var(--line); border-radius:18px; padding:16px 18px; }
     .supply-card { min-height:220px; border-radius:18px; background:linear-gradient(160deg,#f6e7d8,#efe2ef 55%,#f7f1e8); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; color:#6b4b3e; }
@@ -152,7 +152,7 @@
           <div class="carousel" data-imgs="assets/halloween/haunted-cover.jpg,assets/slides/haunted-1.jpg,assets/slides/haunted-2.jpg,assets/slides/haunted-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/halloween/haunted-cover.jpg" alt="Haunted House Adventures Part One" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Haunted House Adventures</h3><p data-t="b3">Part One. A spooky-cute house, little ghosts and a gentle Halloween night.</p><a class="btn" href="https://amzn.eu/d/0dKOLW1f" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a></div>
         </article>
-        <div class="pub-split" id="pub-split"><span data-t="split">Next releases</span></div>
+        <div class="pub-split on" id="pub-split"><span data-t="split">Próximos lançamentos</span></div>
         <article class="book" data-cols="brambleboo soon" data-feat="1" data-name="brambleboo little lanterns part one">
           <div class="carousel" data-imgs="assets/brambleboo/lanterns-cover.jpg,assets/slides/lanterns-1.jpg,assets/slides/lanterns-2.jpg,assets/slides/lanterns-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/brambleboo/lanterns-cover.jpg" alt="Brambleboo's Little Lanterns" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Brambleboo's Little Lanterns</h3><p data-t="b19">Brambleboo shares little lanterns with friends in the forest. A gentle Halloween adventure. Coming soon.</p><span class="pill" data-t="rel1">October 11</span></div>
@@ -352,7 +352,7 @@
         const books = [...document.querySelectorAll(".book")];
         const before = books.filter(b => b.compareDocumentPosition(split) & Node.DOCUMENT_POSITION_FOLLOWING && b.style.display !== "none").length;
         const after = books.filter(b => b.compareDocumentPosition(split) & Node.DOCUMENT_POSITION_PRECEDING && b.style.display !== "none").length;
-        split.classList.toggle("on", before > 0 && after > 0);
+        split.classList.toggle("on", after > 0);
       }
       const title = document.querySelector("#books h2");
       const sub = document.getElementById("books-news");
