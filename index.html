@@ -340,7 +340,7 @@
     function apply() {
       const q = "";
       let shown = 0;
-      document.querySelectorAll(".book").forEach(b => {
+      document.querySelectorAll("#books .book").forEach(b => {
         const cols = (b.dataset.cols || "").split(" ");
         const home = filter === "all" && !document.body.classList.contains("cols-open");
         const ok = (home ? b.dataset.feat === "1" : (filter === "all" || cols.includes(filter))) && (!q || b.dataset.name.includes(q));
@@ -349,7 +349,7 @@
       });
       const split = document.getElementById("pub-split");
       if (split) {
-        const books = [...document.querySelectorAll(".book")];
+        const books = [...document.querySelectorAll("#books .book")];
         const before = books.filter(b => b.compareDocumentPosition(split) & Node.DOCUMENT_POSITION_FOLLOWING && b.style.display !== "none").length;
         const after = books.filter(b => b.compareDocumentPosition(split) & Node.DOCUMENT_POSITION_PRECEDING && b.style.display !== "none").length;
         split.classList.toggle("on", after > 0);
