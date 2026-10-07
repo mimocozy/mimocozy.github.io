@@ -5,376 +5,187 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mimocozy</title>
   <meta name="application-name" content="Mimocozy" />
-  <meta name="apple-mobile-web-app-title" content="Mimocozy" />
-  <meta property="og:site_name" content="Mimocozy" />
   <meta property="og:title" content="Mimocozy" />
   <meta property="og:description" content="Cozy coloring books for a calmer, happier you." />
   <meta property="og:image" content="/og.jpg" />
-  <meta property="x:game:image" content="/x-banner.jpg" />
-  <script>
-    (function () {
-      var host = location.host;
-      if (!host) return;
-      var og = document.querySelector('meta[property="og:image"]');
-      if (og) og.content = "https://" + host + "/og.jpg";
-      var x = document.querySelector('meta[property="x:game:image"]');
-      if (x) x.content = "https://" + host + "/x-banner.jpg";
-    })();
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito:wght@500;650;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,650&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --cream: #f7f1ea;
-      --paper: #fffaf6;
-      --blush: #f3e4dc;
-      --rose: #c98984;
-      --ink: #4a342c;
-      --muted: #8a6d62;
-      --choco: #6b4638;
-      --line: #eadfd6;
-    }
+    :root { --ink:#5a3b32; --muted:#8d6d63; --cream:#fbf6f1; --card:#fffaf7; --blush:#f6e4dc; --btn:#6d4638; --line:#f0e4dc; }
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--cream);
-      font-family: Nunito, sans-serif;
-      font-weight: 650;
-    }
-    a { color: inherit; }
-    img { max-width: 100%; }
-    .wrap { width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
-    .serif { font-family: "Cormorant Garamond", serif; font-weight: 500; }
-    header.nav {
-      position: sticky; top: 0; z-index: 20;
-      background: rgba(255, 250, 246, .92);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line);
-    }
-    .nav-inner { display: flex; align-items: center; gap: 18px; min-height: 78px; }
-    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-    .brand img { width: 138px; height: auto; }
-    .sign { display: block; color: var(--muted); font-size: 12px; letter-spacing: .04em; margin-top: -4px; }
-    .menu { display: flex; gap: 22px; margin: 0 auto; }
-    .menu a { text-decoration: none; font-size: 14px; color: var(--choco); }
-    .menu a:hover { color: var(--rose); }
-    .tools { display: flex; align-items: center; gap: 10px; }
-    .search {
-      border: 1px solid var(--line); background: #fff; border-radius: 999px;
-      padding: 8px 12px; font: inherit; width: 140px; color: var(--ink);
-    }
-    .langs { display: flex; background: var(--blush); border-radius: 999px; padding: 3px; }
-    .langs button {
-      border: 0; background: transparent; border-radius: 999px; padding: 6px 10px;
-      font: inherit; cursor: pointer; color: var(--choco);
-    }
-    .langs button.on { background: var(--choco); color: #fff; }
-    .burger { display: none; border: 0; background: transparent; font-size: 22px; cursor: pointer; }
-    .hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 42px; align-items: center; padding: 64px 0 36px; }
-    h1 { font-size: 68px; line-height: .92; margin: 0 0 14px; color: var(--choco); }
-    .lede { font-size: 18px; color: var(--muted); margin: 0 0 22px; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
-      background: var(--choco); color: #fff; border-radius: 999px; padding: 12px 18px;
-      border: 0; font: inherit; cursor: pointer;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(74, 52, 44, .12); }
-    .btn.soft { background: transparent; color: var(--choco); border: 1px solid var(--choco); }
-    .perks { display: flex; gap: 16px; margin-top: 22px; color: var(--muted); font-size: 14px; flex-wrap: wrap; }
-    .hero-visual { position: relative; }
-    .hero-visual img.still { width: 100%; border-radius: 28px; display: block; }
-    .spine {
-      position: absolute; left: 18px; bottom: 18px; background: rgba(255,250,246,.9);
-      border-radius: 14px; padding: 10px 12px; font-size: 13px; color: var(--choco);
-    }
-    section { padding: 42px 0; }
-    .kicker { letter-spacing: .08em; text-transform: uppercase; font-size: 12px; color: var(--rose); margin: 0 0 6px; }
-    h2 { font-size: 46px; margin: 0; color: var(--choco); }
-    .sub { color: var(--muted); margin: 8px 0 22px; }
-    .grid { display: grid; gap: 16px; }
-    .cols-3 { grid-template-columns: repeat(3, 1fr); }
-    .cols-2 { grid-template-columns: 1.1fr .9fr; }
-    .card, .book, .peek {
-      background: var(--paper); border-radius: 22px; overflow: hidden;
-      box-shadow: 0 8px 24px rgba(74, 52, 44, .04);
-      transition: transform .2s ease;
-    }
-    .card:hover, .book:hover, .peek:hover { transform: translateY(-3px); }
-    .card img, .book img, .peek img { width: 100%; height: 180px; object-fit: cover; display: block; background: #fff; }
-    .book img { height: 280px; object-fit: contain; background: #fff; padding: 12px; }
-    .card div, .book div { padding: 16px 16px 18px; }
-    h3 { margin: 0 0 6px; font-size: 28px; }
-    p { line-height: 1.5; }
-    .link { color: var(--choco); font-weight: 800; text-decoration: none; }
-    .book .meta { color: var(--rose); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
-    .peeks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-    .peek { border: 0; padding: 0; cursor: pointer; background: #fff; }
-    .peek img { height: 240px; object-fit: cover; }
-    .community { background: #f6e7e1; border-radius: 28px; padding: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
-    .community img { border-radius: 20px; }
-    .row { display: flex; gap: 10px; flex-wrap: wrap; }
-    .letter { background: #f8e8e3; border-radius: 28px; padding: 28px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 18px; align-items: center; }
-    form { display: flex; gap: 8px; }
-    input[type="email"] { flex: 1; border: 1px solid var(--line); border-radius: 999px; padding: 12px 14px; font: inherit; }
-    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); }
-    .foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-    .foot a { text-decoration: none; margin-right: 12px; }
-    .lightbox {
-      position: fixed; inset: 0; background: rgba(42, 28, 24, .72); display: none;
-      align-items: center; justify-content: center; z-index: 30; padding: 20px;
-    }
-    .lightbox.open { display: flex; }
-    .lightbox img { max-width: min(860px, 100%); max-height: 88vh; border-radius: 16px; background: #fff; }
-    .hidden { display: none !important; }
-    @media (max-width: 860px) {
-      .menu { display: none; position: absolute; top: 78px; left: 0; right: 0; background: var(--paper); flex-direction: column; padding: 16px 22px 20px; border-bottom: 1px solid var(--line); }
-      .menu.open { display: flex; }
-      .burger { display: block; }
-      .search { display: none; }
-      .hero, .cols-3, .cols-2, .peeks, .community, .letter { grid-template-columns: 1fr; }
-      h1 { font-size: 46px; }
-      h2 { font-size: 36px; }
-      .nav-inner { min-height: 68px; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:Nunito,sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    img { max-width:100%; display:block; }
+    .wrap { width:min(1180px, calc(100% - 28px)); margin:0 auto; }
+    header { position:sticky; top:0; z-index:5; background:rgba(251,246,241,.94); backdrop-filter:blur(8px); }
+    .bar { display:flex; align-items:center; gap:16px; min-height:74px; }
+    .logo { width:168px; }
+    nav { display:flex; gap:18px; margin-left:8px; font-weight:800; font-size:14px; }
+    nav a.active { border-bottom:2px solid var(--btn); }
+    .tools { margin-left:auto; display:flex; align-items:center; gap:10px; }
+    .search { border:0; background:#fff; border-radius:999px; padding:8px 12px; width:42px; }
+    .langs { background:#fff; border-radius:999px; padding:4px; display:flex; gap:4px; }
+    .langs button { border:0; background:transparent; border-radius:999px; padding:6px 10px; font:inherit; font-weight:800; cursor:pointer; }
+    .langs button.on { background:var(--btn); color:#fff; }
+    .burger { display:none; border:0; background:#fff; border-radius:12px; padding:8px 10px; font-size:18px; }
+    .hero { display:grid; grid-template-columns:1fr 1.05fr; gap:22px; padding:28px 0 10px; align-items:center; }
+    h1 { font-family:Fraunces,serif; font-size:62px; line-height:.92; margin:0 0 10px; }
+    .lede { color:var(--muted); margin:0 0 18px; }
+    .btn { display:inline-flex; align-items:center; gap:8px; background:var(--btn); color:#fff; border-radius:999px; padding:12px 18px; border:0; font:inherit; font-weight:800; cursor:pointer; }
+    .btn.soft { background:#fff; color:var(--btn); border:1px solid #ecdcd3; }
+    .perks { display:flex; gap:16px; margin-top:16px; color:var(--muted); font-size:13px; font-weight:800; }
+    .hero-art { background:#fff; border-radius:28px; overflow:hidden; min-height:280px; }
+    .hero-art img { width:100%; height:340px; object-fit:cover; }
+    section { padding:26px 0; }
+    h2 { font-family:Fraunces,serif; font-size:34px; margin:0; }
+    .sub { color:var(--muted); margin:4px 0 14px; }
+    .headrow { display:flex; justify-content:space-between; align-items:end; gap:12px; }
+    .cols { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; }
+    .col, .book, .panel { background:var(--card); border:1px solid var(--line); border-radius:22px; }
+    .col { padding:10px; }
+    .col img, .thumb { width:100%; height:112px; object-fit:cover; border-radius:16px; background:#fff; }
+    .col h3 { font-size:15px; margin:8px 0 4px; }
+    .col p, .book p { color:var(--muted); font-size:13px; margin:0 0 8px; }
+    .pill { display:inline-block; background:#f7eee8; border-radius:999px; padding:6px 10px; font-size:13px; font-weight:800; }
+    .books { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .book { display:grid; grid-template-columns:150px 1fr; gap:12px; padding:12px; align-items:center; }
+    .book img { width:150px; height:180px; object-fit:contain; background:#fff; border-radius:14px; }
+    .split { display:grid; grid-template-columns:1.2fr .8fr; gap:14px; }
+    .peeks { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+    .peeks button { border:0; padding:0; background:#fff; border-radius:16px; overflow:hidden; cursor:pointer; }
+    .peeks img { height:140px; width:100%; object-fit:cover; }
+    .social { background:#f8e7e1; border-radius:24px; padding:18px; display:grid; grid-template-columns:1fr 160px; gap:12px; align-items:center; }
+    .letter { display:flex; gap:12px; align-items:center; background:#f8e4dc; border-radius:22px; padding:14px 16px; }
+    .letter form { display:flex; gap:8px; flex:1; }
+    input { flex:1; border:0; border-radius:999px; padding:12px 14px; font:inherit; }
+    footer { display:flex; justify-content:space-between; gap:12px; align-items:center; padding:18px 0 28px; color:var(--muted); font-size:13px; flex-wrap:wrap; }
+    .lightbox { position:fixed; inset:0; background:rgba(40,24,20,.72); display:none; align-items:center; justify-content:center; padding:16px; }
+    .lightbox.open { display:flex; }
+    .lightbox img { max-height:88vh; border-radius:12px; background:#fff; }
+    @media (max-width:860px) {
+      nav { display:none; position:absolute; top:74px; left:0; right:0; background:#fffaf7; flex-direction:column; padding:14px 18px; }
+      nav.open { display:flex; }
+      .burger { display:block; }
+      .hero, .cols, .books, .split, .book, .social, .peeks { grid-template-columns:1fr; }
+      h1 { font-size:42px; }
+      .book img { width:100%; height:220px; }
+      .letter { flex-direction:column; align-items:stretch; }
     }
   </style>
 </head>
 <body>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="#home">
-        <span>
-          <img src="assets/mimocozy-wordmark.jpg" alt="Mimocozy" />
-          <span class="sign" data-t="sign">Cute pages. Calm moments.</span>
-        </span>
-      </a>
-      <nav class="menu" id="menu">
-        <a href="#home" data-t="navHome">Home</a>
-        <a href="#books" data-t="navBooks">Books</a>
-        <a href="#collections" data-t="navCol">Collections</a>
-        <a href="#about" data-t="navAbout">About</a>
-        <a href="#contact" data-t="navContact">Contact</a>
+  <header>
+    <div class="wrap bar">
+      <img class="logo" src="assets/mimocozy-logo-transparent.png" alt="Mimocozy" />
+      <nav id="menu">
+        <a class="active" href="#home" data-t="home">Home</a>
+        <a href="#books" data-t="books">Books</a>
+        <a href="#collections" data-t="cols">Collections</a>
+        <a href="#about" data-t="about">About</a>
+        <a href="#contact" data-t="contact">Contact</a>
       </nav>
       <div class="tools">
-        <input class="search" id="search" type="search" data-ph="search" placeholder="Search" />
+        <input class="search" id="q" type="search" aria-label="Search" />
         <div class="langs">
-          <button type="button" id="btn-pt" class="on">PT</button>
-          <button type="button" id="btn-en">EN</button>
+          <button id="pt" class="on" type="button">🇵🇹 PT</button>
+          <button id="en" type="button">🇬🇧 EN</button>
         </div>
-        <button class="burger" id="burger" type="button" aria-label="Menu">☰</button>
+        <button class="burger" id="burger" type="button">☰</button>
       </div>
     </div>
   </header>
-
   <main class="wrap" id="home">
     <section class="hero">
       <div>
-        <p class="kicker">Mimocozy</p>
-        <h1 class="serif" data-t="heroTitle">A little color goes a long way</h1>
-        <p class="lede" data-t="heroText">Cozy coloring books for a calmer, happier you.</p>
+        <h1 data-t="hero">A little color goes a long way</h1>
+        <p class="lede" data-t="lede">Cozy coloring books for a calmer, happier you.</p>
         <a class="btn" href="#books" data-t="explore">Explore the Books →</a>
-        <div class="perks">
-          <span data-t="perk1">Relax your mind</span>
-          <span data-t="perk2">Spark your creativity</span>
-          <span data-t="perk3">Enjoy little moments</span>
+        <div class="perks"><span data-t="p1">Relax your mind</span><span data-t="p2">Spark your creativity</span><span data-t="p3">Enjoy little moments</span></div>
+      </div>
+      <div class="hero-art"><img src="assets/hero-still.jpg" alt="" /></div>
+    </section>
+    <section id="collections">
+      <div class="headrow"><div><h2 data-t="cols">Our Collections</h2><p class="sub" data-t="colsub">Different worlds, the same cozy feeling.</p></div><a class="pill" href="#books" data-t="all">View all books →</a></div>
+      <div class="cols">
+        <article class="col"><img src="assets/seoul-product-cover.jpg" alt="" /><h3>K-Drama</h3><p data-t="c1">Romantic scenes, beautiful places and everyday magic.</p><a class="pill" href="#books">Explore →</a></article>
+        <article class="col"><img src="assets/cover-halloween.jpg" alt="" /><h3>Halloween</h3><p data-t="c2">Spooky-cute adventures full of charm.</p><a class="pill" href="#books">Explore →</a></article>
+        <article class="col"><img src="assets/cover-gnomes.jpg" alt="" /><h3>Brambleboo</h3><p data-t="c3">Adorable stories in magical settings.</p><a class="pill" href="#books">Explore →</a></article>
+        <article class="col"><img src="assets/cover-animals.jpg" alt="" /><h3>Slow Life</h3><p data-t="c4">Peaceful places, cozy days and simple joys.</p><a class="pill" href="#books">Explore →</a></article>
+        <article class="col"><img src="assets/mimocozy-cat.jpg" alt="" /><h3 data-t="c5t">More to come</h3><p data-t="c5">New stories, new characters and more cozy moments.</p><a class="pill" href="#contact" data-t="stay">Stay tuned</a></article>
+      </div>
+    </section>
+    <section id="books">
+      <h2 data-t="feat">Featured Books</h2>
+      <p class="sub" data-t="featsub">Discover our latest releases.</p>
+      <div class="books">
+        <article class="book" data-name="seoul between scenes">
+          <img src="assets/seoul-product-cover.jpg" alt="Seoul Between Scenes" />
+          <div><h3>Seoul Between Scenes</h3><p data-t="b1">Romantic city views, cozy moments and everyday beauty in Seoul.</p><a class="btn" href="https://amzn.eu/d/078evWEV" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a></div>
+        </article>
+        <article class="book" data-name="seoul after the cut">
+          <img src="assets/book5/page-1.jpg" alt="Seoul After the Cut" />
+          <div><h3>Seoul After the Cut</h3><p data-t="b2">Cozy scenes, favorite places and everyday magic in Seoul.</p><a class="btn" href="https://amzn.eu/d/09oG4UHr" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a></div>
+        </article>
+      </div>
+    </section>
+    <section class="split" id="inside">
+      <div>
+        <h2 data-t="inside">Inside our books</h2>
+        <p class="sub" data-t="insidesub">Take a peek and see the cozy details.</p>
+        <div class="peeks">
+          <button type="button"><img src="assets/miolo/page-1.jpg" alt="" /></button>
+          <button type="button"><img src="assets/miolo/page-2.jpg" alt="" /></button>
+          <button type="button"><img src="assets/book5/page-2.jpg" alt="" /></button>
+          <button type="button"><img src="assets/book5/page-3.jpg" alt="" /></button>
         </div>
       </div>
-      <div class="hero-visual">
-        <img class="still" src="assets/hero-still.jpg" alt="" />
-        <div class="spine">Good books<br>Cozy moments<br>Brighter days</div>
-      </div>
-    </section>
-
-    <section id="collections">
-      <p class="kicker" data-t="colKicker">Our Collections</p>
-      <h2 class="serif" data-t="colTitle">Our Collections</h2>
-      <p class="sub" data-t="colSub">Different worlds, the same cozy feeling.</p>
-      <div class="grid cols-3">
-        <article class="card"><img src="assets/seoul-product-cover.jpg" alt="" /><div><h3 class="serif">K-Drama</h3><p data-t="c1">Romantic scenes, beautiful places and everyday magic.</p><a class="link" href="#books">Explore →</a></div></article>
-        <article class="card"><img src="assets/cover-halloween.jpg" alt="" /><div><h3 class="serif">Halloween</h3><p data-t="c2">Spooky-cute adventures full of charm.</p><a class="link" href="#books">Explore →</a></div></article>
-        <article class="card"><img src="assets/cover-gnomes.jpg" alt="" /><div><h3 class="serif">Brambleboo</h3><p data-t="c3">Adorable stories in magical settings.</p><a class="link" href="#books">Explore →</a></div></article>
-        <article class="card"><img src="assets/cover-animals.jpg" alt="" /><div><h3 class="serif">Slow Life</h3><p data-t="c4">Peaceful places, cozy days and simple joys.</p><a class="link" href="#books">Explore →</a></div></article>
-        <article class="card"><img src="assets/cover-mandalas.jpg" alt="" /><div><h3 class="serif" data-t="c5t">More to come</h3><p data-t="c5">New stories, new characters and more cozy moments.</p><a class="link" href="#contact">Explore →</a></div></article>
-      </div>
-    </section>
-
-    <section id="books">
-      <p class="kicker" data-t="bookKicker">Featured Books</p>
-      <h2 class="serif" data-t="bookTitle">Featured Books</h2>
-      <p class="sub" data-t="bookSub">Discover our latest releases.</p>
-      <div class="grid cols-2" id="book-list">
-        <article class="book" data-name="seoul between scenes k-drama">
-          <img src="assets/seoul-product-cover.jpg" alt="Seoul Between Scenes" />
-          <div>
-            <p class="meta">K-Drama Collection</p>
-            <h3 class="serif">Seoul Between Scenes</h3>
-            <p data-t="b1">Romantic city views, cozy moments and everyday beauty in Seoul.</p>
-            <a class="btn" href="https://amzn.eu/d/078evWEV" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a>
-          </div>
-        </article>
-        <article class="book" data-name="seoul after the cut k-drama">
-          <img src="assets/book5/page-1.jpg" alt="Seoul After the Cut" />
-          <div>
-            <p class="meta">K-Drama Collection</p>
-            <h3 class="serif">Seoul After the Cut</h3>
-            <p data-t="b2">The kiss they cut, the rainy city, and the scene you still want to color.</p>
-            <a class="btn" href="https://amzn.eu/d/09oG4UHr" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="inside">
-      <p class="kicker">Inside</p>
-      <h2 class="serif" data-t="inTitle">Inside our books</h2>
-      <p class="sub" data-t="inSub">Take a peek and see the cozy details.</p>
-      <div class="peeks">
-        <button class="peek" type="button"><img src="assets/miolo/page-1.jpg" alt="Coloring page" /></button>
-        <button class="peek" type="button"><img src="assets/miolo/page-2.jpg" alt="Coloring page" /></button>
-        <button class="peek" type="button"><img src="assets/book5/page-2.jpg" alt="Coloring page" /></button>
-        <button class="peek" type="button"><img src="assets/book5/page-3.jpg" alt="Coloring page" /></button>
-      </div>
-    </section>
-
-    <section class="community" id="social">
-      <div>
-        <h2 class="serif" data-t="socTitle">Color with Mimocozy</h2>
-        <p data-t="socText">Follow for coloring inspiration, new releases and cozy moments.</p>
-        <div class="row">
+      <div class="social" id="contact">
+        <div>
+          <h2 data-t="color">Color with Mimocozy</h2>
+          <p data-t="colorsub">Follow for coloring inspiration, new releases and cozy moments.</p>
           <a class="btn" href="https://www.tiktok.com/@creative.pages.co" target="_blank" rel="noopener">TikTok</a>
           <a class="btn soft" href="https://www.instagram.com/creativepagescoloring" target="_blank" rel="noopener">Instagram</a>
         </div>
+        <img src="assets/community.jpg" alt="" />
       </div>
-      <img src="assets/community.jpg" alt="" />
     </section>
-
-    <section>
-      <div class="letter">
-        <div>
-          <h2 class="serif" data-t="newsTitle">Join our cozy letters</h2>
-          <p data-t="newsText">Be the first to know about new books, special offers and cozy news.</p>
-        </div>
-        <form id="news">
-          <input type="email" required data-ph="email" placeholder="Your email address" />
-          <button class="btn" type="submit" data-t="subBtn">Subscribe →</button>
-        </form>
-      </div>
-      <p id="thanks" class="hidden" data-t="thanks">Thank you. You are on the list.</p>
+    <section class="letter">
+      <div><strong data-t="news">Join our cozy letters</strong><div class="sub" data-t="newssub">Be the first to know about new books, special offers and cozy news.</div></div>
+      <form id="news"><input type="email" required data-ph="email" placeholder="Your email address" /><button class="btn" data-t="sub">Subscribe →</button></form>
     </section>
-
-    <section id="about">
-      <h2 class="serif" data-t="aboutTitle">About</h2>
-      <p data-t="aboutText">Mimocozy makes cozy coloring books for quiet evenings and little pockets of joy. Original pages, calm stories, and a cat who would rather read than rush.</p>
-    </section>
-    <section id="contact">
-      <h2 class="serif" data-t="navContact">Contact</h2>
-      <p data-t="contactText">Say hello on TikTok or Instagram. We read every note.</p>
-    </section>
+    <section id="about"><h2 data-t="about">About</h2><p data-t="aboutp">Mimocozy makes cozy coloring books for quiet evenings. Original pages, calm stories, and a cat who would rather read.</p></section>
   </main>
-
-  <footer>
-    <div class="wrap foot">
-      <div>
-        <img src="assets/mimocozy-wordmark.jpg" alt="Mimocozy" style="width:150px" />
-        <div class="sign" data-t="sign">Cute pages. Calm moments.</div>
-        <p>© 2026 Mimocozy. All rights reserved.</p>
-        <p data-t="bye">Color a kinder tomorrow.</p>
-      </div>
-      <div>
-        <a href="#home" data-t="navHome">Home</a>
-        <a href="#books" data-t="navBooks">Books</a>
-        <a href="#collections" data-t="navCol">Collections</a>
-        <a href="#about" data-t="navAbout">About</a>
-        <a href="#contact" data-t="navContact">Contact</a>
-        <p>
-          <a href="https://www.tiktok.com/@creative.pages.co" target="_blank" rel="noopener">TikTok</a>
-          <a href="https://www.instagram.com/creativepagescoloring" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://amzn.eu/d/078evWEV" target="_blank" rel="noopener">Amazon</a>
-        </p>
-        <p>PT | EN</p>
-      </div>
-    </div>
+  <footer class="wrap">
+    <img src="assets/mimocozy-logo-transparent.png" alt="Mimocozy" style="width:140px" />
+    <div><a href="#home" data-t="home">Home</a> · <a href="#books" data-t="books">Books</a> · <a href="#collections" data-t="cols">Collections</a> · <a href="https://www.tiktok.com/@creative.pages.co">TikTok</a> · <a href="https://www.instagram.com/creativepagescoloring">Instagram</a></div>
+    <div>© 2026 Mimocozy. All rights reserved. <span data-t="bye">Color a kinder tomorrow</span></div>
   </footer>
   <div class="lightbox" id="light"><img alt="" /></div>
   <script>
     const copy = {
-      pt: {
-        sign: "Páginas fofas. Momentos calmos.",
-        navHome: "Início", navBooks: "Livros", navCol: "Coleções", navAbout: "Sobre", navContact: "Contacto",
-        search: "Pesquisar", heroTitle: "Um pouco de cor vai longe",
-        heroText: "Livros para colorir aconchegantes, para um dia mais calmo e mais feliz.",
-        explore: "Explorar os livros →", perk1: "Acalma a mente", perk2: "Acende a criatividade", perk3: "Saboreia os pequenos momentos",
-        colTitle: "As nossas coleções", colSub: "Mundos diferentes, o mesmo sentimento cozy.",
-        c1: "Cenas românticas, lugares bonitos e magia do quotidiano.",
-        c2: "Aventuras spooky-cute, cheias de charme.",
-        c3: "Histórias adoráveis em cenários mágicos.",
-        c4: "Lugares calmos, dias aconchegantes e alegrias simples.",
-        c5t: "Em breve", c5: "Novas histórias, novas personagens e mais momentos cozy.",
-        bookTitle: "Livros em destaque", bookSub: "Descobre as novidades.",
-        b1: "Vistas da cidade, momentos cozy e a beleza do dia a dia em Seul.",
-        b2: "O beijo que cortaram, a cidade à chuva e a cena que ainda queres colorir.",
-        amazon: "Ver na Amazon →", inTitle: "Dentro dos livros", inSub: "Espreita os detalhes.",
-        socTitle: "Colorir com a Mimocozy", socText: "Segue para inspiração, novidades e momentos cozy.",
-        newsTitle: "As nossas cartas cozy", newsText: "Sê a primeira a saber de livros novos, ofertas e novidades.",
-        email: "O teu email", subBtn: "Subscrever →", thanks: "Obrigada. Ficaste na lista.",
-        aboutTitle: "Sobre", aboutText: "A Mimocozy faz livros para colorir para noites calmas e pequenos bolsos de alegria. Páginas originais, histórias tranquilas, e um gato que prefere ler a apressar-se.",
-        contactText: "Diz olá no TikTok ou no Instagram. Lemos cada recado.",
-        bye: "Colorir um amanhã mais gentil."
-      },
-      en: {
-        sign: "Cute pages. Calm moments.",
-        navHome: "Home", navBooks: "Books", navCol: "Collections", navAbout: "About", navContact: "Contact",
-        search: "Search", heroTitle: "A little color goes a long way",
-        heroText: "Cozy coloring books for a calmer, happier you.",
-        explore: "Explore the Books →", perk1: "Relax your mind", perk2: "Spark your creativity", perk3: "Enjoy little moments",
-        colTitle: "Our Collections", colSub: "Different worlds, the same cozy feeling.",
-        c1: "Romantic scenes, beautiful places and everyday magic.",
-        c2: "Spooky-cute adventures full of charm.",
-        c3: "Adorable stories in magical settings.",
-        c4: "Peaceful places, cozy days and simple joys.",
-        c5t: "More to come", c5: "New stories, new characters and more cozy moments.",
-        bookTitle: "Featured Books", bookSub: "Discover our latest releases.",
-        b1: "Romantic city views, cozy moments and everyday beauty in Seoul.",
-        b2: "The kiss they cut, the rainy city, and the scene you still want to color.",
-        amazon: "View on Amazon →", inTitle: "Inside our books", inSub: "Take a peek and see the cozy details.",
-        socTitle: "Color with Mimocozy", socText: "Follow for coloring inspiration, new releases and cozy moments.",
-        newsTitle: "Join our cozy letters", newsText: "Be the first to know about new books, special offers and cozy news.",
-        email: "Your email address", subBtn: "Subscribe →", thanks: "Thank you. You are on the list.",
-        aboutTitle: "About", aboutText: "Mimocozy makes cozy coloring books for quiet evenings and little pockets of joy. Original pages, calm stories, and a cat who would rather read than rush.",
-        contactText: "Say hello on TikTok or Instagram. We read every note.",
-        bye: "Color a kinder tomorrow."
-      }
+      pt: { home:"Início", books:"Livros", cols:"Coleções", about:"Sobre", contact:"Contacto", hero:"Um pouco de cor vai longe", lede:"Livros para colorir aconchegantes, para um dia mais calmo.", explore:"Explorar os livros →", p1:"Acalma a mente", p2:"Acende a criatividade", p3:"Pequenos momentos", colsub:"Mundos diferentes, o mesmo sentimento cozy.", all:"Ver todos →", c1:"Cenas românticas e magia do quotidiano.", c2:"Aventuras spooky-cute cheias de charme.", c3:"Histórias adoráveis em cenários mágicos.", c4:"Dias calmos e alegrias simples.", c5t:"Em breve", c5:"Novas histórias e mais momentos cozy.", stay:"Fica atenta", feat:"Livros em destaque", featsub:"Descobre as novidades.", b1:"Vistas da cidade e a beleza do dia a dia em Seul.", b2:"Cenas cozy, lugares favoritos e magia em Seul.", amazon:"Ver na Amazon →", inside:"Dentro dos livros", insidesub:"Espreita os detalhes.", color:"Colorir com a Mimocozy", colorsub:"Segue para inspiração, novidades e momentos cozy.", news:"As nossas cartas cozy", newssub:"Novidades, ofertas e livros novos.", email:"O teu email", sub:"Subscrever →", aboutp:"A Mimocozy faz livros para colorir para noites calmas.", bye:"Colorir um amanhã mais gentil" },
+      en: { home:"Home", books:"Books", cols:"Collections", about:"About", contact:"Contact", hero:"A little color goes a long way", lede:"Cozy coloring books for a calmer, happier you.", explore:"Explore the Books →", p1:"Relax your mind", p2:"Spark your creativity", p3:"Enjoy little moments", colsub:"Different worlds, the same cozy feeling.", all:"View all books →", c1:"Romantic scenes, beautiful places and everyday magic.", c2:"Spooky-cute adventures full of charm.", c3:"Adorable stories in magical settings.", c4:"Peaceful places, cozy days and simple joys.", c5t:"More to come", c5:"New stories, new characters and more cozy moments.", stay:"Stay tuned", feat:"Featured Books", featsub:"Discover our latest releases.", b1:"Romantic city views, cozy moments and everyday beauty in Seoul.", b2:"Cozy scenes, favorite places and everyday magic in Seoul.", amazon:"View on Amazon →", inside:"Inside our books", insidesub:"Take a peek and see the cozy details.", color:"Color with Mimocozy", colorsub:"Follow for coloring inspiration, new releases and cozy moments.", news:"Join our cozy letters", newssub:"Be the first to know about new books, special offers and cozy news.", email:"Your email address", sub:"Subscribe →", aboutp:"Mimocozy makes cozy coloring books for quiet evenings.", bye:"Color a kinder tomorrow" }
     };
     let lang = "pt";
     function render() {
       const t = copy[lang];
-      document.querySelectorAll("[data-t]").forEach((el) => { el.textContent = t[el.dataset.t] || el.textContent; });
-      document.querySelectorAll("[data-ph]").forEach((el) => { el.placeholder = t[el.dataset.ph]; });
+      document.querySelectorAll("[data-t]").forEach(el => { if (t[el.dataset.t]) el.textContent = t[el.dataset.t]; });
+      document.querySelectorAll("[data-ph]").forEach(el => el.placeholder = t[el.dataset.ph]);
       document.documentElement.lang = lang;
-      document.getElementById("btn-pt").classList.toggle("on", lang === "pt");
-      document.getElementById("btn-en").classList.toggle("on", lang === "en");
+      pt.classList.toggle("on", lang==="pt"); en.classList.toggle("on", lang==="en");
     }
-    document.getElementById("btn-pt").onclick = () => { lang = "pt"; render(); };
-    document.getElementById("btn-en").onclick = () => { lang = "en"; render(); };
+    const pt = document.getElementById("pt"), en = document.getElementById("en");
+    pt.onclick = () => { lang="pt"; render(); };
+    en.onclick = () => { lang="en"; render(); };
     document.getElementById("burger").onclick = () => document.getElementById("menu").classList.toggle("open");
-    document.getElementById("search").oninput = (e) => {
+    document.getElementById("q").oninput = e => {
       const q = e.target.value.toLowerCase();
-      document.querySelectorAll(".book").forEach((b) => b.classList.toggle("hidden", q && !b.dataset.name.includes(q)));
+      document.querySelectorAll(".book").forEach(b => b.style.display = !q || b.dataset.name.includes(q) ? "" : "none");
     };
     const light = document.getElementById("light");
-    document.querySelectorAll(".peek").forEach((b) => b.onclick = () => {
-      light.querySelector("img").src = b.querySelector("img").src;
-      light.classList.add("open");
-    });
+    document.querySelectorAll(".peeks button").forEach(b => b.onclick = () => { light.querySelector("img").src = b.querySelector("img").src; light.classList.add("open"); });
     light.onclick = () => light.classList.remove("open");
-    document.getElementById("news").onsubmit = (e) => {
-      e.preventDefault();
-      document.getElementById("thanks").classList.remove("hidden");
-      e.target.reset();
-    };
+    document.getElementById("news").onsubmit = e => { e.preventDefault(); e.target.reset(); alert(lang==="pt"?"Obrigada. Ficaste na lista.":"Thank you. You are on the list."); };
     render();
   </script>
 </body>
