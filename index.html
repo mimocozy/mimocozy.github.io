@@ -47,7 +47,7 @@
     .col p, .book p { color:var(--muted); font-size:13px; margin:0 0 8px; }
     .pill { display:inline-block; background:#f7eee8; border-radius:999px; padding:6px 10px; font-size:13px; font-weight:800; }
     .books { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-    .book { display:grid; grid-template-columns:150px 1fr; gap:12px; padding:12px; align-items:center; }
+    .book:not([data-feat]) { display:none; }
     .carousel { position:relative; width:150px; }
     .carousel img { width:150px; height:180px; object-fit:contain; background:#fffaf6; border-radius:14px; display:block; }
     .carousel button { position:absolute; top:50%; transform:translateY(-50%); width:34px; height:34px; border:0; border-radius:50%; background:#6b4636; color:#fffaf6; font-size:22px; line-height:34px; cursor:pointer; z-index:2; box-shadow:0 2px 8px rgba(74,52,40,.25); }
@@ -87,7 +87,6 @@
       <nav id="menu">
         <a class="active" href="#home" data-t="home">Home</a>
         <a href="#books" data-t="books">Books</a>
-        <a href="#collections" data-t="cols">Collections</a>
         <a href="#about" data-t="about">About</a>
         <a href="#contact" data-t="contact">Contact</a>
       </nav>
@@ -110,30 +109,21 @@
       </div>
       <div class="hero-art"><img src="assets/hero-still.jpg?v=3" alt="Gatinho Mimocozy a dormir nos livros" /></div>
     </section>
-    <section id="collections">
-      <div class="headrow"><div><h2 data-t="cols">Our Collections</h2><p class="sub" data-t="colsub">Different worlds, the same cozy feeling.</p></div><a class="pill" href="#books" data-filter="all" data-t="all">View all books →</a></div>
-      <div class="cols">
-        <article class="col" data-filter="kdrama"><img src="assets/seoul-product-cover.jpg" alt="" /><h3>K-Drama</h3><p data-t="c1">Romantic scenes, beautiful places and everyday magic.</p><a class="pill" href="#books" data-filter="kdrama">Explore →</a></article>
-        <article class="col" data-filter="halloween"><img src="assets/halloween/haunted-cover.jpg" alt="Haunted House Adventures" /><h3>Halloween</h3><p data-t="c2">Spooky-cute adventures full of charm.</p><a class="pill" href="#books" data-filter="halloween">Explore →</a></article>
-        <article class="col" data-filter="brambleboo"><img src="assets/cover-gnomes.jpg" alt="" /><h3>Brambleboo</h3><p data-t="c3">Adorable stories in magical settings.</p><a class="pill" href="#books" data-filter="brambleboo">Explore →</a></article>
-        <article class="col" data-filter="slow"><img src="assets/cover-animals.jpg" alt="" /><h3>Slow Life</h3><p data-t="c4">Peaceful places, cozy days and simple joys.</p><a class="pill" href="#books" data-filter="slow">Explore →</a></article>
-        <article class="col" data-filter="soon"><img src="assets/mimocozy-cat.jpg" alt="" /><h3 data-t="c5t">Coming soon</h3><p data-t="c5">Books almost ready to color.</p><a class="pill" href="#books" data-filter="soon" data-t="stay">See them →</a></article>
-      </div>
-    </section>
     <section id="books">
       <h2 data-t="feat">Featured Books</h2>
+      <p class="sub" data-t="colsub">Different worlds, the same cozy feeling.</p>
       <p class="sub" data-t="featsub">Discover our latest releases.</p>
       <div class="books">
         <p id="empty" hidden data-t="empty">No books in this collection yet.</p>
-        <article class="book" data-cols="kdrama" data-name="seoul between scenes">
+        <article class="book" data-feat="1" data-cols="kdrama" data-name="seoul between scenes">
           <div class="carousel" data-imgs="assets/seoul-product-cover.jpg,assets/slides/seoul-1.jpg,assets/slides/seoul-2.jpg,assets/slides/seoul-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/seoul-product-cover.jpg" alt="Seoul Between Scenes" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Seoul Between Scenes</h3><p data-t="b1">Romantic city views, cozy moments and everyday beauty in Seoul.</p><a class="btn" href="https://amzn.eu/d/078evWEV" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a></div>
         </article>
-        <article class="book" data-cols="kdrama" data-name="seoul after the cut">
+        <article class="book" data-feat="1" data-cols="kdrama" data-name="seoul after the cut">
           <div class="carousel" data-imgs="assets/book5/page-1.jpg,assets/slides/cut-1.jpg,assets/slides/cut-2.jpg,assets/slides/cut-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/book5/page-1.jpg" alt="Seoul After the Cut" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Seoul After the Cut</h3><p data-t="b2">Cozy scenes, favorite places and everyday magic in Seoul.</p><a class="btn" href="https://amzn.eu/d/09oG4UHr" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a></div>
         </article>
-        <article class="book" data-cols="halloween soon" data-name="haunted house adventures halloween">
+        <article class="book" data-feat="1" data-cols="halloween soon" data-name="haunted house adventures halloween">
           <div class="carousel" data-imgs="assets/halloween/haunted-cover.jpg,assets/slides/haunted-1.jpg,assets/slides/haunted-2.jpg,assets/slides/haunted-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/halloween/haunted-cover.jpg" alt="Haunted House Adventures Part One" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Haunted House Adventures</h3><p data-t="b3">Part One. A spooky-cute coloring book. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
@@ -196,7 +186,7 @@
   </main>
   <footer class="wrap">
     <img src="assets/mimocozy-logo-transparent.png" alt="Mimocozy" style="width:140px" />
-    <div><a href="#home" data-t="home">Home</a> · <a href="#books" data-t="books">Books</a> · <a href="#collections" data-t="cols">Collections</a> · <a href="https://www.tiktok.com/@creative.pages.co">TikTok</a> · <a href="https://www.instagram.com/creativepagescoloring">Instagram</a></div>
+    <div><a href="#home" data-t="home">Home</a> · <a href="#books" data-t="books">Books</a> · <a href="https://www.tiktok.com/@creative.pages.co">TikTok</a> · <a href="https://www.instagram.com/creativepagescoloring">Instagram</a></div>
     <div>© 2026 Mimocozy. All rights reserved. <span data-t="bye">Color a kinder tomorrow</span></div>
   </footer>
   <div class="lightbox" id="light"><img alt="" /></div>
@@ -224,7 +214,7 @@
       let shown = 0;
       document.querySelectorAll(".book").forEach(b => {
         const cols = (b.dataset.cols || "").split(" ");
-        const ok = (filter === "all" || cols.includes(filter)) && (!q || b.dataset.name.includes(q));
+        const ok = b.dataset.feat === "1" && (filter === "all" || cols.includes(filter)) && (!q || b.dataset.name.includes(q));
         b.style.display = ok ? "" : "none";
         if (ok) shown++;
       });
