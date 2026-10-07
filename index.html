@@ -34,8 +34,8 @@
     .btn { display:inline-flex; align-items:center; gap:8px; background:var(--btn); color:#fff; border-radius:999px; padding:12px 18px; border:0; font:inherit; font-weight:800; cursor:pointer; }
     .btn.soft { background:#fff; color:var(--btn); border:1px solid #ecdcd3; }
     .perks { display:flex; gap:16px; margin-top:16px; color:var(--muted); font-size:13px; font-weight:800; }
-    .hero-art { background:#fff; border-radius:28px; overflow:hidden; min-height:280px; }
-    .hero-art img { width:100%; height:340px; object-fit:cover; }
+    .hero-art { background:#fff; border-radius:28px; overflow:hidden; }
+    .hero-art img { width:100%; height:auto; max-height:520px; object-fit:contain; background:#fffaf6; }
     section { padding:26px 0; }
     h2 { font-family:Fraunces,serif; font-size:34px; margin:0; }
     .sub { color:var(--muted); margin:4px 0 14px; }
@@ -67,6 +67,7 @@
       nav.open { display:flex; }
       .burger { display:block; }
       .hero, .cols, .books, .split, .book, .social, .peeks { grid-template-columns:1fr; }
+      .hero-art { order:-1; }
       h1 { font-size:42px; }
       .book img { width:100%; height:220px; }
       .letter { flex-direction:column; align-items:stretch; }
@@ -102,7 +103,7 @@
         <a class="btn" href="#books" data-t="explore">Explore the Books →</a>
         <div class="perks"><span data-t="p1">Relax your mind</span><span data-t="p2">Spark your creativity</span><span data-t="p3">Enjoy little moments</span></div>
       </div>
-      <div class="hero-art"><img src="assets/hero-still.jpg" alt="" /></div>
+      <div class="hero-art"><img src="assets/hero-still.jpg?v=3" alt="Gatinho Mimocozy a dormir nos livros" /></div>
     </section>
     <section id="collections">
       <div class="headrow"><div><h2 data-t="cols">Our Collections</h2><p class="sub" data-t="colsub">Different worlds, the same cozy feeling.</p></div><a class="pill" href="#books" data-t="all">View all books →</a></div>
