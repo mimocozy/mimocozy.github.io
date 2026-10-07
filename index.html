@@ -390,31 +390,30 @@
       document.getElementById("books").scrollIntoView({ behavior:"smooth" });
     }));
     document.querySelectorAll('a[href="#home"], a[href="#books"]').forEach(a => { if (!a.dataset.filter && a.id !== "open-cols") a.addEventListener("click", () => { filter = "all"; document.body.classList.remove("cols-open"); apply(); }); });
+    (() => {
+      const pubSlides = [], soonSlides = [];
+      document.querySelectorAll("#books .book").forEach(book => {
+        const c = book.querySelector(".carousel");
+        if (!c) return;
+        const list = (book.dataset.cols || "").includes("soon") ? soonSlides : pubSlides;
+        (c.dataset.imgs || "").split(",").map(x => x.trim()).filter(Boolean).slice(1).forEach(src => { if (!list.includes(src)) list.push(src); });
+      });
+      const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+      const pools = [shuffle(pubSlides), shuffle(soonSlides)];
+      const used = new Set();
+      const next = k => { for (const order of [k, 1 - k]) { const src = pools[order].find(x => !used.has(x)); if (src) { used.add(src); return src; } } return null; };
+      document.querySelectorAll(".peeks img").forEach((img, n) => {
+        const k = n % 2;
+        let tries = 0;
+        const set = () => { const src = next(k); if (src) img.src = src; };
+        img.onerror = () => { if (++tries < 8) set(); };
+        set();
+      });
+    })();
     const light = document.getElementById("light");
     document.querySelectorAll(".peeks button").forEach(b => b.onclick = () => { light.querySelector("img").src = b.querySelector("img").src; light.classList.add("open"); });
     light.onclick = () => light.classList.remove("open");
     document.getElementById("news").onsubmit = e => { e.preventDefault(); e.target.reset(); alert(lang==="pt"?"Obrigada. Ficaste na lista.":"Thank you. You are on the list."); };
-
-    const pubSlides = [];
-    const soonSlides = [];
-    document.querySelectorAll(".book").forEach(book => {
-      const carousel = book.querySelector(".carousel");
-      if (!carousel) return;
-      const imgs = (carousel.dataset.imgs || "").split(",").map(s => s.trim()).filter(Boolean).slice(1);
-      const soon = (book.dataset.cols || "").includes("soon");
-      imgs.forEach(src => (soon ? soonSlides : pubSlides).push(src));
-    });
-    function pick(list) { return list[Math.floor(Math.random() * list.length)]; }
-    document.querySelectorAll(".book .carousel").forEach(carousel => {
-      const all = (carousel.dataset.imgs || "").split(",").map(s => s.trim()).filter(Boolean);
-      const cover = all[0];
-      if (!cover || !pubSlides.length || !soonSlides.length) return;
-      const mixed = [cover];
-      for (let n = 0; n < 3; n++) mixed.push(n % 2 === 0 ? pick(pubSlides) : pick(soonSlides));
-      carousel.dataset.imgs = mixed.join(",");
-      const img = carousel.querySelector("img");
-      if (img) img.src = cover;
-    });
 
     document.querySelectorAll(".carousel").forEach(c => {
       const imgs = c.dataset.imgs.split(",");
