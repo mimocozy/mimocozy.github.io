@@ -395,6 +395,27 @@
     light.onclick = () => light.classList.remove("open");
     document.getElementById("news").onsubmit = e => { e.preventDefault(); e.target.reset(); alert(lang==="pt"?"Obrigada. Ficaste na lista.":"Thank you. You are on the list."); };
 
+    const pubSlides = [];
+    const soonSlides = [];
+    document.querySelectorAll(".book").forEach(book => {
+      const carousel = book.querySelector(".carousel");
+      if (!carousel) return;
+      const imgs = (carousel.dataset.imgs || "").split(",").map(s => s.trim()).filter(Boolean).slice(1);
+      const soon = (book.dataset.cols || "").includes("soon");
+      imgs.forEach(src => (soon ? soonSlides : pubSlides).push(src));
+    });
+    function pick(list) { return list[Math.floor(Math.random() * list.length)]; }
+    document.querySelectorAll(".book .carousel").forEach(carousel => {
+      const all = (carousel.dataset.imgs || "").split(",").map(s => s.trim()).filter(Boolean);
+      const cover = all[0];
+      if (!cover || !pubSlides.length || !soonSlides.length) return;
+      const mixed = [cover];
+      for (let n = 0; n < 3; n++) mixed.push(n % 2 === 0 ? pick(pubSlides) : pick(soonSlides));
+      carousel.dataset.imgs = mixed.join(",");
+      const img = carousel.querySelector("img");
+      if (img) img.src = cover;
+    });
+
     document.querySelectorAll(".carousel").forEach(c => {
       const imgs = c.dataset.imgs.split(",");
       const img = c.querySelector("img");
