@@ -106,12 +106,12 @@
       <div class="hero-art"><img src="assets/hero-still.jpg?v=3" alt="Gatinho Mimocozy a dormir nos livros" /></div>
     </section>
     <section id="collections">
-      <div class="headrow"><div><h2 data-t="cols">Our Collections</h2><p class="sub" data-t="colsub">Different worlds, the same cozy feeling.</p></div><a class="pill" href="#books" data-t="all">View all books →</a></div>
+      <div class="headrow"><div><h2 data-t="cols">Our Collections</h2><p class="sub" data-t="colsub">Different worlds, the same cozy feeling.</p></div><a class="pill" href="#books" data-filter="all" data-t="all">View all books →</a></div>
       <div class="cols">
-        <article class="col"><img src="assets/seoul-product-cover.jpg" alt="" /><h3>K-Drama</h3><p data-t="c1">Romantic scenes, beautiful places and everyday magic.</p><a class="pill" href="#books">Explore →</a></article>
-        <article class="col"><img src="assets/halloween/haunted-cover.jpg" alt="Haunted House Adventures" /><h3>Halloween</h3><p data-t="c2">Spooky-cute adventures full of charm.</p><a class="pill" href="#books">Explore →</a></article>
-        <article class="col"><img src="assets/cover-gnomes.jpg" alt="" /><h3>Brambleboo</h3><p data-t="c3">Adorable stories in magical settings.</p><a class="pill" href="#books">Explore →</a></article>
-        <article class="col"><img src="assets/cover-animals.jpg" alt="" /><h3>Slow Life</h3><p data-t="c4">Peaceful places, cozy days and simple joys.</p><a class="pill" href="#books">Explore →</a></article>
+        <article class="col" data-filter="kdrama"><img src="assets/seoul-product-cover.jpg" alt="" /><h3>K-Drama</h3><p data-t="c1">Romantic scenes, beautiful places and everyday magic.</p><a class="pill" href="#books" data-filter="kdrama">Explore →</a></article>
+        <article class="col" data-filter="halloween"><img src="assets/halloween/haunted-cover.jpg" alt="Haunted House Adventures" /><h3>Halloween</h3><p data-t="c2">Spooky-cute adventures full of charm.</p><a class="pill" href="#books" data-filter="halloween">Explore →</a></article>
+        <article class="col" data-filter="brambleboo"><img src="assets/cover-gnomes.jpg" alt="" /><h3>Brambleboo</h3><p data-t="c3">Adorable stories in magical settings.</p><a class="pill" href="#books" data-filter="brambleboo">Explore →</a></article>
+        <article class="col" data-filter="slow"><img src="assets/cover-animals.jpg" alt="" /><h3>Slow Life</h3><p data-t="c4">Peaceful places, cozy days and simple joys.</p><a class="pill" href="#books" data-filter="slow">Explore →</a></article>
         <article class="col"><img src="assets/mimocozy-cat.jpg" alt="" /><h3 data-t="c5t">More to come</h3><p data-t="c5">New stories, new characters and more cozy moments.</p><a class="pill" href="#contact" data-t="stay">Stay tuned</a></article>
       </div>
     </section>
@@ -119,43 +119,44 @@
       <h2 data-t="feat">Featured Books</h2>
       <p class="sub" data-t="featsub">Discover our latest releases.</p>
       <div class="books">
-        <article class="book" data-name="seoul between scenes">
+        <p id="empty" hidden data-t="empty">No books in this collection yet.</p>
+        <article class="book" data-col="kdrama" data-name="seoul between scenes">
           <img src="assets/seoul-product-cover.jpg" alt="Seoul Between Scenes" />
           <div><h3>Seoul Between Scenes</h3><p data-t="b1">Romantic city views, cozy moments and everyday beauty in Seoul.</p><a class="btn" href="https://amzn.eu/d/078evWEV" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a></div>
         </article>
-        <article class="book" data-name="seoul after the cut">
+        <article class="book" data-col="kdrama" data-name="seoul after the cut">
           <img src="assets/book5/page-1.jpg" alt="Seoul After the Cut" />
           <div><h3>Seoul After the Cut</h3><p data-t="b2">Cozy scenes, favorite places and everyday magic in Seoul.</p><a class="btn" href="https://amzn.eu/d/09oG4UHr" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a></div>
         </article>
-        <article class="book" data-name="haunted house adventures halloween">
+        <article class="book" data-col="halloween" data-name="haunted house adventures halloween">
           <img src="assets/halloween/haunted-cover.jpg" alt="Haunted House Adventures Part One" />
           <div><h3>Haunted House Adventures</h3><p data-t="b3">Part One. A spooky-cute coloring book. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
-        <article class="book" data-name="haunted house adventures part two halloween">
+        <article class="book" data-col="halloween" data-name="haunted house adventures part two halloween">
           <img src="assets/halloween/haunted-cover-2.jpg" alt="Haunted House Adventures Part Two" />
           <div><h3>Haunted House Adventures</h3><p data-t="b4">Part Two. From the attic to the moonlit garden. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
-        <article class="book" data-name="pumpkin parade halloween">
+        <article class="book" data-col="halloween" data-name="pumpkin parade halloween">
           <img src="assets/halloween/pumpkin-cover.jpg" alt="Pumpkin Parade" />
           <div><h3>Pumpkin Parade</h3><p data-t="b5">Costumes, candy and trick-or-treat fun. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
-        <article class="book" data-name="pipkin pumpkin pajama party halloween">
+        <article class="book" data-col="halloween" data-name="pipkin pumpkin pajama party halloween">
           <img src="assets/halloween/pipkin-cover.jpg" alt="Pipkin's Pumpkin Pajama Party" />
           <div><h3>Pipkin's Pumpkin Pajama Party</h3><p data-t="b6">A bedtime Halloween coloring adventure. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
-        <article class="book" data-name="midnight magic part one halloween">
+        <article class="book" data-col="halloween" data-name="midnight magic part one halloween">
           <img src="assets/halloween/midnight-cover.jpg" alt="Midnight Magic Part One" />
           <div><h3>Midnight Magic</h3><p data-t="b7">Part One. The first clues. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
-        <article class="book" data-name="midnight magic part two halloween">
+        <article class="book" data-col="halloween" data-name="midnight magic part two halloween">
           <img src="assets/halloween/midnight-cover-2.jpg" alt="Midnight Magic Part Two" />
           <div><h3>Midnight Magic</h3><p data-t="b8">Part Two. Return of the stars. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
-        <article class="book" data-name="ghostlight railway rescue halloween">
+        <article class="book" data-col="halloween" data-name="ghostlight railway rescue halloween">
           <img src="assets/halloween/ghostlight-cover.jpg" alt="The Ghostlight Railway Rescue Part One" />
           <div><h3>The Ghostlight Railway Rescue</h3><p data-t="b9">Part One. A Halloween railway adventure. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
-        <article class="book" data-name="ghostlight railway rescue part two halloween">
+        <article class="book" data-col="halloween" data-name="ghostlight railway rescue part two halloween">
           <img src="assets/halloween/ghostlight-cover-2.jpg" alt="The Ghostlight Railway Rescue Part Two" />
           <div><h3>The Ghostlight Railway Rescue</h3><p data-t="b10">Part Two. The star lantern leads the way. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
@@ -196,8 +197,8 @@
   <div class="lightbox" id="light"><img alt="" /></div>
   <script>
     const copy = {
-      pt: { home:"Início", books:"Livros", cols:"Coleções", about:"Sobre", contact:"Contacto", hero:"Um pouco de cor vai longe", lede:"Livros para colorir aconchegantes, para um dia mais calmo.", explore:"Explorar os livros →", p1:"Acalma a mente", p2:"Acende a criatividade", p3:"Pequenos momentos", colsub:"Mundos diferentes, o mesmo sentimento cozy.", all:"Ver todos →", c1:"Cenas românticas e magia do quotidiano.", c2:"Aventuras spooky-cute cheias de charme.", c3:"Histórias adoráveis em cenários mágicos.", c4:"Dias calmos e alegrias simples.", c5t:"Em breve", c5:"Novas histórias e mais momentos cozy.", stay:"Fica atenta", feat:"Livros em destaque", featsub:"Descobre as novidades.", b1:"Vistas da cidade e a beleza do dia a dia em Seul.", b2:"Cenas cozy, lugares favoritos e magia em Seul.", b3:"Parte 1. Livro para colorir spooky-cute. Em breve.", soon:"Em breve", b4:"Parte 2. Do sótão ao jardim ao luar. Em breve.", b5:"Fatos, doces e um desfile de Halloween. Em breve.", b6:"Uma aventura de colorir para a hora de dormir. Em breve.", b7:"Parte 1. As primeiras pistas. Em breve.", b8:"Parte 2. O regresso das estrelas. Em breve.", b9:"Parte 1. Uma aventura de comboio no Halloween. Em breve.", b10:"Parte 2. A lanterna das estrelas mostra o caminho. Em breve.", amazon:"Ver na Amazon →", inside:"Dentro dos livros", insidesub:"Espreita os detalhes.", color:"Colorir com a Mimocozy", colorsub:"Segue para inspiração, novidades e momentos cozy.", news:"As nossas cartas cozy", newssub:"Novidades, ofertas e livros novos.", email:"O teu email", sub:"Subscrever →", aboutp:"A Mimocozy faz livros para colorir para noites calmas.", bye:"Colorir um amanhã mais gentil" },
-      en: { home:"Home", books:"Books", cols:"Collections", about:"About", contact:"Contact", hero:"A little color goes a long way", lede:"Cozy coloring books for a calmer, happier you.", explore:"Explore the Books →", p1:"Relax your mind", p2:"Spark your creativity", p3:"Enjoy little moments", colsub:"Different worlds, the same cozy feeling.", all:"View all books →", c1:"Romantic scenes, beautiful places and everyday magic.", c2:"Spooky-cute adventures full of charm.", c3:"Adorable stories in magical settings.", c4:"Peaceful places, cozy days and simple joys.", c5t:"More to come", c5:"New stories, new characters and more cozy moments.", stay:"Stay tuned", feat:"Featured Books", featsub:"Discover our latest releases.", b1:"Romantic city views, cozy moments and everyday beauty in Seoul.", b2:"Cozy scenes, favorite places and everyday magic in Seoul.", b3:"Part One. A spooky-cute coloring book. Coming soon.", soon:"Coming soon", b4:"Part Two. From the attic to the moonlit garden. Coming soon.", b5:"Costumes, candy and trick-or-treat fun. Coming soon.", b6:"A bedtime Halloween coloring adventure. Coming soon.", b7:"Part One. The first clues. Coming soon.", b8:"Part Two. Return of the stars. Coming soon.", b9:"Part One. A Halloween railway adventure. Coming soon.", b10:"Part Two. The star lantern leads the way. Coming soon.", amazon:"View on Amazon →", inside:"Inside our books", insidesub:"Take a peek and see the cozy details.", color:"Color with Mimocozy", colorsub:"Follow for coloring inspiration, new releases and cozy moments.", news:"Join our cozy letters", newssub:"Be the first to know about new books, special offers and cozy news.", email:"Your email address", sub:"Subscribe →", aboutp:"Mimocozy makes cozy coloring books for quiet evenings.", bye:"Color a kinder tomorrow" }
+      pt: { home:"Início", books:"Livros", cols:"Coleções", about:"Sobre", contact:"Contacto", hero:"Um pouco de cor vai longe", lede:"Livros para colorir aconchegantes, para um dia mais calmo.", explore:"Explorar os livros →", p1:"Acalma a mente", p2:"Acende a criatividade", p3:"Pequenos momentos", colsub:"Mundos diferentes, o mesmo sentimento cozy.", all:"Ver todos →", c1:"Cenas românticas e magia do quotidiano.", c2:"Aventuras spooky-cute cheias de charme.", c3:"Histórias adoráveis em cenários mágicos.", c4:"Dias calmos e alegrias simples.", c5t:"Em breve", c5:"Novas histórias e mais momentos cozy.", stay:"Fica atenta", feat:"Livros em destaque", featsub:"Descobre as novidades.", empty:"Ainda não há livros nesta coleção.", b1:"Vistas da cidade e a beleza do dia a dia em Seul.", b2:"Cenas cozy, lugares favoritos e magia em Seul.", b3:"Parte 1. Livro para colorir spooky-cute. Em breve.", soon:"Em breve", b4:"Parte 2. Do sótão ao jardim ao luar. Em breve.", b5:"Fatos, doces e um desfile de Halloween. Em breve.", b6:"Uma aventura de colorir para a hora de dormir. Em breve.", b7:"Parte 1. As primeiras pistas. Em breve.", b8:"Parte 2. O regresso das estrelas. Em breve.", b9:"Parte 1. Uma aventura de comboio no Halloween. Em breve.", b10:"Parte 2. A lanterna das estrelas mostra o caminho. Em breve.", amazon:"Ver na Amazon →", inside:"Dentro dos livros", insidesub:"Espreita os detalhes.", color:"Colorir com a Mimocozy", colorsub:"Segue para inspiração, novidades e momentos cozy.", news:"As nossas cartas cozy", newssub:"Novidades, ofertas e livros novos.", email:"O teu email", sub:"Subscrever →", aboutp:"A Mimocozy faz livros para colorir para noites calmas.", bye:"Colorir um amanhã mais gentil" },
+      en: { home:"Home", books:"Books", cols:"Collections", about:"About", contact:"Contact", hero:"A little color goes a long way", lede:"Cozy coloring books for a calmer, happier you.", explore:"Explore the Books →", p1:"Relax your mind", p2:"Spark your creativity", p3:"Enjoy little moments", colsub:"Different worlds, the same cozy feeling.", all:"View all books →", c1:"Romantic scenes, beautiful places and everyday magic.", c2:"Spooky-cute adventures full of charm.", c3:"Adorable stories in magical settings.", c4:"Peaceful places, cozy days and simple joys.", c5t:"More to come", c5:"New stories, new characters and more cozy moments.", stay:"Stay tuned", feat:"Featured Books", featsub:"Discover our latest releases.", empty:"No books in this collection yet.", b1:"Romantic city views, cozy moments and everyday beauty in Seoul.", b2:"Cozy scenes, favorite places and everyday magic in Seoul.", b3:"Part One. A spooky-cute coloring book. Coming soon.", soon:"Coming soon", b4:"Part Two. From the attic to the moonlit garden. Coming soon.", b5:"Costumes, candy and trick-or-treat fun. Coming soon.", b6:"A bedtime Halloween coloring adventure. Coming soon.", b7:"Part One. The first clues. Coming soon.", b8:"Part Two. Return of the stars. Coming soon.", b9:"Part One. A Halloween railway adventure. Coming soon.", b10:"Part Two. The star lantern leads the way. Coming soon.", amazon:"View on Amazon →", inside:"Inside our books", insidesub:"Take a peek and see the cozy details.", color:"Color with Mimocozy", colorsub:"Follow for coloring inspiration, new releases and cozy moments.", news:"Join our cozy letters", newssub:"Be the first to know about new books, special offers and cozy news.", email:"Your email address", sub:"Subscribe →", aboutp:"Mimocozy makes cozy coloring books for quiet evenings.", bye:"Color a kinder tomorrow" }
     };
     let lang = "pt";
     function render() {
@@ -208,13 +209,36 @@
       pt.classList.toggle("on", lang==="pt"); en.classList.toggle("on", lang==="en");
     }
     const pt = document.getElementById("pt"), en = document.getElementById("en");
-    pt.onclick = () => { lang="pt"; render(); };
-    en.onclick = () => { lang="en"; render(); };
+    pt.onclick = () => { lang="pt"; apply(); };
+    en.onclick = () => { lang="en"; apply(); };
     document.getElementById("burger").onclick = () => document.getElementById("menu").classList.toggle("open");
-    document.getElementById("q").oninput = e => {
-      const q = e.target.value.toLowerCase();
-      document.querySelectorAll(".book").forEach(b => b.style.display = !q || b.dataset.name.includes(q) ? "" : "none");
-    };
+    let filter = "all";
+    const names = { kdrama:"K-Drama", halloween:"Halloween", brambleboo:"Brambleboo", slow:"Slow Life" };
+    function apply() {
+      const q = (document.getElementById("q").value || "").toLowerCase();
+      let shown = 0;
+      document.querySelectorAll(".book").forEach(b => {
+        const ok = (filter === "all" || b.dataset.col === filter) && (!q || b.dataset.name.includes(q));
+        b.style.display = ok ? "" : "none";
+        if (ok) shown++;
+      });
+      const title = document.querySelector("#books h2");
+      const sub = document.querySelector("#books .sub");
+      if (filter === "all") { title.dataset.t = "feat"; sub.dataset.t = "featsub"; render(); }
+      else {
+        title.removeAttribute("data-t"); sub.removeAttribute("data-t");
+        title.textContent = names[filter] || filter;
+        sub.textContent = lang === "pt" ? "Só os livros desta coleção." : "Only the books in this collection.";
+      }
+      document.getElementById("empty").hidden = shown > 0;
+    }
+    document.querySelectorAll("[data-filter]").forEach(el => el.addEventListener("click", () => {
+      filter = el.dataset.filter;
+      apply();
+      document.getElementById("books").scrollIntoView({ behavior:"smooth" });
+    }));
+    document.getElementById("q").oninput = apply;
+    document.querySelectorAll('a[href="#books"]').forEach(a => { if (!a.dataset.filter) a.addEventListener("click", () => { filter = "all"; apply(); }); });
     const light = document.getElementById("light");
     document.querySelectorAll(".peeks button").forEach(b => b.onclick = () => { light.querySelector("img").src = b.querySelector("img").src; light.classList.add("open"); });
     light.onclick = () => light.classList.remove("open");
