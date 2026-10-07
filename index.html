@@ -49,9 +49,9 @@
     .pill { display:inline-block; background:#f7eee8; border-radius:999px; padding:6px 10px; font-size:13px; font-weight:800; }
     .books { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
     .book { display:grid; grid-template-columns:150px 1fr; gap:12px; padding:12px; align-items:center; }
-    .carousel { position:relative; }
+    .carousel { position:relative; width:150px; }
     .carousel img { width:150px; height:180px; object-fit:cover; background:#fff; border-radius:14px; display:block; }
-    .carousel button { position:absolute; top:50%; transform:translateY(-50%); width:28px; height:28px; border:0; border-radius:50%; background:rgba(255,250,246,.92); color:#4a3428; cursor:pointer; }
+    .carousel button { position:absolute; top:50%; transform:translateY(-50%); width:34px; height:34px; border:0; border-radius:50%; background:#6b4636; color:#fffaf6; font-size:22px; line-height:34px; cursor:pointer; z-index:2; box-shadow:0 2px 8px rgba(74,52,40,.25); }
     .carousel .prev { left:6px; }
     .carousel .next { right:6px; }
     .split { display:grid; grid-template-columns:1.2fr .8fr; gap:14px; }
@@ -73,7 +73,7 @@
       .hero, .cols, .books, .split, .book, .social, .peeks { grid-template-columns:1fr; }
       .hero-art { order:-1; }
       h1 { font-size:42px; }
-      .carousel img, .book img { width:100%; height:220px; }
+      .carousel, .carousel img, .book img { width:100%; height:220px; }
       .letter { flex-direction:column; align-items:stretch; }
     }
   </style>
@@ -125,43 +125,43 @@
       <div class="books">
         <p id="empty" hidden data-t="empty">No books in this collection yet.</p>
         <article class="book" data-col="kdrama" data-name="seoul between scenes">
-          <div class="carousel" data-imgs="assets/seoul-product-cover.jpg,assets/slides/seoul-1.jpg,assets/slides/seoul-2.jpg,assets/slides/seoul-3.jpg"><button class="prev" type="button" aria-label="Anterior">‹</button><img src="assets/seoul-product-cover.jpg" alt="Seoul Between Scenes" /><button class="next" type="button" aria-label="Seguinte">›</button></div>
+          <div class="carousel" data-imgs="assets/seoul-product-cover.jpg,assets/slides/seoul-1.jpg,assets/slides/seoul-2.jpg,assets/slides/seoul-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/seoul-product-cover.jpg" alt="Seoul Between Scenes" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Seoul Between Scenes</h3><p data-t="b1">Romantic city views, cozy moments and everyday beauty in Seoul.</p><a class="btn" href="https://amzn.eu/d/078evWEV" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a></div>
         </article>
         <article class="book" data-col="kdrama" data-name="seoul after the cut">
-          <div class="carousel" data-imgs="assets/book5/page-1.jpg,assets/slides/cut-1.jpg,assets/slides/cut-2.jpg,assets/slides/cut-3.jpg"><button class="prev" type="button" aria-label="Anterior">‹</button><img src="assets/book5/page-1.jpg" alt="Seoul After the Cut" /><button class="next" type="button" aria-label="Seguinte">›</button></div>
+          <div class="carousel" data-imgs="assets/book5/page-1.jpg,assets/slides/cut-1.jpg,assets/slides/cut-2.jpg,assets/slides/cut-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/book5/page-1.jpg" alt="Seoul After the Cut" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Seoul After the Cut</h3><p data-t="b2">Cozy scenes, favorite places and everyday magic in Seoul.</p><a class="btn" href="https://amzn.eu/d/09oG4UHr" target="_blank" rel="noopener" data-t="amazon">View on Amazon →</a></div>
         </article>
         <article class="book" data-col="halloween" data-name="haunted house adventures halloween">
-          <div class="carousel" data-imgs="assets/halloween/haunted-cover.jpg,assets/slides/haunted-1.jpg,assets/slides/haunted-2.jpg,assets/slides/haunted-3.jpg"><button class="prev" type="button" aria-label="Anterior">‹</button><img src="assets/halloween/haunted-cover.jpg" alt="Haunted House Adventures Part One" /><button class="next" type="button" aria-label="Seguinte">›</button></div>
+          <div class="carousel" data-imgs="assets/halloween/haunted-cover.jpg,assets/slides/haunted-1.jpg,assets/slides/haunted-2.jpg,assets/slides/haunted-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/halloween/haunted-cover.jpg" alt="Haunted House Adventures Part One" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Haunted House Adventures</h3><p data-t="b3">Part One. A spooky-cute coloring book. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
         <article class="book" data-col="halloween" data-name="haunted house adventures part two halloween">
-          <div class="carousel" data-imgs="assets/halloween/haunted-cover-2.jpg,assets/slides/haunted2-1.jpg,assets/slides/haunted2-2.jpg,assets/slides/haunted2-3.jpg"><button class="prev" type="button" aria-label="Anterior">‹</button><img src="assets/halloween/haunted-cover-2.jpg" alt="Haunted House Adventures Part Two" /><button class="next" type="button" aria-label="Seguinte">›</button></div>
+          <div class="carousel" data-imgs="assets/halloween/haunted-cover-2.jpg,assets/slides/haunted2-1.jpg,assets/slides/haunted2-2.jpg,assets/slides/haunted2-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/halloween/haunted-cover-2.jpg" alt="Haunted House Adventures Part Two" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Haunted House Adventures</h3><p data-t="b4">Part Two. From the attic to the moonlit garden. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
         <article class="book" data-col="halloween" data-name="pumpkin parade halloween">
-          <div class="carousel" data-imgs="assets/halloween/pumpkin-cover.jpg,assets/slides/pumpkin-1.jpg,assets/slides/pumpkin-2.jpg,assets/slides/pumpkin-3.jpg"><button class="prev" type="button" aria-label="Anterior">‹</button><img src="assets/halloween/pumpkin-cover.jpg" alt="Pumpkin Parade" /><button class="next" type="button" aria-label="Seguinte">›</button></div>
+          <div class="carousel" data-imgs="assets/halloween/pumpkin-cover.jpg,assets/slides/pumpkin-1.jpg,assets/slides/pumpkin-2.jpg,assets/slides/pumpkin-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/halloween/pumpkin-cover.jpg" alt="Pumpkin Parade" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Pumpkin Parade</h3><p data-t="b5">Costumes, candy and trick-or-treat fun. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
         <article class="book" data-col="halloween" data-name="pipkin pumpkin pajama party halloween">
-          <div class="carousel" data-imgs="assets/halloween/pipkin-cover.jpg,assets/slides/pipkin-1.jpg,assets/slides/pipkin-2.jpg,assets/slides/pipkin-3.jpg"><button class="prev" type="button" aria-label="Anterior">‹</button><img src="assets/halloween/pipkin-cover.jpg" alt="Pipkin's Pumpkin Pajama Party" /><button class="next" type="button" aria-label="Seguinte">›</button></div>
+          <div class="carousel" data-imgs="assets/halloween/pipkin-cover.jpg,assets/slides/pipkin-1.jpg,assets/slides/pipkin-2.jpg,assets/slides/pipkin-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/halloween/pipkin-cover.jpg" alt="Pipkin's Pumpkin Pajama Party" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Pipkin's Pumpkin Pajama Party</h3><p data-t="b6">A bedtime Halloween coloring adventure. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
         <article class="book" data-col="halloween" data-name="midnight magic part one halloween">
-          <div class="carousel" data-imgs="assets/halloween/midnight-cover.jpg,assets/slides/midnight-1.jpg,assets/slides/midnight-2.jpg,assets/slides/midnight-3.jpg"><button class="prev" type="button" aria-label="Anterior">‹</button><img src="assets/halloween/midnight-cover.jpg" alt="Midnight Magic Part One" /><button class="next" type="button" aria-label="Seguinte">›</button></div>
+          <div class="carousel" data-imgs="assets/halloween/midnight-cover.jpg,assets/slides/midnight-1.jpg,assets/slides/midnight-2.jpg,assets/slides/midnight-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/halloween/midnight-cover.jpg" alt="Midnight Magic Part One" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Midnight Magic</h3><p data-t="b7">Part One. The first clues. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
         <article class="book" data-col="halloween" data-name="midnight magic part two halloween">
-          <div class="carousel" data-imgs="assets/halloween/midnight-cover-2.jpg,assets/slides/midnight2-1.jpg,assets/slides/midnight2-2.jpg,assets/slides/midnight2-3.jpg"><button class="prev" type="button" aria-label="Anterior">‹</button><img src="assets/halloween/midnight-cover-2.jpg" alt="Midnight Magic Part Two" /><button class="next" type="button" aria-label="Seguinte">›</button></div>
+          <div class="carousel" data-imgs="assets/halloween/midnight-cover-2.jpg,assets/slides/midnight2-1.jpg,assets/slides/midnight2-2.jpg,assets/slides/midnight2-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/halloween/midnight-cover-2.jpg" alt="Midnight Magic Part Two" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>Midnight Magic</h3><p data-t="b8">Part Two. Return of the stars. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
         <article class="book" data-col="halloween" data-name="ghostlight railway rescue halloween">
-          <div class="carousel" data-imgs="assets/halloween/ghostlight-cover.jpg,assets/slides/ghost-1.jpg,assets/slides/ghost-2.jpg,assets/slides/ghost-3.jpg"><button class="prev" type="button" aria-label="Anterior">‹</button><img src="assets/halloween/ghostlight-cover.jpg" alt="The Ghostlight Railway Rescue Part One" /><button class="next" type="button" aria-label="Seguinte">›</button></div>
+          <div class="carousel" data-imgs="assets/halloween/ghostlight-cover.jpg,assets/slides/ghost-1.jpg,assets/slides/ghost-2.jpg,assets/slides/ghost-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/halloween/ghostlight-cover.jpg" alt="The Ghostlight Railway Rescue Part One" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>The Ghostlight Railway Rescue</h3><p data-t="b9">Part One. A Halloween railway adventure. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
         <article class="book" data-col="halloween" data-name="ghostlight railway rescue part two halloween">
-          <div class="carousel" data-imgs="assets/halloween/ghostlight-cover-2.jpg,assets/slides/ghost2-1.jpg,assets/slides/ghost2-2.jpg,assets/slides/ghost2-3.jpg"><button class="prev" type="button" aria-label="Anterior">‹</button><img src="assets/halloween/ghostlight-cover-2.jpg" alt="The Ghostlight Railway Rescue Part Two" /><button class="next" type="button" aria-label="Seguinte">›</button></div>
+          <div class="carousel" data-imgs="assets/halloween/ghostlight-cover-2.jpg,assets/slides/ghost2-1.jpg,assets/slides/ghost2-2.jpg,assets/slides/ghost2-3.jpg"><button class="prev" type="button" aria-label="Anterior">←</button><img src="assets/halloween/ghostlight-cover-2.jpg" alt="The Ghostlight Railway Rescue Part Two" /><button class="next" type="button" aria-label="Seguinte">→</button></div>
           <div><h3>The Ghostlight Railway Rescue</h3><p data-t="b10">Part Two. The star lantern leads the way. Coming soon.</p><span class="pill" data-t="soon">Coming soon</span></div>
         </article>
       </div>
