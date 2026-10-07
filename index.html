@@ -243,7 +243,6 @@
       apply();
       document.getElementById("books").scrollIntoView({ behavior:"smooth" });
     }));
-    document.getElementById("q").oninput = apply;
     document.querySelectorAll('a[href="#books"]').forEach(a => { if (!a.dataset.filter) a.addEventListener("click", () => { filter = "all"; apply(); }); });
     const light = document.getElementById("light");
     document.querySelectorAll(".peeks button").forEach(b => b.onclick = () => { light.querySelector("img").src = b.querySelector("img").src; light.classList.add("open"); });
