@@ -47,7 +47,9 @@
     .col p, .book p { color:var(--muted); font-size:13px; margin:0 0 8px; }
     .pill { display:inline-block; background:#f7eee8; border-radius:999px; padding:6px 10px; font-size:13px; font-weight:800; }
     .books { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-    .book:not([data-feat]) { display:none; }
+    .book { display:grid; grid-template-columns:150px 1fr; gap:12px; padding:12px; align-items:center; }
+    #collections { display:none; }
+    body.cols-open #collections { display:block; }
     .carousel { position:relative; width:150px; }
     .carousel img { width:150px; height:180px; object-fit:contain; background:#fffaf6; border-radius:14px; display:block; }
     .carousel button { position:absolute; top:50%; transform:translateY(-50%); width:34px; height:34px; border:0; border-radius:50%; background:#6b4636; color:#fffaf6; font-size:22px; line-height:34px; cursor:pointer; z-index:2; box-shadow:0 2px 8px rgba(74,52,40,.25); }
@@ -87,6 +89,7 @@
       <nav id="menu">
         <a class="active" href="#home" data-t="home">Home</a>
         <a href="#books" data-t="books">Books</a>
+        <a href="#collections" id="open-cols" data-t="cols">Collections</a>
         <a href="#about" data-t="about">About</a>
         <a href="#contact" data-t="contact">Contact</a>
       </nav>
@@ -108,6 +111,16 @@
         <div class="perks"><span data-t="p1">Relax your mind</span><span data-t="p2">Spark your creativity</span><span data-t="p3">Enjoy little moments</span></div>
       </div>
       <div class="hero-art"><img src="assets/hero-still.jpg?v=4" alt="Gatinho Mimocozy a dormir nos livros" /></div>
+    </section>
+    <section id="collections">
+      <div class="headrow"><div><h2 data-t="cols">Collections</h2><p class="sub" data-t="colsub">Different worlds, the same cozy feeling.</p></div><a class="pill" href="#books" data-filter="all" data-t="all">View all books →</a></div>
+      <div class="cols">
+        <article class="col" data-filter="kdrama"><img src="assets/seoul-product-cover.jpg" alt="" /><h3>K-Drama</h3><p data-t="c1">Romantic scenes, beautiful places and everyday magic.</p><a class="pill" href="#books" data-filter="kdrama">Explore →</a></article>
+        <article class="col" data-filter="halloween"><img src="assets/halloween/haunted-cover.jpg" alt="Haunted House Adventures" /><h3>Halloween</h3><p data-t="c2">Spooky-cute adventures full of charm.</p><a class="pill" href="#books" data-filter="halloween">Explore →</a></article>
+        <article class="col" data-filter="brambleboo"><img src="assets/cover-gnomes.jpg" alt="" /><h3>Brambleboo</h3><p data-t="c3">Adorable stories in magical settings.</p><a class="pill" href="#books" data-filter="brambleboo">Explore →</a></article>
+        <article class="col" data-filter="slow"><img src="assets/cover-animals.jpg" alt="" /><h3>Slow Life</h3><p data-t="c4">Peaceful places, cozy days and simple joys.</p><a class="pill" href="#books" data-filter="slow">Explore →</a></article>
+        <article class="col" data-filter="soon"><img src="assets/mimocozy-cat.jpg" alt="" /><h3 data-t="c5t">Coming soon</h3><p data-t="c5">Books almost ready to color.</p><a class="pill" href="#books" data-filter="soon" data-t="stay">See them →</a></article>
+      </div>
     </section>
     <section id="books">
       <h2 data-t="feat">Featured Books</h2>
@@ -214,7 +227,8 @@
       let shown = 0;
       document.querySelectorAll(".book").forEach(b => {
         const cols = (b.dataset.cols || "").split(" ");
-        const ok = b.dataset.feat === "1" && (filter === "all" || cols.includes(filter)) && (!q || b.dataset.name.includes(q));
+        const home = filter === "all" && !document.body.classList.contains("cols-open");
+        const ok = (home ? b.dataset.feat === "1" : (filter === "all" || cols.includes(filter))) && (!q || b.dataset.name.includes(q));
         b.style.display = ok ? "" : "none";
         if (ok) shown++;
       });
@@ -228,12 +242,20 @@
       }
       document.getElementById("empty").hidden = shown > 0;
     }
-    document.querySelectorAll("[data-filter]").forEach(el => el.addEventListener("click", () => {
+    document.getElementById("open-cols").onclick = e => {
+      e.preventDefault();
+      document.body.classList.add("cols-open");
+      document.getElementById("menu").classList.remove("open");
+      document.getElementById("collections").scrollIntoView({ behavior:"smooth" });
+    };
+    document.querySelectorAll("[data-filter]").forEach(el => el.addEventListener("click", e => {
+      e.preventDefault();
       filter = el.dataset.filter;
+      document.body.classList.add("cols-open");
       apply();
       document.getElementById("books").scrollIntoView({ behavior:"smooth" });
     }));
-    document.querySelectorAll('a[href="#books"]').forEach(a => { if (!a.dataset.filter) a.addEventListener("click", () => { filter = "all"; apply(); }); });
+    document.querySelectorAll('a[href="#home"], a[href="#books"]').forEach(a => { if (!a.dataset.filter && a.id !== "open-cols") a.addEventListener("click", () => { filter = "all"; document.body.classList.remove("cols-open"); apply(); }); });
     const light = document.getElementById("light");
     document.querySelectorAll(".peeks button").forEach(b => b.onclick = () => { light.querySelector("img").src = b.querySelector("img").src; light.classList.add("open"); });
     light.onclick = () => light.classList.remove("open");
