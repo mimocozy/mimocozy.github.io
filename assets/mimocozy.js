@@ -1,4 +1,4 @@
-/* Mimocozy shared script (homepage + /books/<slug>/ pages). No dependencies.
+/* Mimocozy shared script (homepage + /books/<slug>/ pages + /privacy/). No dependencies.
    - remembers PT/EN choice in localStorage (shared by every page)
    - swaps any element carrying data-pt / data-en
    - book pages: header toggle, menu, "Take a Peek Inside" gallery + lightbox (zoom, prev/next, keyboard, swipe) */
@@ -17,12 +17,17 @@
         var attr = el.getAttribute("data-i18n-attr");
         if (attr) el.setAttribute(attr, v); else el.textContent = v;
       });
+      /* whole blocks written in one language (privacy page): show only the current one */
+      (root || document).querySelectorAll("[data-only]").forEach(function (el) {
+        el.hidden = el.getAttribute("data-only") !== lang;
+      });
     }
   };
 
-  if (!document.body || document.body.getAttribute("data-page") !== "book") return;
+  var page = document.body && document.body.getAttribute("data-page");
+  if (page !== "book" && page !== "privacy") return;
 
-  /* ---------- book page ---------- */
+  /* ---------- book pages + privacy page (header, language, menu) ---------- */
   var lang = Mimo.getLang();
   var ptBtn = document.getElementById("pt"), enBtn = document.getElementById("en");
   function setLang(l) {

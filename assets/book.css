@@ -58,3 +58,13 @@
 .cx-pair img { display:block; width:100%; height:auto; background:#fffaf6; }
 .cx-pair figcaption { padding:10px 14px; font-weight:800; font-size:14px; color:var(--muted); text-align:center; }
 @media (max-width:520px) { .cx-pair { gap:8px; } .cx-pair figure { border-radius:18px; } .cx-pair figcaption { font-size:12px; padding:8px; } }
+/* Privacy page (/privacidade/): one readable card, existing palette only */
+.policy { max-width:780px; background:#fff; border:1px solid var(--line); border-radius:18px; padding:22px 24px; margin:18px 0 8px; line-height:1.6; }
+.policy[hidden] { display:none; }
+.policy h1 { font-size:46px; line-height:1.05; }
+.policy h2 { font-size:24px; margin:24px 0 6px; }
+.policy p, .policy li { margin:0 0 10px; }
+.policy ul { margin:0 0 10px; padding-left:20px; }
+.policy a { text-decoration:underline; text-underline-offset:3px; }
+.policy code { background:var(--cream); border-radius:6px; padding:1px 5px; }
+@media (max-width:860px) { .policy { padding:18px 16px; } .policy h1 { font-size:34px; } .policy h2 { font-size:21px; } }
