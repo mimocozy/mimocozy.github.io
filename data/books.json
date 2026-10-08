@@ -394,17 +394,17 @@
         },
         {
           "lineart": {
-            "src": "assets/halloween/haunted-house-adventures-p47-lineart.jpg",
+            "src": "assets/halloween/haunted-house-adventures-p47-lineart-crop.jpg",
             "size": [
               1105,
-              1105
+              1045
             ]
           },
           "colored": {
-            "src": "assets/halloween/haunted-house-adventures-p47-colored.jpg",
+            "src": "assets/halloween/haunted-house-adventures-p47-colored-crop.jpg",
             "size": [
               1105,
-              1105
+              1045
             ]
           }
         }
