@@ -128,11 +128,27 @@ def render_page(b, tpl):
         peek = ('<section id="peek"><h2 data-pt="Espreita o interior" data-en="Take a Peek Inside">Espreita o interior</h2>'
                 '<p class="sub" data-pt="As imagens deste livro chegam em breve." data-en="Images for this book are coming soon.">As imagens deste livro chegam em breve.</p></section>')
 
+    # C. Bring Your Pages to Life: shown only when the book has real coloured examples.
+    # data/books.json -> "colorExamples": [{"lineart": {"src", "size"}, "colored": {"src", "size"}}, ...]
     color = ""
-    if b.get("colorExamples"):
-        cells = "".join(f'<div class="hero-art">{img_tag(c["src"], c.get("size"), "Exemplo colorido", "Coloring example")}</div>' for c in b["colorExamples"])
-        color = f'''<section id="colors"><h2 data-pt="Dá vida às tuas páginas" data-en="Bring Your Pages to Life">Dá vida às tuas páginas</h2>
-      <p class="sub" data-pt="Exemplos de páginas coloridas." data-en="Coloring examples.">Exemplos de páginas coloridas.</p><div class="peeks">{cells}</div></section>'''
+    pairs = b.get("colorExamples") or []
+    for n, c in enumerate(pairs, 1):
+        if not (isinstance(c, dict) and c.get("lineart", {}).get("src") and c.get("colored", {}).get("src")):
+            sys.exit(f"{b['slug']}: colorExamples[{n}] must be {{'lineart': {{'src','size'}}, 'colored': {{'src','size'}}}}")
+    if pairs:
+        tpt, ten = full_title(b, "pt"), title_en
+        cells = "".join(
+            '<div class="cx-pair">'
+            f'<figure>{img_tag(c["lineart"]["src"], c["lineart"].get("size"), f"{tpt} — página original {n}, a preto e branco", f"{ten} — original page {n}, black and white")}'
+            '<figcaption data-pt="Página original" data-en="Original page">Página original</figcaption></figure>'
+            f'<figure>{img_tag(c["colored"]["src"], c["colored"].get("size"), f"{tpt} — exemplo de pintura {n}", f"{ten} — coloring example {n}")}'
+            '<figcaption data-pt="Exemplo de pintura" data-en="Coloring example">Exemplo de pintura</figcaption></figure>'
+            '</div>' for n, c in enumerate(pairs, 1))
+        color = f'''<section id="colors">
+      <h2 data-pt="Dá vida às tuas páginas" data-en="Bring Your Pages to Life">Dá vida às tuas páginas</h2>
+      <p class="sub" data-pt="Exemplos de pintura: a mesma página do livro, antes e depois de colorida. O livro traz as páginas a preto e branco." data-en="Coloring examples: the same page from the book, before and after coloring. The book contains the black-and-white pages.">Exemplos de pintura: a mesma página do livro, antes e depois de colorida. O livro traz as páginas a preto e branco.</p>
+      <div class="cx-grid">{cells}</div>
+    </section>'''
 
     series_block = ""
     if b.get("series"):

@@ -51,3 +51,10 @@
   .panel dl { grid-template-columns:1fr; }
   .panel dt { border-bottom:0; padding-bottom:0; }
 }
+/* C. Bring Your Pages to Life: black-and-white page next to its coloured example */
+.cx-grid { display:grid; gap:18px; }
+.cx-pair { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.cx-pair figure { margin:0; background:#fff; border-radius:28px; overflow:hidden; border:1px solid var(--line); }
+.cx-pair img { display:block; width:100%; height:auto; background:#fffaf6; }
+.cx-pair figcaption { padding:10px 14px; font-weight:800; font-size:14px; color:var(--muted); text-align:center; }
+@media (max-width:520px) { .cx-pair { gap:8px; } .cx-pair figure { border-radius:18px; } .cx-pair figcaption { font-size:12px; padding:8px; } }
