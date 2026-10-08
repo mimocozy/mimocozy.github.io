@@ -569,7 +569,7 @@
     const BREVO_FORM = "https://a4e6855e.sibforms.com/serve/MUIFAOX7ClpfbqW6mHBn3zWcd7N5S4B5KDZYLbMvJ9Z6JQKAzciU_PWUzJJ_RzwTznuW3CjTYZfgcu7yp9xUqYLiPvqr8ygWqz0CtAUbcCT80vUpLxTffr0ng6eL97kVtJKKjIbguHN7u5uwWSzv7CiJ3NE3fii_8er-PGtUvPkE-px3zR4ICHZhZHvi58kCFyq8Q9BmO9cqEaC98w==";
     // Name of the consent field in the Brevo form. Empty = not sent: the current Brevo form has no GDPR/opt-in field,
     // so an extra field could be rejected. Once the GDPR field is enabled in Brevo, set this to the name it posts (e.g. "OPT_IN").
-    const BREVO_CONSENT_FIELD = "";
+    const BREVO_CONSENT_FIELD = "OPT_IN";
     const newsForm = document.getElementById("news"), newsEmail = document.getElementById("news-email"),
           newsConsent = document.getElementById("news-consent"), newsErr = document.getElementById("news-err");
     const newsClear = el => { el.removeAttribute("aria-invalid"); el.removeAttribute("aria-describedby"); };
