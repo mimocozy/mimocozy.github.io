@@ -8,7 +8,7 @@ Single source of truth: data/books.json
                              and regenerates the theme filter pills.  Nothing else in index.html is touched.
   3. books/<slug>/index.html  <- one static page per book from tools/book-template.html
   4. sitemap.xml
-  5. validation: every local src/href in index.html + generated pages must exist.
+  5. validation: every local src/href in index.html + generated pages + privacy/index.html must exist.
 Standard library only.
 """
 import html, json, os, re, sys
@@ -344,7 +344,9 @@ def main():
         d = os.path.join(ROOT, "books", b["slug"]); os.makedirs(d, exist_ok=True)
         f = os.path.join(d, "index.html")
         open(f, "w", encoding="utf-8").write(render_page(b, tpl)); files.append(f)
-    entries = [(SITE + "/", "index.html")] + [(f"{SITE}/books/{b['slug']}/", f"books/{b['slug']}/index.html") for b in BOOKS]
+    files.append(os.path.join(ROOT, "privacy", "index.html"))  # hand-written privacy page (PT/EN), checked + in the sitemap
+    entries = ([(SITE + "/", "index.html")] + [(f"{SITE}/books/{b['slug']}/", f"books/{b['slug']}/index.html") for b in BOOKS]
+               + [(SITE + "/privacy/", "privacy/index.html")])
     open(os.path.join(ROOT, "sitemap.xml"), "w").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{u}</loc><lastmod>{lastmod(f)}</lastmod></url>\n" for u, f in entries) + "</urlset>\n")
