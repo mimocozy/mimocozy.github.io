@@ -519,7 +519,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-tropical-days-p43-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-tropical-days-p43-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-tropical-days-p85-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-tropical-days-p85-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 108,
       "format": {
@@ -592,7 +625,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/lia-tom-lumi-christmas-decorations-p13-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/lia-tom-lumi-christmas-decorations-p13-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/lia-tom-lumi-christmas-decorations-p37-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/lia-tom-lumi-christmas-decorations-p37-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 50,
       "format": {
@@ -744,7 +810,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/lia-tom-lumi-christmas-gifts-treats-p21-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/lia-tom-lumi-christmas-gifts-treats-p21-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/lia-tom-lumi-christmas-gifts-treats-p45-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/lia-tom-lumi-christmas-gifts-treats-p45-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": null,
       "format": null,
@@ -964,7 +1063,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-cozy-spring-days-p11-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-cozy-spring-days-p11-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-cozy-spring-days-p35-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-cozy-spring-days-p35-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 58,
       "format": {
@@ -1104,7 +1236,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-golden-autumn-days-p09-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-golden-autumn-days-p09-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-golden-autumn-days-p33-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-golden-autumn-days-p33-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 58,
       "format": {
@@ -1405,7 +1570,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-lazy-summer-days-p11-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-lazy-summer-days-p11-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-lazy-summer-days-p33-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-lazy-summer-days-p33-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 58,
       "format": {
@@ -1697,7 +1895,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-quiet-winter-days-p09-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-quiet-winter-days-p09-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-quiet-winter-days-p19-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-quiet-winter-days-p19-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 58,
       "format": {
@@ -2189,7 +2420,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-island-hideaways-p09-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-island-hideaways-p09-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-island-hideaways-p49-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-island-hideaways-p49-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 58,
       "format": {
@@ -2330,7 +2594,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-seaside-cottage-days-p07-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-seaside-cottage-days-p07-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-seaside-cottage-days-p29-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-seaside-cottage-days-p29-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 58,
       "format": {
@@ -2616,7 +2913,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-tropical-cafe-days-p11-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-tropical-cafe-days-p11-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/slow/slow-life-tropical-cafe-days-p45-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/slow/slow-life-tropical-cafe-days-p45-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 58,
       "format": {
