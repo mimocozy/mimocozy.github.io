@@ -206,8 +206,8 @@ def render_page(b, tpl):
     </section>'''
 
     ld = {"@context": "https://schema.org", "@type": "Book", "name": title_en, "url": url,
-          "description": b["short"]["en"], "image": og_img, "genre": "Coloring book",
-          "brand": {"@type": "Brand", "name": "Mimocozy"}}
+          "description": b["short"]["en"], "image": og_img, "genre": "Coloring book"}
+    # (no "brand": it is not a schema.org property of Book; no author/offers: not stated on the site / no prices)
     if b.get("pages"): ld["numberOfPages"] = b["pages"]
     if pub: ld["sameAs"] = amazon
 
@@ -297,6 +297,15 @@ def check_refs(files):
                 bad.append((os.path.relpath(f, ROOT), r))
     return bad
 
+def lastmod(rel):
+    """Real last-change date of a page for sitemap.xml: today if the file differs from the last
+    commit (it is about to be committed), otherwise the date of the last commit that touched it."""
+    import datetime, subprocess
+    run = lambda *a: subprocess.run(["git", "-C", ROOT, *a], capture_output=True, text=True)
+    if run("diff", "--quiet", "HEAD", "--", rel).returncode != 0 or not run("ls-files", rel).stdout.strip():
+        return datetime.date.today().isoformat()
+    return run("log", "-1", "--format=%cs", "--", rel).stdout.strip() or datetime.date.today().isoformat()
+
 def main():
     stamp_homepage()
     tpl = open(os.path.join(ROOT, "tools", "book-template.html"), encoding="utf-8").read()
@@ -305,10 +314,10 @@ def main():
         d = os.path.join(ROOT, "books", b["slug"]); os.makedirs(d, exist_ok=True)
         f = os.path.join(d, "index.html")
         open(f, "w", encoding="utf-8").write(render_page(b, tpl)); files.append(f)
-    urls = [SITE + "/"] + [f"{SITE}/books/{b['slug']}/" for b in BOOKS]
+    entries = [(SITE + "/", "index.html")] + [(f"{SITE}/books/{b['slug']}/", f"books/{b['slug']}/index.html") for b in BOOKS]
     open(os.path.join(ROOT, "sitemap.xml"), "w").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+        + "".join(f"  <url><loc>{u}</loc><lastmod>{lastmod(f)}</lastmod></url>\n" for u, f in entries) + "</urlset>\n")
     bad = check_refs(files)
     print(f"built {len(BOOKS)} book pages; checked {len(files)} html files")
     if bad:
