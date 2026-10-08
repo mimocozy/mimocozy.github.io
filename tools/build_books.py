@@ -68,6 +68,14 @@ def related(b, n=4):
         if x["status"] == "published": add(x, ("Já disponível", "Available now"))
     return out
 
+def long_paras(b):
+    """'Discover the Story' text: a blank line in data/books.json starts a new paragraph (PT and EN must match)."""
+    pt = [x.strip() for x in b["long"]["pt"].split("\n\n") if x.strip()]
+    en = [x.strip() for x in b["long"]["en"].split("\n\n") if x.strip()]
+    if len(pt) != len(en):
+        sys.exit(f"{b['slug']}: long.pt has {len(pt)} paragraphs but long.en has {len(en)}")
+    return "".join(f'<p data-pt="{E(a)}" data-en="{E(c)}"{" style=\"margin-top:10px\"" if i else ""}>{E(a)}</p>' for i, (a, c) in enumerate(zip(pt, en)))
+
 def cover_or_placeholder(x, prefix, lazy=True):
     if x.get("cover"):
         return img_tag(x["cover"], x.get("coverSize"), x["coverAlt"], x["coverAlt"], prefix, lazy)
@@ -212,6 +220,7 @@ def render_page(b, tpl):
         "status_pt": E(spt), "status_en": E(sen), "subtitle_block": sub,
         "short_pt": E(b["short"]["pt"]), "short_en": E(b["short"]["en"]),
         "long_pt": E(b["long"]["pt"]), "long_en": E(b["long"]["en"]),
+        "long_paras": long_paras(b),
         "collection_blurb_pt": E(col["blurb"]["pt"]), "collection_blurb_en": E(col["blurb"]["en"]),
         "facts_block": facts_block, "hero_cta": cta, "hero_cover": hero_cover,
         "peek_section": peek, "color_section": color, "series_block": series_block,
@@ -250,7 +259,17 @@ def stamp_homepage():
         a2 = a2[:i] + f' <a class="btn soft" data-explore href="books/{b["slug"]}/" data-t="explorebook">Explore Book →</a>' + a2[i:]
         if b.get("amazon") and b["amazon"] not in a2:
             sys.exit(f"Amazon link mismatch for {b['slug']}")
+        if b.get("card"):
+            a2 = re.sub(r'(<p data-t="' + key + r'">)[^<]*(</p>)', lambda mm: mm.group(1) + E(b["card"]["en"]) + mm.group(2), a2, count=1)
         s = s.replace(a, a2, 1)
+        if b.get("card"):
+            for lang in ("pt", "en"):
+                line = re.search(r"\n      " + lang + r": \{.*\n", s).group(0)
+                val = json.dumps(b["card"][lang], ensure_ascii=False)
+                new, n = re.subn(r'((?:\{|, ) ?)' + key + r':"(?:[^"\\]|\\.)*"', lambda mm: mm.group(1) + key + ":" + val, line, count=1)
+                if n != 1:
+                    sys.exit(f"copy key {key} not found in the {lang} dictionary")
+                s = s.replace(line, new, 1)
     used = [t for t in THEMES if any(t in b["themes"] for b in BOOKS)]
     pills = ['<button class="pill" type="button" data-theme="all" aria-pressed="true" data-t="fthall">All themes</button>']
     pills += [f'<button class="pill" type="button" data-theme="{t}" aria-pressed="false" data-pt="{E(THEMES[t]["pt"])}" data-en="{E(THEMES[t]["en"])}">{E(THEMES[t]["en"])}</button>' for t in used]
