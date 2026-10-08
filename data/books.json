@@ -1,0 +1,2565 @@
+{
+  "_about": "Single source of truth for every Mimocozy book. Text is copied verbatim from the live site copy (index.html @ d3978b5). Edit here, then run: python3 tools/build_books.py",
+  "site": "https://mimocozy.github.io",
+  "collections": {
+    "kdrama": {
+      "pt": "K-Drama",
+      "en": "K-Drama",
+      "blurb": {
+        "pt": "Cenas românticas e magia do quotidiano.",
+        "en": "Romantic scenes, beautiful places and everyday magic."
+      }
+    },
+    "halloween": {
+      "pt": "Halloween",
+      "en": "Halloween",
+      "blurb": {
+        "pt": "Aventuras spooky-cute cheias de charme.",
+        "en": "Spooky-cute adventures full of charm."
+      }
+    },
+    "brambleboo": {
+      "pt": "Brambleboo",
+      "en": "Brambleboo",
+      "blurb": {
+        "pt": "Histórias adoráveis em cenários mágicos.",
+        "en": "Adorable stories in magical settings."
+      }
+    },
+    "slow": {
+      "pt": "Slow Life",
+      "en": "Slow Life",
+      "blurb": {
+        "pt": "Dias calmos e alegrias simples.",
+        "en": "Peaceful places, cozy days and simple joys."
+      }
+    },
+    "natal": {
+      "pt": "Livros de Natal",
+      "en": "Christmas Books",
+      "blurb": {
+        "pt": "Histórias de Natal aconchegantes para colorir.",
+        "en": "Cozy Christmas stories to color."
+      }
+    }
+  },
+  "themes": {
+    "halloween": {
+      "pt": "Halloween",
+      "en": "Halloween"
+    },
+    "christmas": {
+      "pt": "Natal",
+      "en": "Christmas"
+    },
+    "seasons": {
+      "pt": "Estações do ano",
+      "en": "Seasons"
+    },
+    "seaside": {
+      "pt": "Mar e trópicos",
+      "en": "Seaside & tropical"
+    },
+    "city": {
+      "pt": "Cidade e romance",
+      "en": "City & romance"
+    },
+    "night": {
+      "pt": "Noite e estrelas",
+      "en": "Night & stars"
+    },
+    "friendship": {
+      "pt": "Amizade",
+      "en": "Friendship"
+    },
+    "celebrations": {
+      "pt": "Festas",
+      "en": "Celebrations"
+    }
+  },
+  "books": [
+    {
+      "slug": "seoul-between-scenes",
+      "title": "Seoul Between Scenes",
+      "subtitle": null,
+      "collection": "kdrama",
+      "themes": [
+        "city"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "published",
+      "release": null,
+      "featured": true,
+      "short": {
+        "pt": "Entre cenas, Seul acende-se: um café, uma rua molhada e um encontro que quase não acontece.",
+        "en": "Between scenes, Seoul lights up: a café, a wet street and a meeting that almost does not happen."
+      },
+      "long": {
+        "pt": "Entre cenas, Seul acende-se: um café, uma rua molhada e um encontro que quase não acontece. Colore a cidade e fica com o momento.",
+        "en": "Between scenes, Seoul lights up: a café, a wet street and a meeting that almost does not happen. Color the city and keep the moment."
+      },
+      "coverAlt": "Seoul Between Scenes",
+      "cover": "assets/seoul-product-cover.jpg",
+      "coverSize": [
+        406,
+        526
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/seoul-1.jpg",
+          "size": [
+            357,
+            462
+          ]
+        },
+        {
+          "src": "assets/slides/seoul-2.jpg",
+          "size": [
+            357,
+            462
+          ]
+        },
+        {
+          "src": "assets/slides/seoul-3.jpg",
+          "size": [
+            357,
+            462
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/seoul-title.jpg",
+          "size": [
+            680,
+            880
+          ]
+        },
+        {
+          "src": "assets/seoul-scene.jpg",
+          "size": [
+            612,
+            792
+          ]
+        },
+        {
+          "src": "assets/seoul-cover.jpg",
+          "size": [
+            680,
+            880
+          ]
+        },
+        {
+          "src": "assets/miolo/page-1.jpg",
+          "size": [
+            856,
+            1176
+          ]
+        },
+        {
+          "src": "assets/miolo/page-2.jpg",
+          "size": [
+            856,
+            1176
+          ]
+        },
+        {
+          "src": "assets/miolo/page-3.jpg",
+          "size": [
+            856,
+            1185
+          ]
+        },
+        {
+          "src": "assets/miolo/page-4.jpg",
+          "size": [
+            856,
+            1176
+          ]
+        },
+        {
+          "src": "assets/miolo/page-5.jpg",
+          "size": [
+            856,
+            1176
+          ]
+        },
+        {
+          "src": "assets/miolo/page-6.jpg",
+          "size": [
+            856,
+            1176
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": "https://amzn.eu/d/078evWEV",
+      "pages": null,
+      "format": null,
+      "searchTerms": "seoul between scenes",
+      "legacyCopyKey": "b1",
+      "note": "No verified page count/format.",
+      "ages": null
+    },
+    {
+      "slug": "seoul-after-the-cut",
+      "title": "Seoul After the Cut",
+      "subtitle": null,
+      "collection": "kdrama",
+      "themes": [
+        "city"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "published",
+      "release": null,
+      "featured": true,
+      "short": {
+        "pt": "Depois do corte, a cidade fica quieta. Lugares favoritos, uma última luz e o dia que ainda não acabou.",
+        "en": "After the cut, the city goes quiet. Favorite places, one last light and a day that is not over."
+      },
+      "long": {
+        "pt": "Depois do corte, a cidade fica quieta. Lugares favoritos, uma última luz e o dia que ainda não acabou. Pega nos lápis e entra nessa Seul.",
+        "en": "After the cut, the city goes quiet. Favorite places, one last light and a day that is not over. Pick up your pencils and step into this Seoul."
+      },
+      "coverAlt": "Seoul After the Cut",
+      "cover": "assets/book5/page-1.jpg",
+      "coverSize": [
+        866,
+        1106
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/cut-1.jpg",
+          "size": [
+            357,
+            462
+          ]
+        },
+        {
+          "src": "assets/slides/cut-2.jpg",
+          "size": [
+            357,
+            462
+          ]
+        },
+        {
+          "src": "assets/slides/cut-3.jpg",
+          "size": [
+            357,
+            462
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/book5/page-2.jpg",
+          "size": [
+            864,
+            1112
+          ]
+        },
+        {
+          "src": "assets/book5/page-3.jpg",
+          "size": [
+            864,
+            1112
+          ]
+        },
+        {
+          "src": "assets/book5/page-4.jpg",
+          "size": [
+            864,
+            1112
+          ]
+        },
+        {
+          "src": "assets/book5/page-5.jpg",
+          "size": [
+            859,
+            1112
+          ]
+        },
+        {
+          "src": "assets/book5/page-6.jpg",
+          "size": [
+            864,
+            1112
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": "https://amzn.eu/d/09oG4UHr",
+      "pages": null,
+      "format": null,
+      "searchTerms": "seoul after the cut",
+      "legacyCopyKey": "b2",
+      "note": "No verified page count/format.",
+      "ages": null
+    },
+    {
+      "slug": "haunted-house-adventures",
+      "title": "Haunted House Adventures",
+      "subtitle": {
+        "pt": "Parte 1",
+        "en": "Part One"
+      },
+      "collection": "halloween",
+      "themes": [
+        "halloween"
+      ],
+      "series": "haunted",
+      "seriesOrder": 1,
+      "status": "published",
+      "release": null,
+      "featured": true,
+      "short": {
+        "pt": "Uma casa assombrada, fantasminhas e uma noite suave de Halloween.",
+        "en": "A spooky-cute house, little ghosts and a gentle Halloween night."
+      },
+      "long": {
+        "pt": "Parte 1. Uma casa assombrada, fantasminhas e uma noite suave de Halloween.",
+        "en": "Part One. A spooky-cute house, little ghosts and a gentle Halloween night."
+      },
+      "coverAlt": "Haunted House Adventures Part One",
+      "cover": "assets/halloween/haunted-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/haunted-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/haunted-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/haunted-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/halloween/page-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/halloween/page-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": "https://amzn.eu/d/0dKOLW1f",
+      "pages": 52,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "haunted house adventures halloween",
+      "legacyCopyKey": "b3",
+      "ages": null
+    },
+    {
+      "slug": "brambleboos-little-lanterns",
+      "title": "Brambleboo's Little Lanterns",
+      "subtitle": {
+        "pt": "Parte 1",
+        "en": "Part One"
+      },
+      "collection": "brambleboo",
+      "themes": [
+        "halloween",
+        "friendship"
+      ],
+      "series": "lanterns",
+      "seriesOrder": 1,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel1",
+        "pt": "11 de outubro",
+        "en": "October 11"
+      },
+      "featured": true,
+      "short": {
+        "pt": "O Brambleboo partilha lanternas com os amigos da floresta.",
+        "en": "Brambleboo shares little lanterns with friends in the forest."
+      },
+      "long": {
+        "pt": "O Brambleboo partilha lanternas com os amigos da floresta. Uma aventura suave de Halloween, com vinte cenas para colorir. Em breve.",
+        "en": "Brambleboo shares little lanterns with friends in the forest. A gentle Halloween adventure, twenty scenes to color. Coming soon."
+      },
+      "coverAlt": "Brambleboo's Little Lanterns",
+      "cover": "assets/brambleboo/lanterns-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/lanterns-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/lanterns-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/lanterns-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 58,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "brambleboo little lanterns part one",
+      "legacyCopyKey": "b19",
+      "ages": null
+    },
+    {
+      "slug": "slow-life-tropical-days",
+      "title": "Slow Life: Tropical Days",
+      "subtitle": null,
+      "collection": "slow",
+      "themes": [
+        "seaside"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel1",
+        "pt": "11 de outubro",
+        "en": "October 11"
+      },
+      "featured": true,
+      "short": {
+        "pt": "Uma varanda ao sol, o mar quieto e um gato na cadeira. Cinquenta cenas tropicais para colorir sem pressa.",
+        "en": "A sunny veranda, a quiet sea and a cat in the chair. Fifty tropical scenes to color at your own pace."
+      },
+      "long": {
+        "pt": "Uma varanda ao sol, o mar quieto e um gato na cadeira. Cinquenta cenas tropicais para colorir sem pressa. Em breve.",
+        "en": "A sunny veranda, a quiet sea and a cat in the chair. Fifty tropical scenes to color at your own pace. Coming soon."
+      },
+      "coverAlt": "Slow Life: Tropical Days",
+      "cover": "assets/slow/tropical-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/tropical-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/tropical-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/tropical-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 108,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "slow life tropical days",
+      "legacyCopyKey": "b11",
+      "ages": null
+    },
+    {
+      "slug": "lia-tom-lumi-christmas-decorations",
+      "title": "Lia, Tom & Lumi: Christmas Decorations",
+      "subtitle": {
+        "pt": "Livro 1",
+        "en": "Book One"
+      },
+      "collection": "natal",
+      "themes": [
+        "christmas"
+      ],
+      "series": "xmas",
+      "seriesOrder": 1,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel2",
+        "pt": "18 de outubro",
+        "en": "October 18"
+      },
+      "featured": true,
+      "short": {
+        "pt": "A Lia, o Tom e o Lumi decoram a casa e a estação de comboios para um Natal mágico.",
+        "en": "Lia, Tom and Lumi decorate their home and railway station for a magical Christmas."
+      },
+      "long": {
+        "pt": "Livro 1. A Lia, o Tom e o Lumi decoram a casa e a estação de comboios para um Natal mágico. Vinte cenas para colorir. Em breve.",
+        "en": "Book One. Lia, Tom and Lumi decorate their home and railway station for a magical Christmas. Twenty scenes to color. Coming soon."
+      },
+      "coverAlt": "Lia, Tom & Lumi: Christmas Decorations Book One",
+      "cover": "assets/halloween/xmas1-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/xmas1-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/xmas1-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/xmas1-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 50,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "lia tom and lumi christmas decorations book one natal christmas",
+      "legacyCopyKey": "b24",
+      "ages": null
+    },
+    {
+      "slug": "haunted-house-adventures-part-2",
+      "title": "Haunted House Adventures",
+      "subtitle": {
+        "pt": "Parte 2",
+        "en": "Part Two"
+      },
+      "collection": "halloween",
+      "themes": [
+        "halloween"
+      ],
+      "series": "haunted",
+      "seriesOrder": 2,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel2",
+        "pt": "18 de outubro",
+        "en": "October 18"
+      },
+      "featured": true,
+      "short": {
+        "pt": "Do sótão ao jardim ao luar, a noite ainda não acabou. Colore o final da aventura quando o livro chegar.",
+        "en": "From the attic to the moonlit garden, the night is not over."
+      },
+      "long": {
+        "pt": "Parte 2: do sótão ao jardim ao luar, a noite ainda não acabou. Colore o final da aventura quando o livro chegar.",
+        "en": "Part Two: from the attic to the moonlit garden, the night is not over. Color the end of the adventure when the book arrives."
+      },
+      "coverAlt": "Haunted House Adventures Part Two",
+      "cover": "assets/halloween/haunted-cover-2.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/haunted2-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/haunted2-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/haunted2-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/halloween/page-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": null,
+      "format": null,
+      "searchTerms": "haunted house adventures part two halloween",
+      "legacyCopyKey": "b4",
+      "note": "Page count not applied: summary says \"Haunted House 52p\" without naming Part Two — confirm before adding.",
+      "ages": null
+    },
+    {
+      "slug": "lia-tom-lumi-christmas-gifts-treats",
+      "title": "Lia, Tom & Lumi: Christmas Gifts & Treats",
+      "subtitle": {
+        "pt": "Livro 2",
+        "en": "Book Two"
+      },
+      "collection": "natal",
+      "themes": [
+        "christmas"
+      ],
+      "series": "xmas",
+      "seriesOrder": 2,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel3",
+        "pt": "25 de outubro",
+        "en": "October 25"
+      },
+      "featured": false,
+      "short": {
+        "pt": "A Lia, o Tom e o Lumi fazem doces de Natal, embrulham presentes com carinho e preparam-se para o Natal.",
+        "en": "Lia, Tom and Lumi bake festive treats, wrap thoughtful gifts and get ready for Christmas."
+      },
+      "long": {
+        "pt": "Livro 2. A Lia, o Tom e o Lumi fazem doces de Natal, embrulham presentes com carinho e preparam-se para o Natal. Vinte cenas para colorir. Em breve.",
+        "en": "Book Two. Lia, Tom and Lumi bake festive treats, wrap thoughtful gifts and get ready for Christmas. Twenty scenes to color. Coming soon."
+      },
+      "coverAlt": "Lia, Tom & Lumi: Christmas Gifts & Treats Book Two",
+      "cover": "assets/halloween/xmas2-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/xmas2-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/xmas2-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/xmas2-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": null,
+      "format": null,
+      "searchTerms": "lia tom and lumi christmas gifts and treats book two natal christmas",
+      "legacyCopyKey": "b25",
+      "note": "Page count not applied: summary says \"Natal 50p\" — confirm it also applies to Book Two.",
+      "ages": null
+    },
+    {
+      "slug": "brambleboos-little-lanterns-part-2",
+      "title": "Brambleboo's Little Lanterns",
+      "subtitle": {
+        "pt": "Parte 2",
+        "en": "Part Two"
+      },
+      "collection": "brambleboo",
+      "themes": [
+        "halloween",
+        "friendship"
+      ],
+      "series": "lanterns",
+      "seriesOrder": 2,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel3",
+        "pt": "25 de outubro",
+        "en": "October 25"
+      },
+      "featured": false,
+      "short": {
+        "pt": "O Brambleboo entrega a última lanterna e a amizade ilumina o caminho de casa.",
+        "en": "Brambleboo shares his last lantern and friendship lights the way home."
+      },
+      "long": {
+        "pt": "O Brambleboo entrega a última lanterna e a amizade ilumina o caminho de casa. Parte 2, vinte cenas para colorir. Em breve.",
+        "en": "Brambleboo shares his last lantern and friendship lights the way home. Part Two, twenty scenes to color. Coming soon."
+      },
+      "coverAlt": "Brambleboo's Little Lanterns Part 2",
+      "cover": "assets/brambleboo/lanterns2-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/lanterns2-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/lanterns2-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/lanterns2-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 58,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "brambleboo little lanterns part two",
+      "legacyCopyKey": "b20",
+      "ages": null
+    },
+    {
+      "slug": "pumpkin-parade",
+      "title": "Pumpkin Parade",
+      "subtitle": null,
+      "collection": "halloween",
+      "themes": [
+        "halloween"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel4",
+        "pt": "1 de novembro",
+        "en": "November 1"
+      },
+      "featured": false,
+      "short": {
+        "pt": "O desfile das abóboras atravessa a rua: fatos, doces e janelas acesas.",
+        "en": "The pumpkin parade crosses the street: costumes, candy and lit windows."
+      },
+      "long": {
+        "pt": "O desfile das abóboras atravessa a rua: fatos, doces e janelas acesas. Em breve, um livro para colorir sem pressa.",
+        "en": "The pumpkin parade crosses the street: costumes, candy and lit windows. Coming soon, a book to color without rushing."
+      },
+      "coverAlt": "Pumpkin Parade",
+      "cover": "assets/halloween/pumpkin-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/pumpkin-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/pumpkin-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/pumpkin-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/halloween/pumpkin-page.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 64,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "pumpkin parade halloween",
+      "legacyCopyKey": "b5",
+      "ages": null
+    },
+    {
+      "slug": "slow-life-cozy-spring-days",
+      "title": "Slow Life: Cozy Spring Days",
+      "subtitle": null,
+      "collection": "slow",
+      "themes": [
+        "seasons"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel4",
+        "pt": "1 de novembro",
+        "en": "November 1"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Jardins cheios de flores, lojas calmas da aldeia e uma pausa gentil.",
+        "en": "Flower-filled gardens, quiet village shops and a gentle pause."
+      },
+      "long": {
+        "pt": "Jardins cheios de flores, lojas calmas da aldeia e uma pausa gentil. Vinte e cinco cenas para colorir devagar. Em breve.",
+        "en": "Flower-filled gardens, quiet village shops and a gentle pause. Twenty-five scenes to color slowly. Coming soon."
+      },
+      "coverAlt": "Slow Life: Cozy Spring Days",
+      "cover": "assets/slow/spring-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/spring-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/spring-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/spring-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 58,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "slow life cozy spring days",
+      "legacyCopyKey": "b12",
+      "ages": null
+    },
+    {
+      "slug": "brambleboo-and-the-snowglow-trail",
+      "title": "Brambleboo and the Snowglow Trail",
+      "subtitle": null,
+      "collection": "brambleboo",
+      "themes": [
+        "seasons"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel5",
+        "pt": "8 de novembro",
+        "en": "November 8"
+      },
+      "featured": false,
+      "short": {
+        "pt": "O Brambleboo, de gorro azul, segue um caminho de inverno que brilha na neve.",
+        "en": "Brambleboo, in a blue hat, follows a glowing winter path through the snow."
+      },
+      "long": {
+        "pt": "O Brambleboo, de gorro azul, segue um caminho de inverno que brilha na neve. Uma história suave de inverno para colorir. Em breve.",
+        "en": "Brambleboo, in a blue hat, follows a glowing winter path through the snow. A gentle winter story to color. Coming soon."
+      },
+      "coverAlt": "Brambleboo and the Snowglow Trail",
+      "cover": "assets/brambleboo/snowglow-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/snowglow-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/snowglow-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/snowglow-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 36,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "brambleboo and the snowglow trail",
+      "legacyCopyKey": "b26",
+      "ages": null
+    },
+    {
+      "slug": "slow-life-golden-autumn-days",
+      "title": "Slow Life: Golden Autumn Days",
+      "subtitle": null,
+      "collection": "slow",
+      "themes": [
+        "seasons"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel5",
+        "pt": "8 de novembro",
+        "en": "November 8"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Livrarias, cabanas no bosque e cozinhas de outono. Vinte e cinco cenas para colorir com calma.",
+        "en": "Bookshops, woodland cabins and harvest kitchens. Twenty-five cozy autumn scenes to color slowly."
+      },
+      "long": {
+        "pt": "Livrarias, cabanas no bosque e cozinhas de outono. Vinte e cinco cenas para colorir com calma. Em breve.",
+        "en": "Bookshops, woodland cabins and harvest kitchens. Twenty-five cozy autumn scenes to color slowly. Coming soon."
+      },
+      "coverAlt": "Slow Life: Golden Autumn Days",
+      "cover": "assets/slow/autumn-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/autumn-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/autumn-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/autumn-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 58,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "slow life golden autumn days",
+      "legacyCopyKey": "b13",
+      "ages": null
+    },
+    {
+      "slug": "pipkins-pumpkin-pajama-party",
+      "title": "Pipkin's Pumpkin Pajama Party",
+      "subtitle": null,
+      "collection": "halloween",
+      "themes": [
+        "halloween"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel6",
+        "pt": "15 de novembro",
+        "en": "November 15"
+      },
+      "featured": false,
+      "short": {
+        "pt": "O Pipkin prepara a festa do pijama. Almofadas, abóboras e uma história para antes de apagar a luz.",
+        "en": "Pipkin sets up the pajama party. Pillows, pumpkins and a story for before the light goes out."
+      },
+      "long": {
+        "pt": "O Pipkin prepara a festa do pijama. Almofadas, abóboras e uma história para antes de apagar a luz. Em breve, para colorir devagar.",
+        "en": "Pipkin sets up the pajama party. Pillows, pumpkins and a story for before the light goes out. Coming soon, to color slowly."
+      },
+      "coverAlt": "Pipkin's Pumpkin Pajama Party",
+      "cover": "assets/halloween/pipkin-cover.jpg?v=20261007",
+      "coverSize": [
+        1086,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/pipkin-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/pipkin-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/pipkin-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/halloween/pipkin-page.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 76,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "pipkin pumpkin pajama party halloween",
+      "legacyCopyKey": "b6",
+      "ages": null
+    },
+    {
+      "slug": "brambleboo-and-the-forest-playday",
+      "title": "Brambleboo and the Forest Playday",
+      "subtitle": null,
+      "collection": "brambleboo",
+      "themes": [
+        "friendship"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel6",
+        "pt": "15 de novembro",
+        "en": "November 15"
+      },
+      "featured": false,
+      "short": {
+        "pt": "O Brambleboo, de cachecol cor-de-rosa, passa um dia de sol no parque da floresta, com baloiços e amigos.",
+        "en": "Brambleboo, in a pink scarf, spends a sunny day at the forest playground with swings and friends."
+      },
+      "long": {
+        "pt": "O Brambleboo, de cachecol cor-de-rosa, passa um dia de sol no parque da floresta, com baloiços e amigos. Em breve.",
+        "en": "Brambleboo, in a pink scarf, spends a sunny day at the forest playground with swings and friends. Coming soon."
+      },
+      "coverAlt": "Brambleboo and the Forest Playday",
+      "cover": "assets/brambleboo/playday-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/playday-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/playday-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/playday-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 68,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "brambleboo and the forest playday",
+      "legacyCopyKey": "b29",
+      "ages": null
+    },
+    {
+      "slug": "midnight-magic",
+      "title": "Midnight Magic",
+      "subtitle": {
+        "pt": "Parte 1",
+        "en": "Part One"
+      },
+      "collection": "halloween",
+      "themes": [
+        "halloween",
+        "night"
+      ],
+      "series": "midnight",
+      "seriesOrder": 1,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel7",
+        "pt": "22 de novembro",
+        "en": "November 22"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Treze minutos para a meia-noite, o relógio para. A Luna, a Vega, o Mimo e o Nox seguem as primeiras pistas.",
+        "en": "Thirteen minutes to midnight, the clock stops. Luna, Vega, Mimo and Nox follow the first clues."
+      },
+      "long": {
+        "pt": "Treze minutos para a meia-noite, o relógio para. A Luna, a Vega, o Mimo e o Nox seguem as primeiras pistas. Em breve, uma noite para colorir.",
+        "en": "Thirteen minutes to midnight, the clock stops. Luna, Vega, Mimo and Nox follow the first clues. Coming soon, a night to color."
+      },
+      "coverAlt": "Midnight Magic Part One",
+      "cover": "assets/halloween/midnight-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/midnight-1.jpg?v=20261008",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/midnight-2.jpg?v=20261008",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/midnight-3.jpg?v=20261008",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/halloween/midnight-page.jpg",
+          "size": [
+            425,
+            425
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 74,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "midnight magic part one halloween",
+      "legacyCopyKey": "b7",
+      "ages": null
+    },
+    {
+      "slug": "slow-life-lazy-summer-days",
+      "title": "Slow Life: Lazy Summer Days",
+      "subtitle": null,
+      "collection": "slow",
+      "themes": [
+        "seasons",
+        "seaside"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel7",
+        "pt": "22 de novembro",
+        "en": "November 22"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Cantos de praia, cozinhas de sol e gelatarias pequeninas.",
+        "en": "Breezy beach corners, sunny kitchens and little ice cream shops."
+      },
+      "long": {
+        "pt": "Cantos de praia, cozinhas de sol e gelatarias pequeninas. Vinte e cinco momentos para colorir sem pressa. Em breve.",
+        "en": "Breezy beach corners, sunny kitchens and little ice cream shops. Twenty-five unhurried moments to color. Coming soon."
+      },
+      "coverAlt": "Slow Life: Lazy Summer Days",
+      "cover": "assets/slow/summer-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/summer-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/summer-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/summer-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 58,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "slow life lazy summer days",
+      "legacyCopyKey": "b14",
+      "ages": null
+    },
+    {
+      "slug": "midnight-magic-part-2",
+      "title": "Midnight Magic",
+      "subtitle": {
+        "pt": "Parte 2",
+        "en": "Part Two"
+      },
+      "collection": "halloween",
+      "themes": [
+        "halloween",
+        "night"
+      ],
+      "series": "midnight",
+      "seriesOrder": 2,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel8",
+        "pt": "29 de novembro",
+        "en": "November 29"
+      },
+      "featured": false,
+      "short": {
+        "pt": "As pistas levam à estufa de vidro e ao lago das estrelas.",
+        "en": "The clues lead to the glass greenhouse and the lake of stars."
+      },
+      "long": {
+        "pt": "As pistas levam à estufa de vidro e ao lago das estrelas. Parte 2: colore o regresso da luz.",
+        "en": "The clues lead to the glass greenhouse and the lake of stars. Part Two: color the light coming back."
+      },
+      "coverAlt": "Midnight Magic Part Two",
+      "cover": "assets/halloween/midnight-cover-2.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/midnight2-1.jpg?v=20261008",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/midnight2-2.jpg?v=20261008",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/midnight2-3.jpg?v=20261008",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/halloween/midnight-page-2.jpg",
+          "size": [
+            425,
+            425
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 74,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "midnight magic part two halloween",
+      "legacyCopyKey": "b8",
+      "ages": null
+    },
+    {
+      "slug": "brambleboo-and-the-golden-acorn-wagon",
+      "title": "Brambleboo and the Golden Acorn Wagon",
+      "subtitle": null,
+      "collection": "brambleboo",
+      "themes": [
+        "seasons"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel8",
+        "pt": "29 de novembro",
+        "en": "November 29"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Uma carroça cheia de outono: bolotas a brilhar, tarte de maçã e uma colheita aconchegante com o Brambleboo.",
+        "en": "A wagon full of autumn: glowing acorns, apple pie and a cozy harvest with Brambleboo."
+      },
+      "long": {
+        "pt": "Uma carroça cheia de outono: bolotas a brilhar, tarte de maçã e uma colheita aconchegante com o Brambleboo. Em breve.",
+        "en": "A wagon full of autumn: glowing acorns, apple pie and a cozy harvest with Brambleboo. Coming soon."
+      },
+      "coverAlt": "Brambleboo and the Golden Acorn Wagon",
+      "cover": "assets/brambleboo/acorn-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/acorn-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/acorn-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/acorn-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 68,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "brambleboo and the golden acorn wagon",
+      "legacyCopyKey": "b30",
+      "ages": null
+    },
+    {
+      "slug": "brambleboo-and-the-lantern-cake",
+      "title": "Brambleboo and the Lantern Cake",
+      "subtitle": null,
+      "collection": "brambleboo",
+      "themes": [
+        "celebrations"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel9",
+        "pt": "6 de dezembro",
+        "en": "December 6"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Um bolo feito de luzes: lanternas, um bolo de anos e uma festa ao entardecer com o Brambleboo.",
+        "en": "A cake made of lights: lanterns, a birthday cake and a twilight party with Brambleboo."
+      },
+      "long": {
+        "pt": "Um bolo feito de luzes: lanternas, um bolo de anos e uma festa ao entardecer com o Brambleboo. Em breve.",
+        "en": "A cake made of lights: lanterns, a birthday cake and a twilight party with Brambleboo. Coming soon."
+      },
+      "coverAlt": "Brambleboo and the Lantern Cake",
+      "cover": "assets/brambleboo/lanterncake-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/lanterncake-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/lanterncake-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/lanterncake-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 68,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "brambleboo and the lantern cake",
+      "legacyCopyKey": "b31",
+      "ages": null
+    },
+    {
+      "slug": "slow-life-quiet-winter-days",
+      "title": "Slow Life: Quiet Winter Days",
+      "subtitle": null,
+      "collection": "slow",
+      "themes": [
+        "seasons"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel9",
+        "pt": "6 de dezembro",
+        "en": "December 6"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Cabanas na neve, cantos à lareira e cozinhas de inverno.",
+        "en": "Snow-covered cottages, fireside corners and winter kitchens."
+      },
+      "long": {
+        "pt": "Cabanas na neve, cantos à lareira e cozinhas de inverno. Vinte e cinco cenas para colorir devagar. Em breve.",
+        "en": "Snow-covered cottages, fireside corners and winter kitchens. Twenty-five quiet scenes to color slowly. Coming soon."
+      },
+      "coverAlt": "Slow Life: Quiet Winter Days",
+      "cover": "assets/slow/winter-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/winter-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/winter-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/winter-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 58,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "slow life quiet winter days",
+      "legacyCopyKey": "b15",
+      "ages": null
+    },
+    {
+      "slug": "the-ghostlight-railway-rescue",
+      "title": "The Ghostlight Railway Rescue",
+      "subtitle": {
+        "pt": "Parte 1",
+        "en": "Part One"
+      },
+      "collection": "halloween",
+      "themes": [
+        "halloween"
+      ],
+      "series": "ghostlight",
+      "seriesOrder": 1,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel10",
+        "pt": "13 de dezembro",
+        "en": "December 13"
+      },
+      "featured": false,
+      "short": {
+        "pt": "A Lia, o Tom e o Lumi sobem ao comboio fantasma. Estações secretas e uma pista em cada apeadeiro.",
+        "en": "Lia, Tom and Lumi board the ghost train. Secret stations and a clue at every stop."
+      },
+      "long": {
+        "pt": "A Lia, o Tom e o Lumi sobem ao comboio fantasma. Estações secretas e uma pista em cada apeadeiro. Em breve, para colorir a viagem.",
+        "en": "Lia, Tom and Lumi board the ghost train. Secret stations and a clue at every stop. Coming soon, to color the journey."
+      },
+      "coverAlt": "The Ghostlight Railway Rescue Part One",
+      "cover": "assets/halloween/ghostlight-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/ghost-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/ghost-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/ghost-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/halloween/ghostlight-page.jpg",
+          "size": [
+            425,
+            425
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 64,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "ghostlight railway rescue halloween",
+      "legacyCopyKey": "b9",
+      "ages": null
+    },
+    {
+      "slug": "the-letter-the-tide-kept",
+      "title": "The Letter the Tide Kept",
+      "subtitle": {
+        "pt": "Livro 6",
+        "en": "Book Six"
+      },
+      "collection": "kdrama",
+      "themes": [
+        "seaside"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel10",
+        "pt": "13 de dezembro",
+        "en": "December 13"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Uma carta com dez anos de atraso, um autocarro para uma aldeia de pescadores e a mala que ela não volta a levantar.",
+        "en": "A letter ten years late, a bus into a fishing village, and the suitcase she never lifts back on."
+      },
+      "long": {
+        "pt": "Livro 6. Uma carta com dez anos de atraso, um autocarro para uma aldeia de pescadores e a mala que ela não volta a levantar.",
+        "en": "Book Six. A letter ten years late, a bus into a fishing village, and the suitcase she never lifts back on."
+      },
+      "coverAlt": "The Letter the Tide Kept",
+      "cover": null,
+      "coverSize": null,
+      "slides": [],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": null,
+      "format": null,
+      "searchTerms": "the letter the tide kept book six",
+      "legacyCopyKey": "b23",
+      "note": "Cover/slides referenced on the live site (assets/kdrama/tide-cover.jpg, assets/slides/tide-*.jpg) do not exist in the repo; shown with a text placeholder.",
+      "ages": null
+    },
+    {
+      "slug": "the-ghostlight-railway-rescue-part-2",
+      "title": "The Ghostlight Railway Rescue",
+      "subtitle": {
+        "pt": "Parte 2",
+        "en": "Part Two"
+      },
+      "collection": "halloween",
+      "themes": [
+        "halloween"
+      ],
+      "series": "ghostlight",
+      "seriesOrder": 2,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel11",
+        "pt": "20 de dezembro",
+        "en": "December 20"
+      },
+      "featured": false,
+      "short": {
+        "pt": "A lanterna das estrelas abre o túnel. Parte 2: segue-os até casa e colore o fim da linha.",
+        "en": "The star lantern opens the tunnel. Part Two: follow them home and color the end of the line."
+      },
+      "long": {
+        "pt": "A lanterna das estrelas abre o túnel. Parte 2: segue-os até casa e colore o fim da linha.",
+        "en": "The star lantern opens the tunnel. Part Two: follow them home and color the end of the line."
+      },
+      "coverAlt": "The Ghostlight Railway Rescue Part Two",
+      "cover": "assets/halloween/ghostlight-cover-2.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/ghost2-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/ghost2-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/ghost2-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/halloween/ghostlight-page-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": null,
+      "format": null,
+      "searchTerms": "ghostlight railway rescue part two halloween",
+      "legacyCopyKey": "b10",
+      "note": "Page count not applied: summary says \"Ghostlight 64p\" — confirm it also applies to Part Two.",
+      "ages": null
+    },
+    {
+      "slug": "brambleboo-and-the-missing-star",
+      "title": "Brambleboo and the Missing Star",
+      "subtitle": null,
+      "collection": "brambleboo",
+      "themes": [
+        "night"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel11",
+        "pt": "20 de dezembro",
+        "en": "December 20"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Falta uma estrela. O Brambleboo, de barrete estrelado, parte numa busca suave pelo céu noturno.",
+        "en": "One star is missing. Brambleboo, in a starry nightcap, sets off on a gentle night-sky search."
+      },
+      "long": {
+        "pt": "Falta uma estrela. O Brambleboo, de barrete estrelado, parte numa busca suave pelo céu noturno. Em breve.",
+        "en": "One star is missing. Brambleboo, in a starry nightcap, sets off on a gentle night-sky search. Coming soon."
+      },
+      "coverAlt": "Brambleboo and the Missing Star",
+      "cover": "assets/brambleboo/missingstar-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/missingstar-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/missingstar-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/missingstar-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 68,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "brambleboo and the missing star",
+      "legacyCopyKey": "b32",
+      "ages": null
+    },
+    {
+      "slug": "the-broomstick-repair-brigade",
+      "title": "The Broomstick Repair Brigade",
+      "subtitle": {
+        "pt": "Parte 1",
+        "en": "Part One"
+      },
+      "collection": "halloween",
+      "themes": [
+        "halloween"
+      ],
+      "series": "broom",
+      "seriesOrder": 1,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel12",
+        "pt": "27 de dezembro",
+        "en": "December 27"
+      },
+      "featured": false,
+      "short": {
+        "pt": "A Tessa, o Milo, a Juniper e o Sparkplug reparam vassouras numa oficina de Halloween.",
+        "en": "Tessa, Milo, Juniper and Sparkplug repair brooms in a glowing Halloween workshop."
+      },
+      "long": {
+        "pt": "A Tessa, o Milo, a Juniper e o Sparkplug reparam vassouras numa oficina de Halloween. Parte 1, o mistério da oficina.",
+        "en": "Tessa, Milo, Juniper and Sparkplug repair brooms in a glowing Halloween workshop. Part One, the workshop mystery."
+      },
+      "coverAlt": "The Broomstick Repair Brigade",
+      "cover": "assets/halloween/broom-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/broom-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/broom-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/broom-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 60,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "broomstick repair brigade part one halloween",
+      "legacyCopyKey": "b21",
+      "ages": null
+    },
+    {
+      "slug": "slow-life-island-hideaways",
+      "title": "Slow Life: Island Hideaways",
+      "subtitle": null,
+      "collection": "slow",
+      "themes": [
+        "seaside"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel12",
+        "pt": "27 de dezembro",
+        "en": "December 27"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Cabanas escondidas, recantos nas árvores e caminhos de jardim.",
+        "en": "Hidden cabins, treetop retreats and quiet garden paths."
+      },
+      "long": {
+        "pt": "Cabanas escondidas, recantos nas árvores e caminhos de jardim. Vinte e cinco cenas de ilha para colorir. Em breve.",
+        "en": "Hidden cabins, treetop retreats and quiet garden paths. Twenty-five island scenes to color slowly. Coming soon."
+      },
+      "coverAlt": "Slow Life: Island Hideaways",
+      "cover": "assets/slow/island-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/island-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/island-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/island-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 58,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "slow life island hideaways",
+      "legacyCopyKey": "b16",
+      "ages": null
+    },
+    {
+      "slug": "brambleboo-and-the-moonlit-picnic",
+      "title": "Brambleboo and the Moonlit Picnic",
+      "subtitle": null,
+      "collection": "brambleboo",
+      "themes": [
+        "night",
+        "friendship"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel13",
+        "pt": "3 de janeiro",
+        "en": "January 3"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Um piquenique debaixo da lua cheia, com chá, bolo e os amigos do Brambleboo.",
+        "en": "A picnic under the full moon, with tea, cake and Brambleboo's friends."
+      },
+      "long": {
+        "pt": "Um piquenique debaixo da lua cheia, com chá, bolo e os amigos do Brambleboo. Em breve.",
+        "en": "A picnic under the full moon, with tea, cake and Brambleboo's friends. Coming soon."
+      },
+      "coverAlt": "Brambleboo and the Moonlit Picnic",
+      "cover": "assets/brambleboo/picnic-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/picnic-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/picnic-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/picnic-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 68,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "brambleboo and the moonlit picnic",
+      "legacyCopyKey": "b33",
+      "ages": null
+    },
+    {
+      "slug": "slow-life-seaside-cottage-days",
+      "title": "Slow Life: Seaside Cottage Days",
+      "subtitle": null,
+      "collection": "slow",
+      "themes": [
+        "seaside"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel13",
+        "pt": "3 de janeiro",
+        "en": "January 3"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Cabanas à beira-mar, cozinhas de sol e um gato à janela.",
+        "en": "Beach cottages, sunlit kitchens and a cat by the sea. Twenty-five cozy scenes to color at home."
+      },
+      "long": {
+        "pt": "Cabanas à beira-mar, cozinhas de sol e um gato à janela. Vinte e cinco cenas para colorir em casa. Em breve.",
+        "en": "Beach cottages, sunlit kitchens and a cat by the sea. Twenty-five cozy scenes to color at home. Coming soon."
+      },
+      "coverAlt": "Slow Life: Seaside Cottage Days",
+      "cover": "assets/slow/seaside-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/seaside-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/seaside-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/seaside-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 58,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "slow life seaside cottage days",
+      "legacyCopyKey": "b17",
+      "ages": null
+    },
+    {
+      "slug": "the-broomstick-repair-brigade-part-2",
+      "title": "The Broomstick Repair Brigade",
+      "subtitle": {
+        "pt": "Parte 2",
+        "en": "Part Two"
+      },
+      "collection": "halloween",
+      "themes": [
+        "halloween",
+        "celebrations"
+      ],
+      "series": "broom",
+      "seriesOrder": 2,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel14",
+        "pt": "10 de janeiro",
+        "en": "January 10"
+      },
+      "featured": false,
+      "short": {
+        "pt": "A brigada está pronta para descolar. Mais reparações, testes de voo e uma festa por cima da aldeia.",
+        "en": "The brigade is ready for takeoff. More repairs, flight tests and a celebration above the village."
+      },
+      "long": {
+        "pt": "A brigada está pronta para descolar. Mais reparações, testes de voo e uma festa por cima da aldeia.",
+        "en": "The brigade is ready for takeoff. More repairs, flight tests and a celebration above the village."
+      },
+      "coverAlt": "The Broomstick Repair Brigade Part Two",
+      "cover": "assets/halloween/broom2-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/broom2-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/broom2-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/broom2-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": null,
+      "format": null,
+      "searchTerms": "broomstick repair brigade part two halloween",
+      "legacyCopyKey": "b22",
+      "note": "Page count not applied: summary says \"Broomstick 60p\" — confirm it also applies to Part Two.",
+      "ages": null
+    },
+    {
+      "slug": "brambleboo-and-the-puddle-parade",
+      "title": "Brambleboo and the Puddle Parade",
+      "subtitle": null,
+      "collection": "brambleboo",
+      "themes": [
+        "seasons"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel14",
+        "pt": "10 de janeiro",
+        "en": "January 10"
+      },
+      "featured": false,
+      "short": {
+        "pt": "O Brambleboo veste a gabardina amarela para a chuva, os arco-íris e um desfile nas poças.",
+        "en": "Brambleboo puts on his yellow raincoat for rain, rainbows and a parade in the puddles."
+      },
+      "long": {
+        "pt": "O Brambleboo veste a gabardina amarela para a chuva, os arco-íris e um desfile nas poças. Em breve.",
+        "en": "Brambleboo puts on his yellow raincoat for rain, rainbows and a parade in the puddles. Coming soon."
+      },
+      "coverAlt": "Brambleboo and the Puddle Parade",
+      "cover": "assets/brambleboo/puddle-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/puddle-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/puddle-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/puddle-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 68,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "brambleboo and the puddle parade",
+      "legacyCopyKey": "b34",
+      "ages": null
+    },
+    {
+      "slug": "midnight-magic-the-dream-lantern",
+      "title": "Midnight Magic: The Dream Lantern",
+      "subtitle": {
+        "pt": "Livro 2",
+        "en": "Book Two"
+      },
+      "collection": "halloween",
+      "themes": [
+        "halloween",
+        "night"
+      ],
+      "series": "midnight",
+      "seriesOrder": 3,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel15",
+        "pt": "17 de janeiro",
+        "en": "January 17"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Um brilho desaparecido, um comboio acima das nuvens e um pequeno dragão com um presente muito especial.",
+        "en": "A missing glow, a train above the clouds and a little dragon with a very special gift."
+      },
+      "long": {
+        "pt": "Livro 2. Um brilho desaparecido, um comboio acima das nuvens e um pequeno dragão com um presente muito especial. Vinte e oito cenas para colorir em Nocturna. Em breve.",
+        "en": "Book Two. A missing glow, a train above the clouds and a little dragon with a very special gift. Twenty-eight scenes to color in Nocturna. Coming soon."
+      },
+      "coverAlt": "Midnight Magic: The Dream Lantern",
+      "cover": "assets/halloween/dream-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/dream-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/dream-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/dream-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 32,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "midnight magic the dream lantern book two halloween",
+      "legacyCopyKey": "b27",
+      "ages": null
+    },
+    {
+      "slug": "slow-life-tropical-cafe-days",
+      "title": "Slow Life: Tropical Café Days",
+      "subtitle": null,
+      "collection": "slow",
+      "themes": [
+        "seaside"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel15",
+        "pt": "17 de janeiro",
+        "en": "January 17"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Cafés à beira-mar, pastelarias tropicais e um pouco de sol.",
+        "en": "Seaside cafes, tropical bakeries and a little sunshine."
+      },
+      "long": {
+        "pt": "Cafés à beira-mar, pastelarias tropicais e um pouco de sol. Vinte e cinco pequenos-almoços para colorir. Em breve.",
+        "en": "Seaside cafes, tropical bakeries and a little sunshine. Twenty-five unhurried breakfasts to color. Coming soon."
+      },
+      "coverAlt": "Slow Life: Tropical Cafe Days",
+      "cover": "assets/slow/cafe-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/cafe-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/cafe-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/cafe-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 58,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "slow life tropical cafe days",
+      "legacyCopyKey": "b18",
+      "ages": null
+    },
+    {
+      "slug": "spooky-cuties",
+      "title": "Spooky Cuties",
+      "subtitle": null,
+      "collection": "halloween",
+      "themes": [
+        "halloween"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel16",
+        "pt": "24 de janeiro",
+        "en": "January 24"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Fantasmas simpáticos, abóboras, morcegos e gatos em 40 páginas grandes e fáceis, mais 10 atividades de Halloween.",
+        "en": "Friendly ghosts, pumpkins, bats and cats in 40 big and easy pages, plus 10 Halloween activities."
+      },
+      "long": {
+        "pt": "Fantasmas simpáticos, abóboras, morcegos e gatos em 40 páginas grandes e fáceis, mais 10 atividades de Halloween. Dos 3 aos 6 anos. Em breve.",
+        "en": "Friendly ghosts, pumpkins, bats and cats in 40 big and easy pages, plus 10 Halloween activities. For ages 3 to 6. Coming soon."
+      },
+      "coverAlt": "Spooky Cuties",
+      "cover": "assets/halloween/spooky-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/spooky-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/spooky-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/spooky-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 110,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "spooky cuties halloween",
+      "legacyCopyKey": "b28",
+      "ages": {
+        "pt": "Dos 3 aos 6 anos",
+        "en": "Ages 3 to 6"
+      }
+    },
+    {
+      "slug": "brambleboo-and-the-whispering-bridge",
+      "title": "Brambleboo and the Whispering Bridge",
+      "subtitle": null,
+      "collection": "brambleboo",
+      "themes": [
+        "friendship"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "coming-soon",
+      "release": {
+        "key": "rel16",
+        "pt": "24 de janeiro",
+        "en": "January 24"
+      },
+      "featured": false,
+      "short": {
+        "pt": "Uma ponte antiga no bosque, uma fita no corrimão e amigos à espera do outro lado.",
+        "en": "An old bridge in the wood, a ribbon on the rail and friends who wait on the other side."
+      },
+      "long": {
+        "pt": "Uma ponte antiga no bosque, uma fita no corrimão e amigos à espera do outro lado. Uma história de amizade para colorir. Em breve.",
+        "en": "An old bridge in the wood, a ribbon on the rail and friends who wait on the other side. A friendship story to color. Coming soon."
+      },
+      "coverAlt": "Brambleboo and the Whispering Bridge",
+      "cover": "assets/brambleboo/bridge-cover.jpg?v=20261007",
+      "coverSize": [
+        1087,
+        1087
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/bridge-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/bridge-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/bridge-3.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
+      "interior": [],
+      "colorExamples": [],
+      "amazon": null,
+      "pages": 68,
+      "format": {
+        "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
+        "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
+      },
+      "searchTerms": "brambleboo and the whispering bridge",
+      "legacyCopyKey": "b35",
+      "ages": null
+    }
+  ]
+}
