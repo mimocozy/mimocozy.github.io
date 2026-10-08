@@ -243,9 +243,8 @@ def stamp_homepage():
     open(p, "w", encoding="utf-8").write(s)
 
 # ---------------------------------------------------------------- validation
-# Pre-existing on the live homepage (commit 224d42e): images for "The Letter the Tide Kept" were never
-# added to the repo.  Left untouched on purpose; add the files and remove them from this list.
-KNOWN_MISSING = {"assets/kdrama/tide-cover.jpg", "assets/slides/tide-1.jpg", "assets/slides/tide-2.jpg", "assets/slides/tide-3.jpg"}
+# Images for "The Letter the Tide Kept" were added on 2026-10-08, so nothing is known-missing any more.
+KNOWN_MISSING = set()
 
 def check_refs(files):
     bad = []
@@ -281,7 +280,7 @@ def main():
         print("MISSING local references:")
         for f, r in bad: print("  ", f, "->", r)
         sys.exit(1)
-    print("all local references exist (known pre-existing missing, untouched:", ", ".join(sorted(KNOWN_MISSING)) + ")")
+    print("all local references exist")
 
 if __name__ == "__main__":
     main()

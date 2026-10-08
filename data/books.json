@@ -142,55 +142,6 @@
             612,
             792
           ]
-        },
-        {
-          "src": "assets/seoul-cover.jpg",
-          "size": [
-            680,
-            880
-          ]
-        },
-        {
-          "src": "assets/miolo/page-1.jpg",
-          "size": [
-            856,
-            1176
-          ]
-        },
-        {
-          "src": "assets/miolo/page-2.jpg",
-          "size": [
-            856,
-            1176
-          ]
-        },
-        {
-          "src": "assets/miolo/page-3.jpg",
-          "size": [
-            856,
-            1185
-          ]
-        },
-        {
-          "src": "assets/miolo/page-4.jpg",
-          "size": [
-            856,
-            1176
-          ]
-        },
-        {
-          "src": "assets/miolo/page-5.jpg",
-          "size": [
-            856,
-            1176
-          ]
-        },
-        {
-          "src": "assets/miolo/page-6.jpg",
-          "size": [
-            856,
-            1176
-          ]
         }
       ],
       "colorExamples": [],
@@ -262,27 +213,6 @@
         },
         {
           "src": "assets/book5/page-3.jpg",
-          "size": [
-            864,
-            1112
-          ]
-        },
-        {
-          "src": "assets/book5/page-4.jpg",
-          "size": [
-            864,
-            1112
-          ]
-        },
-        {
-          "src": "assets/book5/page-5.jpg",
-          "size": [
-            859,
-            1112
-          ]
-        },
-        {
-          "src": "assets/book5/page-6.jpg",
           "size": [
             864,
             1112
@@ -1734,17 +1664,57 @@
         "en": "Book Six. A letter ten years late, a bus into a fishing village, and the suitcase she never lifts back on."
       },
       "coverAlt": "The Letter the Tide Kept",
-      "cover": null,
-      "coverSize": null,
-      "slides": [],
-      "interior": [],
+      "cover": "assets/kdrama/tide-cover.jpg",
+      "coverSize": [
+        1087,
+        1407
+      ],
+      "slides": [
+        {
+          "src": "assets/slides/tide-1.jpg",
+          "size": [
+            1105,
+            1430
+          ]
+        },
+        {
+          "src": "assets/slides/tide-2.jpg",
+          "size": [
+            1105,
+            1430
+          ]
+        },
+        {
+          "src": "assets/slides/tide-3.jpg",
+          "size": [
+            1105,
+            1430
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/kdrama/the-letter-the-tide-kept-1.jpg",
+          "size": [
+            1105,
+            1430
+          ]
+        },
+        {
+          "src": "assets/kdrama/the-letter-the-tide-kept-2.jpg",
+          "size": [
+            1105,
+            1430
+          ]
+        }
+      ],
       "colorExamples": [],
       "amazon": null,
       "pages": null,
       "format": null,
       "searchTerms": "the letter the tide kept book six",
       "legacyCopyKey": "b23",
-      "note": "Cover/slides referenced on the live site (assets/kdrama/tide-cover.jpg, assets/slides/tide-*.jpg) do not exist in the repo; shown with a text placeholder.",
+      "note": "Cover = front panel of The-Letter-the-Tide-Kept_Book-6_COVER_FINAL_KDP_42p.pdf; slides/interior = PDF pages 7, 9, 19, 33, 65 of The_Letter_the_Tide_Kept_Book6_verso_branco.pdf. No verified page count/format.",
       "ages": null
     },
     {
