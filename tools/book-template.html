@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{page_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+  <link rel="canonical" href="{{canonical}}" />
+  <meta name="application-name" content="Mimocozy" />
+  <meta property="og:type" content="book" />
+  <meta property="og:site_name" content="Mimocozy" />
+  <meta property="og:title" content="{{og_title}}" />
+  <meta property="og:description" content="{{meta_description}}" />
+  <meta property="og:image" content="{{og_image}}" />
+  <meta property="og:url" content="{{canonical}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{og_title}}" />
+  <meta name="twitter:description" content="{{meta_description}}" />
+  <meta name="twitter:image" content="{{og_image}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,650&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/site.css" />
+  <link rel="stylesheet" href="../../assets/book.css" />
+  <script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body data-page="book">
+  <a class="skip btn" href="#main" data-pt="Saltar para o conteúdo" data-en="Skip to content">Saltar para o conteúdo</a>
+  <header>
+    <div class="wrap bar">
+      <a href="../../" aria-label="Mimocozy"><img class="logo" src="../../assets/mimocozy-logo-transparent.png" alt="Mimocozy" /></a>
+      <nav id="menu">
+        <a href="../../#home" data-pt="Início" data-en="Home">Início</a>
+        <a class="active" href="../../#books" data-pt="Livros" data-en="Books">Livros</a>
+        <a href="../../#collections" data-pt="Coleções" data-en="Collections">Coleções</a>
+        <a href="../../#supplies" data-pt="Materiais de colorir" data-en="Coloring supplies">Materiais de colorir</a>
+        <a href="../../#about" data-pt="Sobre" data-en="About">Sobre</a>
+      </nav>
+      <div class="tools">
+        <div class="langs">
+          <button id="pt" class="on" type="button" aria-pressed="true">🇵🇹 PT</button>
+          <button id="en" type="button" aria-pressed="false">🇬🇧 EN</button>
+        </div>
+        <button class="burger" id="burger" type="button" aria-label="Menu" aria-controls="menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../../" data-pt="Início" data-en="Home">Início</a></li>
+        <li><a href="../../#books" data-pt="Livros" data-en="Books">Livros</a></li>
+        <li><a href="../../?c={{collection_key}}#books" data-pt="{{collection_pt}}" data-en="{{collection_en}}">{{collection_pt}}</a></li>
+        <li aria-current="page">{{title_html}}</li>
+      </ol>
+    </nav>
+
+    <!-- A. Hero -->
+    <section class="hero">
+      <div>
+        <span class="pill" data-pt="{{collection_pt}}" data-en="{{collection_en}}">{{collection_pt}}</span><span class="pill" data-pt="{{status_pt}}" data-en="{{status_en}}">{{status_pt}}</span>
+        <h1>{{title_html}}</h1>
+        {{subtitle_block}}
+        <p class="syn" data-pt="{{short_pt}}" data-en="{{short_en}}">{{short_pt}}</p>
+        {{facts_block}}
+        <div class="cta">{{hero_cta}}</div>
+      </div>
+      <div class="hero-art">{{hero_cover}}</div>
+    </section>
+
+    <!-- B. Take a Peek Inside -->
+    {{peek_section}}
+
+    <!-- C. Bring Your Pages to Life (only when real coloured examples exist) -->
+    {{color_section}}
+
+    <!-- D. Discover the Story -->
+    <section id="story">
+      <h2 data-pt="Descobre a história" data-en="Discover the Story">Descobre a história</h2>
+      <p class="sub" data-pt="{{collection_blurb_pt}}" data-en="{{collection_blurb_en}}">{{collection_blurb_pt}}</p>
+      <div class="about-grid">
+        <article><h3>{{title_html}}</h3><p data-pt="{{long_pt}}" data-en="{{long_en}}">{{long_pt}}</p></article>
+        {{series_block}}
+      </div>
+    </section>
+
+    <!-- E. Book details -->
+    <section id="details">
+      <h2 data-pt="Detalhes do livro" data-en="Book Details">Detalhes do livro</h2>
+      <p class="sub" data-pt="Só informação confirmada." data-en="Confirmed information only.">Só informação confirmada.</p>
+      <div class="panel"><dl>{{details_rows}}</dl></div>
+    </section>
+
+    <!-- F. Related books -->
+    <section id="related">
+      <h2 data-pt="Também vais gostar" data-en="You May Also Like">Também vais gostar</h2>
+      <p class="sub" data-pt="Mundos diferentes, o mesmo sentimento cozy." data-en="Different worlds, the same cozy feeling.">Mundos diferentes, o mesmo sentimento cozy.</p>
+      <div class="books">{{related_cards}}</div>
+    </section>
+
+    <!-- G. Buy again (published only) -->
+    {{buy_band}}
+
+    <div class="back-row"><a class="pill" href="../../#books" data-pt="← Voltar à loja" data-en="← Back to the store">← Voltar à loja</a></div>
+  </main>
+  <footer class="wrap">
+    <img src="../../assets/mimocozy-logo-transparent.png" alt="Mimocozy" style="width:140px" />
+    <div><a href="../../#home" data-pt="Início" data-en="Home">Início</a> · <a href="../../#books" data-pt="Livros" data-en="Books">Livros</a> · <a href="../../#supplies" data-pt="Materiais de colorir" data-en="Coloring supplies">Materiais de colorir</a> · <a href="https://www.tiktok.com/@creative.pages.co">TikTok</a> · <a href="https://www.instagram.com/creativepagescoloring">Instagram</a></div>
+    <div>© 2026 Mimocozy. All rights reserved. <span data-pt="Colorir um amanhã mais gentil" data-en="Color a kinder tomorrow">Colorir um amanhã mais gentil</span></div>
+  </footer>
+  <div class="lightbox" id="light" role="dialog" aria-modal="true" aria-label="{{title_attr}}" hidden>
+    <span class="lb-count" aria-live="polite"></span>
+    <button class="lb-close" type="button" data-i18n-attr="aria-label" data-pt="Fechar" data-en="Close" aria-label="Fechar">×</button>
+    <button class="lb-prev" type="button" data-i18n-attr="aria-label" data-pt="Imagem anterior" data-en="Previous image" aria-label="Imagem anterior">←</button>
+    <div class="lb-stage"><img alt="" /></div>
+    <button class="lb-next" type="button" data-i18n-attr="aria-label" data-pt="Imagem seguinte" data-en="Next image" aria-label="Imagem seguinte">→</button>
+    <button class="lb-zoom" type="button" aria-pressed="false" data-pt="Ampliar +" data-en="Zoom in +">Ampliar +</button>
+  </div>
+  <script src="../../assets/mimocozy.js"></script>
+</body>
+</html>
