@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+# Ficheiros internos que não são páginas do site (cópia antiga da página inicial e o modelo das páginas dos livros)
+Disallow: /backup/
+Disallow: /tools/
+
+Sitemap: https://mimocozy.github.io/sitemap.xml
