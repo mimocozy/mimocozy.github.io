@@ -437,7 +437,8 @@
       "release": {
         "key": "rel1",
         "pt": "11 de outubro",
-        "en": "October 11"
+        "en": "October 11",
+        "date": "2026-10-11"
       },
       "featured": true,
       "short": {
@@ -540,7 +541,8 @@
       "release": {
         "key": "rel1",
         "pt": "11 de outubro",
-        "en": "October 11"
+        "en": "October 11",
+        "date": "2026-10-11"
       },
       "featured": true,
       "short": {
@@ -646,7 +648,8 @@
       "release": {
         "key": "rel2",
         "pt": "18 de outubro",
-        "en": "October 18"
+        "en": "October 18",
+        "date": "2026-10-18"
       },
       "featured": true,
       "short": {
@@ -752,7 +755,8 @@
       "release": {
         "key": "rel2",
         "pt": "18 de outubro",
-        "en": "October 18"
+        "en": "October 18",
+        "date": "2026-10-18"
       },
       "featured": true,
       "short": {
@@ -864,7 +868,8 @@
       "release": {
         "key": "rel3",
         "pt": "25 de outubro",
-        "en": "October 25"
+        "en": "October 25",
+        "date": "2026-10-25"
       },
       "featured": false,
       "short": {
@@ -969,7 +974,8 @@
       "release": {
         "key": "rel3",
         "pt": "25 de outubro",
-        "en": "October 25"
+        "en": "October 25",
+        "date": "2026-10-25"
       },
       "featured": false,
       "short": {
@@ -1072,7 +1078,8 @@
       "release": {
         "key": "rel4",
         "pt": "1 de novembro",
-        "en": "November 1"
+        "en": "November 1",
+        "date": "2026-11-01"
       },
       "featured": false,
       "short": {
@@ -1183,7 +1190,8 @@
       "release": {
         "key": "rel4",
         "pt": "1 de novembro",
-        "en": "November 1"
+        "en": "November 1",
+        "date": "2026-11-01"
       },
       "featured": false,
       "short": {
@@ -1286,7 +1294,8 @@
       "release": {
         "key": "rel5",
         "pt": "8 de novembro",
-        "en": "November 8"
+        "en": "November 8",
+        "date": "2026-11-08"
       },
       "featured": false,
       "short": {
@@ -1389,7 +1398,8 @@
       "release": {
         "key": "rel5",
         "pt": "8 de novembro",
-        "en": "November 8"
+        "en": "November 8",
+        "date": "2026-11-08"
       },
       "featured": false,
       "short": {
@@ -1492,7 +1502,8 @@
       "release": {
         "key": "rel6",
         "pt": "15 de novembro",
-        "en": "November 15"
+        "en": "November 15",
+        "date": "2026-11-15"
       },
       "featured": false,
       "short": {
@@ -1603,7 +1614,8 @@
       "release": {
         "key": "rel6",
         "pt": "15 de novembro",
-        "en": "November 15"
+        "en": "November 15",
+        "date": "2026-11-15"
       },
       "featured": false,
       "short": {
@@ -1710,7 +1722,8 @@
       "release": {
         "key": "rel7",
         "pt": "22 de novembro",
-        "en": "November 22"
+        "en": "November 22",
+        "date": "2026-11-22"
       },
       "featured": false,
       "short": {
@@ -1822,7 +1835,8 @@
       "release": {
         "key": "rel7",
         "pt": "22 de novembro",
-        "en": "November 22"
+        "en": "November 22",
+        "date": "2026-11-22"
       },
       "featured": false,
       "short": {
@@ -1929,7 +1943,8 @@
       "release": {
         "key": "rel8",
         "pt": "29 de novembro",
-        "en": "November 29"
+        "en": "November 29",
+        "date": "2026-11-29"
       },
       "featured": false,
       "short": {
@@ -2040,7 +2055,8 @@
       "release": {
         "key": "rel8",
         "pt": "29 de novembro",
-        "en": "November 29"
+        "en": "November 29",
+        "date": "2026-11-29"
       },
       "featured": false,
       "short": {
@@ -2143,7 +2159,8 @@
       "release": {
         "key": "rel9",
         "pt": "6 de dezembro",
-        "en": "December 6"
+        "en": "December 6",
+        "date": "2026-12-06"
       },
       "featured": false,
       "short": {
@@ -2246,7 +2263,8 @@
       "release": {
         "key": "rel9",
         "pt": "6 de dezembro",
-        "en": "December 6"
+        "en": "December 6",
+        "date": "2026-12-06"
       },
       "featured": false,
       "short": {
@@ -2352,7 +2370,8 @@
       "release": {
         "key": "rel10",
         "pt": "13 de dezembro",
-        "en": "December 13"
+        "en": "December 13",
+        "date": "2026-12-13"
       },
       "featured": false,
       "short": {
@@ -2466,7 +2485,8 @@
       "release": {
         "key": "rel10",
         "pt": "13 de dezembro",
-        "en": "December 13"
+        "en": "December 13",
+        "date": "2026-12-13"
       },
       "featured": false,
       "short": {
@@ -2585,7 +2605,8 @@
       "release": {
         "key": "rel11",
         "pt": "20 de dezembro",
-        "en": "December 20"
+        "en": "December 20",
+        "date": "2026-12-20"
       },
       "featured": false,
       "short": {
@@ -2694,7 +2715,8 @@
       "release": {
         "key": "rel11",
         "pt": "20 de dezembro",
-        "en": "December 20"
+        "en": "December 20",
+        "date": "2026-12-20"
       },
       "featured": false,
       "short": {
@@ -2800,7 +2822,8 @@
       "release": {
         "key": "rel12",
         "pt": "27 de dezembro",
-        "en": "December 27"
+        "en": "December 27",
+        "date": "2026-12-27"
       },
       "featured": false,
       "short": {
@@ -2903,7 +2926,8 @@
       "release": {
         "key": "rel12",
         "pt": "27 de dezembro",
-        "en": "December 27"
+        "en": "December 27",
+        "date": "2026-12-27"
       },
       "featured": false,
       "short": {
@@ -3007,7 +3031,8 @@
       "release": {
         "key": "rel13",
         "pt": "3 de janeiro",
-        "en": "January 3"
+        "en": "January 3",
+        "date": "2027-01-03"
       },
       "featured": false,
       "short": {
@@ -3110,7 +3135,8 @@
       "release": {
         "key": "rel13",
         "pt": "3 de janeiro",
-        "en": "January 3"
+        "en": "January 3",
+        "date": "2027-01-03"
       },
       "featured": false,
       "short": {
@@ -3217,7 +3243,8 @@
       "release": {
         "key": "rel14",
         "pt": "10 de janeiro",
-        "en": "January 10"
+        "en": "January 10",
+        "date": "2027-01-10"
       },
       "featured": false,
       "short": {
@@ -3318,7 +3345,8 @@
       "release": {
         "key": "rel14",
         "pt": "10 de janeiro",
-        "en": "January 10"
+        "en": "January 10",
+        "date": "2027-01-10"
       },
       "featured": false,
       "short": {
@@ -3425,7 +3453,8 @@
       "release": {
         "key": "rel15",
         "pt": "17 de janeiro",
-        "en": "January 17"
+        "en": "January 17",
+        "date": "2027-01-17"
       },
       "featured": false,
       "short": {
@@ -3528,7 +3557,8 @@
       "release": {
         "key": "rel15",
         "pt": "17 de janeiro",
-        "en": "January 17"
+        "en": "January 17",
+        "date": "2027-01-17"
       },
       "featured": false,
       "short": {
@@ -3631,7 +3661,8 @@
       "release": {
         "key": "rel16",
         "pt": "24 de janeiro",
-        "en": "January 24"
+        "en": "January 24",
+        "date": "2027-01-24"
       },
       "featured": false,
       "short": {
@@ -3737,7 +3768,8 @@
       "release": {
         "key": "rel16",
         "pt": "24 de janeiro",
-        "en": "January 24"
+        "en": "January 24",
+        "date": "2027-01-24"
       },
       "featured": false,
       "short": {
