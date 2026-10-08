@@ -148,7 +148,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/kdrama/seoul-between-scenes-p37-lineart.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          },
+          "colored": {
+            "src": "assets/kdrama/seoul-between-scenes-p37-colored.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/kdrama/seoul-between-scenes-p71-lineart.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          },
+          "colored": {
+            "src": "assets/kdrama/seoul-between-scenes-p71-colored.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          }
+        }
+      ],
       "amazon": "https://amzn.eu/d/078evWEV",
       "pages": 42,
       "format": null,
@@ -227,7 +260,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/kdrama/seoul-after-the-cut-p55-lineart.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          },
+          "colored": {
+            "src": "assets/kdrama/seoul-after-the-cut-p55-colored.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/kdrama/seoul-after-the-cut-p73-lineart.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          },
+          "colored": {
+            "src": "assets/kdrama/seoul-after-the-cut-p73-colored.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          }
+        }
+      ],
       "amazon": "https://amzn.eu/d/09oG4UHr",
       "pages": 42,
       "format": null,
@@ -1800,7 +1866,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/kdrama/the-letter-the-tide-kept-1.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          },
+          "colored": {
+            "src": "assets/kdrama/the-letter-the-tide-kept-p33-colored.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/kdrama/the-letter-the-tide-kept-2.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          },
+          "colored": {
+            "src": "assets/kdrama/the-letter-the-tide-kept-p65-colored.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 42,
       "format": null,
