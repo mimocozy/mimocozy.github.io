@@ -375,7 +375,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/haunted-house-adventures-p25-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/haunted-house-adventures-p25-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/haunted-house-adventures-p47-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/haunted-house-adventures-p47-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": "https://amzn.eu/d/0dKOLW1f",
       "pages": 52,
       "format": {
@@ -449,7 +482,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboos-little-lanterns-p15-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboos-little-lanterns-p15-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboos-little-lanterns-p29-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboos-little-lanterns-p29-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 58,
       "format": {
@@ -739,7 +805,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/haunted-house-adventures-part-2-p17-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/haunted-house-adventures-part-2-p17-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/haunted-house-adventures-part-2-p25-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/haunted-house-adventures-part-2-p25-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": null,
       "format": null,
@@ -915,7 +1014,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboos-little-lanterns-part-2-p11-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboos-little-lanterns-part-2-p11-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboos-little-lanterns-part-2-p39-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboos-little-lanterns-part-2-p39-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 58,
       "format": {
@@ -993,7 +1125,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/pumpkin-parade-p13-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/pumpkin-parade-p13-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/pumpkin-parade-p59-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/pumpkin-parade-p59-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 64,
       "format": {
@@ -1166,7 +1331,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-snowglow-trail-p23-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-snowglow-trail-p23-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-snowglow-trail-p27-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-snowglow-trail-p27-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 36,
       "format": {
@@ -1347,7 +1545,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/pipkins-pumpkin-pajama-party-p51-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/pipkins-pumpkin-pajama-party-p51-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/pipkins-pumpkin-pajama-party-p65-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/pipkins-pumpkin-pajama-party-p65-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 76,
       "format": {
@@ -1417,7 +1648,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-forest-playday-p17-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-forest-playday-p17-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-forest-playday-p45-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-forest-playday-p45-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 68,
       "format": {
@@ -1499,7 +1763,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/midnight-magic-p05-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/midnight-magic-p05-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/midnight-magic-p37-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/midnight-magic-p37-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 74,
       "format": {
@@ -1685,7 +1982,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/midnight-magic-part-2-p13-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/midnight-magic-part-2-p13-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/midnight-magic-part-2-p57-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/midnight-magic-part-2-p57-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 74,
       "format": {
@@ -1755,7 +2085,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-golden-acorn-wagon-p29-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-golden-acorn-wagon-p29-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-golden-acorn-wagon-p53-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-golden-acorn-wagon-p53-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 68,
       "format": {
@@ -1825,7 +2188,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-lantern-cake-p35-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-lantern-cake-p35-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-lantern-cake-p53-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-lantern-cake-p53-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 68,
       "format": {
@@ -2009,7 +2405,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/the-ghostlight-railway-rescue-p09-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/the-ghostlight-railway-rescue-p09-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/the-ghostlight-railway-rescue-p41-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/the-ghostlight-railway-rescue-p41-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 64,
       "format": {
@@ -2209,7 +2638,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/the-ghostlight-railway-rescue-part-2-p25-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/the-ghostlight-railway-rescue-part-2-p25-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/the-ghostlight-railway-rescue-part-2-p43-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/the-ghostlight-railway-rescue-part-2-p43-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": null,
       "format": null,
@@ -2277,7 +2739,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-missing-star-p15-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-missing-star-p15-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-missing-star-p47-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-missing-star-p47-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 68,
       "format": {
@@ -2350,7 +2845,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/the-broomstick-repair-brigade-p09-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/the-broomstick-repair-brigade-p09-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/the-broomstick-repair-brigade-p31-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/the-broomstick-repair-brigade-p31-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 60,
       "format": {
@@ -2524,7 +3052,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-moonlit-picnic-p37-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-moonlit-picnic-p37-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-moonlit-picnic-p53-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-moonlit-picnic-p53-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 68,
       "format": {
@@ -2701,7 +3262,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/the-broomstick-repair-brigade-part-2-p19-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/the-broomstick-repair-brigade-part-2-p19-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/the-broomstick-repair-brigade-part-2-p43-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/the-broomstick-repair-brigade-part-2-p43-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": null,
       "format": null,
@@ -2769,7 +3363,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-puddle-parade-p19-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-puddle-parade-p19-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-puddle-parade-p53-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-puddle-parade-p53-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 68,
       "format": {
@@ -2843,7 +3470,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/midnight-magic-the-dream-lantern-p16-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/midnight-magic-the-dream-lantern-p16-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/midnight-magic-the-dream-lantern-p26-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/midnight-magic-the-dream-lantern-p26-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 32,
       "format": {
@@ -3016,7 +3676,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/halloween/spooky-cuties-p17-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/spooky-cuties-p17-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/halloween/spooky-cuties-p31-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/halloween/spooky-cuties-p31-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 110,
       "format": {
@@ -3089,7 +3782,40 @@
         }
       ],
       "interior": [],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-whispering-bridge-p19-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-whispering-bridge-p19-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/brambleboo/brambleboo-and-the-whispering-bridge-p55-lineart.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          },
+          "colored": {
+            "src": "assets/brambleboo/brambleboo-and-the-whispering-bridge-p55-colored.jpg",
+            "size": [
+              1105,
+              1105
+            ]
+          }
+        }
+      ],
       "amazon": null,
       "pages": 68,
       "format": {
