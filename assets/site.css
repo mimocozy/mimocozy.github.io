@@ -88,6 +88,7 @@ button.pill[aria-pressed="true"] { background:var(--btn); color:#fff; }
 #books .books { grid-template-columns:repeat(6,1fr); }
 #books .books > #empty, #books .more-soon { grid-column:1 / -1; }
 #books .book { grid-column:span 2; }
+#books .book[hidden] { display:none; }
 #books .book[data-status="soon"] { grid-column:span 3; }
 #books .book[data-status="published"] { grid-template-columns:1fr; align-content:start; padding:14px; }
 #books .book[data-status="published"] .carousel, #books .book[data-status="published"] .carousel img { width:100%; }

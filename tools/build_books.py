@@ -47,7 +47,7 @@ def img_tag(src, size, alt_pt, alt_en, prefix="../../", lazy=True, extra=""):
 def related(b, n=4):
     out, seen = [], {b["slug"]}
     def add(x, why):
-        if x["slug"] not in seen and len(out) < n:
+        if x["slug"] not in seen and len(out) < n and not is_hidden(x):
             seen.add(x["slug"]); out.append((x, why))
     if b.get("series"):
         sib = sorted([x for x in BOOKS if x.get("series") == b["series"]], key=lambda x: x["seriesOrder"])
@@ -160,7 +160,7 @@ def render_page(b, tpl):
 
     series_block = ""
     if b.get("series"):
-        sib = sorted([x for x in BOOKS if x.get("series") == b["series"]], key=lambda x: x["seriesOrder"])
+        sib = sorted([x for x in BOOKS if x.get("series") == b["series"] and (x is b or not is_hidden(x))], key=lambda x: x["seriesOrder"])
         items = []
         for x in sib:
             xs_pt, xs_en = status_text(x)
@@ -168,7 +168,7 @@ def render_page(b, tpl):
             if x is b:
                 items.append(f'<li><strong>{T(label_pt, label_en)}</strong> {T("(este livro)", "(this book)")}</li>')
             else:
-                items.append(f'<li><a href="../{x["slug"]}/" style="text-decoration:underline">{T(label_pt, label_en)}</a> · {T(xs_pt, xs_en)}</li>')
+                items.append(f'<li{date_attr(x)}><a href="../{x["slug"]}/" style="text-decoration:underline">{T(label_pt, label_en)}</a> · {T(xs_pt, xs_en)}</li>')
         series_block = (f'<article><h3 data-pt="Nesta série" data-en="In this series">Nesta série</h3>'
                         f'<ul style="margin:0;padding-left:18px;color:var(--muted);line-height:1.8">{"".join(items)}</ul></article>')
 
@@ -192,7 +192,7 @@ def render_page(b, tpl):
         xs_pt, xs_en = status_text(x)
         href = f"../{x['slug']}/"
         sub_x = f'<p class="sub" style="margin:0 0 4px;font-weight:800">{T(x["subtitle"]["pt"], x["subtitle"]["en"])}</p>' if x.get("subtitle") else ""
-        cards.append(f'''<article class="book">
+        cards.append(f'''<article class="book"{date_attr(x)}>
           <div class="carousel"><a href="{href}" tabindex="-1" aria-hidden="true">{cover_or_placeholder(x, "../../")}</a></div>
           <div><span class="pill" style="margin-bottom:6px" data-pt="{E(why[0])}" data-en="{E(why[1])}">{E(why[0])}</span><h3><a href="{href}">{E(x["title"])}</a></h3>{sub_x}{T(x["short"]["pt"], x["short"]["en"], "p")}
           <div class="acts">{T(xs_pt, xs_en, "span", "pill")}<a class="btn soft" href="{href}" data-pt="Explorar livro →" data-en="Explore Book →">Explorar livro →</a></div></div>
@@ -212,6 +212,7 @@ def render_page(b, tpl):
     if pub: ld["sameAs"] = amazon
 
     rep = {
+        "robots_meta": '<meta name="robots" content="noindex" />\n  ' if is_hidden(b) else "",
         "page_title": E(f"{title_en} | Mimocozy"), "meta_description": E(meta_desc), "canonical": url,
         "og_title": E(f"{title_en} — Mimocozy"), "og_image": E(og_img),
         "jsonld": json.dumps(ld, ensure_ascii=False).replace("</", "<\\/"),
@@ -256,6 +257,19 @@ def next_releases():
             up.append((d, BOOKS.index(b), b["slug"]))
     return {slug for _, _, slug in sorted(up)[:FEATURED_UPCOMING]}
 
+NEXT_UP = None
+def is_hidden(b):
+    """Unreleased books outside the FEATURED_UPCOMING nearest releases are hidden site-wide
+    (their files stay; they get noindex, leave the sitemap and nothing links to them)."""
+    global NEXT_UP
+    if NEXT_UP is None:
+        NEXT_UP = next_releases()
+    return b["status"] != "published" and b["slug"] not in NEXT_UP
+
+def date_attr(x):
+    """data-date on links/cards to unreleased books, so the shared script can hide them once the date passes."""
+    return f' data-date="{x["release"]["date"]}"' if x["status"] != "published" else ""
+
 def stamp_homepage():
     p = os.path.join(ROOT, "index.html")
     s = open(p, encoding="utf-8").read()
@@ -274,12 +288,12 @@ def stamp_homepage():
         a = m.group(0)
         head = re.match(r'<article class="book"[^>]*>', a).group(0)
         soon = b["status"] != "published"
-        strip = r'\s+data-(slug|status|themes|theme-names|date|feat)="[^"]*"' if soon else r'\s+data-(slug|status|themes|theme-names)="[^"]*"'
+        strip = r'\s+data-(slug|status|themes|theme-names|date|feat|hide)="[^"]*"|\s+hidden(?=[\s>])' if soon else r'\s+data-(slug|status|themes|theme-names)="[^"]*"'
         new_head = re.sub(strip, "", head)
         names = " ".join(THEMES[t]["pt"] + " " + THEMES[t]["en"] for t in b["themes"])
         # upcoming cards: data-date (YYYY-MM-DD) drives the automatic "next 4 releases" rotation in index.html;
         # data-feat="1" on the 4 nearest future releases at build time is the no-JS fallback.
-        upc = (f' data-date="{b["release"]["date"]}"' + (' data-feat="1"' if b["slug"] in next_up else "")) if soon else ""
+        upc = (f' data-date="{b["release"]["date"]}"' + (' data-feat="1"' if b["slug"] in next_up else ' data-hide="1" hidden')) if soon else ""
         new_head = new_head[:-1] + (f' data-slug="{b["slug"]}" data-status="{"published" if b["status"] == "published" else "soon"}"'
                                     f' data-themes="{" ".join(b["themes"])}" data-theme-names="{E(names.lower())}"{upc}>')
         a2 = a.replace(head, new_head, 1)
@@ -345,7 +359,7 @@ def main():
         f = os.path.join(d, "index.html")
         open(f, "w", encoding="utf-8").write(render_page(b, tpl)); files.append(f)
     files.append(os.path.join(ROOT, "privacy", "index.html"))  # hand-written privacy page (PT/EN), checked + in the sitemap
-    entries = ([(SITE + "/", "index.html")] + [(f"{SITE}/books/{b['slug']}/", f"books/{b['slug']}/index.html") for b in BOOKS]
+    entries = ([(SITE + "/", "index.html")] + [(f"{SITE}/books/{b['slug']}/", f"books/{b['slug']}/index.html") for b in BOOKS if not is_hidden(b)]
                + [(SITE + "/privacy/", "privacy/index.html")])
     open(os.path.join(ROOT, "sitemap.xml"), "w").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

@@ -28,6 +28,16 @@
   if (page !== "book" && page !== "privacy") return;
 
   /* ---------- book pages + privacy page (header, language, menu) ---------- */
+  /* links/cards to unreleased books carry data-date: once that date has passed (Europe/Lisbon) the book is no
+     longer among the upcoming releases shown on the site, so hide it even before the daily rebuild runs */
+  (function () {
+    var today;
+    try { today = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Lisbon", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date()); } catch (e) {}
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(today || "")) return;
+    document.querySelectorAll("[data-date]").forEach(function (el) {
+      if (el.getAttribute("data-date") < today) el.style.display = "none";
+    });
+  })();
   var lang = Mimo.getLang();
   var ptBtn = document.getElementById("pt"), enBtn = document.getElementById("en");
   function setLang(l) {

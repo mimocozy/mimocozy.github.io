@@ -1,0 +1,47 @@
+# Daily rebuild of the static store pages.
+# Only the 4 nearest upcoming releases are visible on the site; that set moves as release dates pass.
+# The homepage script already applies this in the browser, but the static parts (no-JS fallback,
+# noindex on hidden book pages, sitemap.xml, related-book links) come from tools/build_books.py.
+# This job reruns the build every day just after midnight in Lisbon and commits only if something changed.
+name: Daily store rebuild
+
+on:
+  schedule:
+    - cron: "20 0 * * *"   # 00:20 UTC = 00:20 Lisbon in winter, 01:20 in summer (after the Lisbon date change)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: store-rebuild
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history: sitemap lastmod uses each page's last commit date
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build
+        env:
+          TZ: Europe/Lisbon
+        run: python3 tools/build_books.py
+
+      - name: Commit and push if changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Daily rebuild: upcoming releases shown on the site ($(TZ=Europe/Lisbon date +%F))"
+          git push
