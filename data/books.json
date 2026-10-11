@@ -375,14 +375,14 @@
       "colorExamples": [
         {
           "lineart": {
-            "src": "assets/halloween/haunted-house-adventures-p25-lineart.jpg",
+            "src": "assets/halloween/hh-final/p25-lineart.jpg",
             "size": [
               1105,
               1105
             ]
           },
           "colored": {
-            "src": "assets/halloween/haunted-house-adventures-p25-colored.jpg",
+            "src": "assets/halloween/hh-final/p25-colored.jpg",
             "size": [
               1105,
               1105
@@ -391,17 +391,17 @@
         },
         {
           "lineart": {
-            "src": "assets/halloween/haunted-house-adventures-p47-lineart-crop.jpg",
+            "src": "assets/halloween/hh-final/p75-lineart.jpg",
             "size": [
               1105,
-              1045
+              1105
             ]
           },
           "colored": {
-            "src": "assets/halloween/haunted-house-adventures-p47-colored-crop.jpg",
+            "src": "assets/halloween/hh-final/p75-colored.jpg",
             "size": [
               1105,
-              1045
+              1105
             ]
           }
         }
