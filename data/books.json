@@ -104,61 +104,61 @@
         "en": "The second Love in Seoul book picks up where the first left off: the collection ended, the tropes did not. Inside are a Ferris wheel cabin stuck at the top, hands held under the table, midnight ramyeon, a torn contract, his hoodie on her balcony, a military send-off and dawn on a bridge after nobody slept.\n\nThese are 36 original line-art scenes, none repeated from Book One, with Seoul as the backdrop: rainy streets, dinners for two, fireworks over the river and the city lights. Play the OST and color each moment the way you remember it."
       },
       "coverAlt": "Seoul Between Scenes",
-      "cover": "assets/seoul-product-cover.jpg",
+      "cover": "assets/seoul-s2/cover.jpg",
       "coverSize": [
-        406,
-        526
+        1159,
+        1500
       ],
       "slides": [
         {
-          "src": "assets/slides/seoul-1.jpg",
+          "src": "assets/seoul-s2/slide-1.jpg",
           "size": [
-            357,
-            462
+            714,
+            924
           ]
         },
         {
-          "src": "assets/slides/seoul-2.jpg",
+          "src": "assets/seoul-s2/slide-2.jpg",
           "size": [
-            357,
-            462
+            714,
+            924
           ]
         },
         {
-          "src": "assets/slides/seoul-3.jpg",
+          "src": "assets/seoul-s2/slide-3.jpg",
           "size": [
-            357,
-            462
+            714,
+            924
           ]
         }
       ],
       "interior": [
         {
-          "src": "assets/seoul-title.jpg",
+          "src": "assets/seoul-s2/title.jpg",
           "size": [
             680,
             880
           ]
         },
         {
-          "src": "assets/seoul-scene.jpg",
+          "src": "assets/seoul-s2/scene.jpg",
           "size": [
-            612,
-            792
+            680,
+            880
           ]
         }
       ],
       "colorExamples": [
         {
           "lineart": {
-            "src": "assets/kdrama/seoul-between-scenes-p37-lineart.jpg",
+            "src": "assets/seoul-s2/p16-lineart.jpg",
             "size": [
               1105,
               1430
             ]
           },
           "colored": {
-            "src": "assets/kdrama/seoul-between-scenes-p37-colored.jpg",
+            "src": "assets/seoul-s2/p16-colored.jpg",
             "size": [
               1105,
               1430
@@ -167,14 +167,14 @@
         },
         {
           "lineart": {
-            "src": "assets/kdrama/seoul-between-scenes-p71-lineart.jpg",
+            "src": "assets/seoul-s2/p33-lineart.jpg",
             "size": [
               1105,
               1430
             ]
           },
           "colored": {
-            "src": "assets/kdrama/seoul-between-scenes-p71-colored.jpg",
+            "src": "assets/seoul-s2/p33-colored.jpg",
             "size": [
               1105,
               1430
@@ -183,11 +183,11 @@
         }
       ],
       "amazon": "https://amzn.eu/d/078evWEV",
-      "pages": 42,
+      "pages": 82,
       "format": null,
       "searchTerms": "seoul between scenes",
       "legacyCopyKey": "b1",
-      "note": "Page count 42 confirmed by Wilneidy (2026-10-08); format not verified.",
+      "note": "Page count 82 per Amazon B0HLG46WSH and the new cover file (2026-10-11; earlier 42); format not verified. Images from the Season 2 files (2026-10-11).",
       "ages": null
     },
     {
