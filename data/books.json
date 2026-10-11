@@ -305,54 +305,51 @@
     {
       "slug": "haunted-house-adventures",
       "title": "Haunted House Adventures",
-      "subtitle": {
-        "pt": "Parte 1",
-        "en": "Part One"
-      },
+      "subtitle": null,
       "collection": "halloween",
       "themes": [
         "halloween"
       ],
-      "series": "haunted",
-      "seriesOrder": 1,
+      "series": null,
+      "seriesOrder": null,
       "status": "published",
       "release": null,
       "featured": true,
       "short": {
-        "pt": "Esta noite há festa na casa assombrada, mas a lanterna da lua desapareceu. Junta-te ao fantasma Milo, à gata Nova e à abóbora Pip e segue as pistas pela biblioteca, pela cozinha e pelo grande salão de baile.",
-        "en": "Tonight the haunted house is throwing a big party, but the moon lantern has disappeared. Join Milo the ghost, Nova the cat and Pip the pumpkin as they follow the clues through the library, the kitchen and the grand ballroom."
+        "pt": "Esta noite há festa na casa assombrada, mas a lanterna da lua desapareceu. Junta-te ao fantasma Milo, à gata Nova e à abóbora Pip e segue as pistas da biblioteca até à torre do relógio, a caminho de uma festa mágica de Halloween.",
+        "en": "Tonight the haunted house is throwing a big party, but the moon lantern has disappeared. Join Milo the ghost, Nova the cat and Pip the pumpkin as they follow the clues from the library to the clock tower, on the way to a magical Halloween celebration."
       },
       "card": {
-        "pt": "Parte 1. Esta noite há festa na casa assombrada, mas a lanterna da lua desapareceu. Junta-te ao fantasma Milo, à gata Nova e à abóbora Pip e segue as pistas pela biblioteca, pela cozinha e pelo grande salão de baile.",
-        "en": "Part One. Tonight the haunted house is throwing a big party, but the moon lantern has disappeared. Join Milo the ghost, Nova the cat and Pip the pumpkin as they follow the clues through the library, the kitchen and the grand ballroom."
+        "pt": "Esta noite há festa na casa assombrada, mas a lanterna da lua desapareceu. Junta-te ao fantasma Milo, à gata Nova e à abóbora Pip e segue as pistas da biblioteca até à torre do relógio, a caminho de uma festa mágica de Halloween.",
+        "en": "Tonight the haunted house is throwing a big party, but the moon lantern has disappeared. Join Milo the ghost, Nova the cat and Pip the pumpkin as they follow the clues from the library to the clock tower, on the way to a magical Halloween celebration."
       },
       "long": {
-        "pt": "Esta noite é a grande festa da casa assombrada, mas a lanterna da lua desapareceu. O fantasma Milo, a gata Nova e a abóbora Pip exploram os quartos aconchegantes da casa, seguem as pistas de sala em sala e vão encontrando surpresas simpáticas pelo caminho, da biblioteca à cozinha e ao grande salão de baile.\n\nSão vinte cenas spooky-cute para colorir, com fantasminhas sorridentes, abóboras, caldeirões, livros antigos e um piano no salão, mais uma atividade para inventares o teu próprio monstro simpático. A aventura continua na Parte 2.",
-        "en": "Tonight is the haunted house's big party, but the moon lantern has disappeared. Milo the ghost, Nova the cat and Pip the pumpkin explore the cozy rooms, follow the clues from room to room and uncover friendly surprises along the way, from the library to the kitchen and the grand ballroom.\n\nThere are twenty spooky-cute scenes to color, with smiling little ghosts, pumpkins, cauldrons, old books and a piano in the ballroom, plus an activity where you invent your own friendly monster. The adventure continues in Part Two."
+        "pt": "Esta noite é a grande festa da casa assombrada, mas a lanterna da lua desapareceu. O fantasma Milo, a gata Nova e a abóbora Pip exploram os quartos aconchegantes da casa e seguem as pistas de sala em sala: a biblioteca, a cozinha, o grande salão de baile, o sótão, o jardim ao luar e a torre do relógio. Pelo caminho vão encontrando surpresas simpáticas e, no fim, espera-os uma festa mágica de Halloween.\n\nSão 40 cenas spooky-cute para colorir, com fantasminhas sorridentes, abóboras, caldeirões, livros antigos e um piano no salão. A história completa num só livro.",
+        "en": "Tonight is the haunted house's big party, but the moon lantern has disappeared. Milo the ghost, Nova the cat and Pip the pumpkin explore the cozy rooms and follow the clues from room to room: the library, the kitchen, the grand ballroom, the attic, the moonlit garden and the clock tower. They uncover friendly surprises along the way, and a magical Halloween celebration is waiting at the end.\n\nThere are 40 spooky-cute scenes to color, with smiling little ghosts, pumpkins, cauldrons, old books and a piano in the ballroom. The whole story in one book."
       },
-      "coverAlt": "Haunted House Adventures Part One",
-      "cover": "assets/halloween/haunted-cover.jpg?v=20261007",
+      "coverAlt": "Haunted House Adventures",
+      "cover": "assets/halloween/hh-final/cover.jpg",
       "coverSize": [
-        1087,
-        1087
+        1500,
+        1500
       ],
       "slides": [
         {
-          "src": "assets/slides/haunted-1.jpg?v=20261007",
+          "src": "assets/halloween/hh-final/slide-1.jpg",
           "size": [
             1105,
             1105
           ]
         },
         {
-          "src": "assets/slides/haunted-2.jpg?v=20261007",
+          "src": "assets/halloween/hh-final/slide-2.jpg",
           "size": [
             1105,
             1105
           ]
         },
         {
-          "src": "assets/slides/haunted-3.jpg?v=20261007",
+          "src": "assets/halloween/hh-final/slide-3.jpg",
           "size": [
             1105,
             1105
@@ -361,14 +358,14 @@
       ],
       "interior": [
         {
-          "src": "assets/halloween/page-1.jpg?v=20261007",
+          "src": "assets/halloween/hh-final/page-1.jpg",
           "size": [
             1105,
             1105
           ]
         },
         {
-          "src": "assets/halloween/page-2.jpg?v=20261007",
+          "src": "assets/halloween/hh-final/page-2.jpg",
           "size": [
             1105,
             1105
@@ -410,14 +407,16 @@
         }
       ],
       "amazon": "https://amzn.eu/d/0dKOLW1f",
-      "pages": 52,
+      "pages": 92,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "haunted house adventures halloween",
       "legacyCopyKey": "b3",
-      "ages": null
+      "ages": null,
+      "illustrations": 40,
+      "note": "2026-10-11: Part 1 and Part 2 merged into one book (92 pages, 40 illustrations, final files of 11 Oct). Amazon link still the Part One listing (B0HLXBS7JX) until Wilneidy sends the new one. Colour pairs are from the old art (do not match the final pages exactly)."
     },
     {
       "slug": "brambleboos-little-lanterns",
@@ -848,8 +847,9 @@
       "format": null,
       "searchTerms": "haunted house adventures part two halloween",
       "legacyCopyKey": "b4",
-      "note": "Page count not applied: summary says \"Haunted House 52p\" without naming Part Two — confirm before adding.",
-      "ages": null
+      "note": "Page count not applied: summary says \"Haunted House 52p\" without naming Part Two — confirm before adding. | 2026-10-11: merged into haunted-house-adventures; retired (hidden everywhere, noindex, files kept).",
+      "ages": null,
+      "retired": true
     },
     {
       "slug": "lia-tom-lumi-christmas-gifts-treats",

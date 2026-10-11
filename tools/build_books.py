@@ -248,7 +248,7 @@ def next_releases():
     today = lisbon_today()
     up = []
     for b in BOOKS:
-        if b["status"] == "published":
+        if b["status"] == "published" or b.get("retired"):
             continue
         d = (b.get("release") or {}).get("date", "")
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", d or ""):
@@ -264,7 +264,8 @@ def is_hidden(b):
     global NEXT_UP
     if NEXT_UP is None:
         NEXT_UP = next_releases()
-    return b["status"] != "published" and b["slug"] not in NEXT_UP
+    # "retired": true = merged into another book (e.g. Haunted House Adventures Part 2): always hidden, never counted.
+    return b.get("retired") or (b["status"] != "published" and b["slug"] not in NEXT_UP)
 
 def date_attr(x):
     """data-date on links/cards to unreleased books, so the shared script can hide them once the date passes."""
@@ -294,7 +295,10 @@ def stamp_homepage():
         # upcoming cards: data-date (YYYY-MM-DD) drives the automatic "next 4 releases" rotation in index.html;
         # data-feat="1" on the 4 nearest future releases at build time is the no-JS fallback.
         upc = (f' data-date="{b["release"]["date"]}"' + (' data-feat="1"' if b["slug"] in next_up else ' data-hide="1" hidden')) if soon else ""
-        new_head = new_head[:-1] + (f' data-slug="{b["slug"]}" data-status="{"published" if b["status"] == "published" else "soon"}"'
+        st = "published" if b["status"] == "published" else "soon"
+        if b.get("retired"):  # merged book: no data-date (so the rotation never counts it), always hidden
+            upc, st = ' data-hide="1" hidden', "retired"
+        new_head = new_head[:-1] + (f' data-slug="{b["slug"]}" data-status="{st}"'
                                     f' data-themes="{" ".join(b["themes"])}" data-theme-names="{E(names.lower())}"{upc}>')
         a2 = a.replace(head, new_head, 1)
         a2 = re.sub(r'<h3>(?:<a href="books/[^"]*/">)?(.*?)(?:</a>)?</h3>', lambda mm: f'<h3><a href="books/{b["slug"]}/">{mm.group(1)}</a></h3>', a2, count=1)
