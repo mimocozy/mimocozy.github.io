@@ -406,7 +406,7 @@
           }
         }
       ],
-      "amazon": "https://amzn.eu/d/0h7Wp1I4",
+      "amazon": "https://amzn.eu/d/0brNbPj5",
       "pages": 92,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
@@ -640,25 +640,20 @@
       ],
       "series": null,
       "seriesOrder": null,
-      "status": "coming-soon",
-      "release": {
-        "key": "rel17",
-        "pt": "15 de outubro",
-        "en": "October 15",
-        "date": "2026-10-15"
-      },
+      "status": "published",
+      "release": null,
       "featured": true,
       "short": {
         "pt": "A Lia, o Tom e o seu amigo fantasma brincalhão, o Lumi, vivem uma aventura de Natal acolhedora, cheia de decorações, doces e presentes pensados com carinho. São 40 ilustrações para colorir.",
         "en": "Join Lia, Tom and their playful ghost friend, Lumi, for a cozy Christmas adventure filled with decorations, sweet treats and thoughtful gifts. 40 illustrations to color."
       },
       "card": {
-        "pt": "A Lia, o Tom e o seu amigo fantasma brincalhão, o Lumi, vivem uma aventura de Natal acolhedora, cheia de decorações, doces e presentes pensados com carinho. São 40 ilustrações para colorir. Em breve.",
-        "en": "Join Lia, Tom and their playful ghost friend, Lumi, for a cozy Christmas adventure filled with decorations, sweet treats and thoughtful gifts. 40 illustrations to color. Coming soon."
+        "pt": "A Lia, o Tom e o seu amigo fantasma brincalhão, o Lumi, vivem uma aventura de Natal acolhedora, cheia de decorações, doces e presentes pensados com carinho. São 40 ilustrações para colorir.",
+        "en": "Join Lia, Tom and their playful ghost friend, Lumi, for a cozy Christmas adventure filled with decorations, sweet treats and thoughtful gifts. 40 illustrations to color."
       },
       "long": {
-        "pt": "Um pouco de cor, muita magia de Natal. A Lia, o Tom e o seu amigo fantasma brincalhão, o Lumi, enchem a casa e a estação de comboios de enfeites para um Natal mágico, com coroas, laços vermelhos, lanternas acesas e luzes na neve. Depois fazem doces de Natal, embrulham presentes pensados para cada pessoa e levam trenós carregados pela estação coberta de neve, junto à árvore iluminada.\n\nDa primeira caixa de enfeites até à festa na estação de comboios da aldeia, cada página é um pequeno momento de alegria para tornares teu. São 40 ilustrações para colorir, com verso em branco: a história completa num só livro. Em breve.",
-        "en": "A little color, a lot of Christmas magic. Lia, Tom and their playful ghost friend, Lumi, fill their home and the railway station with decorations for a magical Christmas: wreaths, red bows, glowing lanterns and lights in the snow. Then they bake festive treats, wrap thoughtful gifts and pull loaded sleds through the snowy station, past the glowing tree.\n\nFrom the first box of ornaments to a celebration at the village railway station, every page is a little moment of joy to make your own. There are 40 illustrations to color, with blank reverse pages: the whole story in one book. Coming soon."
+        "pt": "Um pouco de cor, muita magia de Natal. A Lia, o Tom e o seu amigo fantasma brincalhão, o Lumi, enchem a casa e a estação de comboios de enfeites para um Natal mágico, com coroas, laços vermelhos, lanternas acesas e luzes na neve. Depois fazem doces de Natal, embrulham presentes pensados para cada pessoa e levam trenós carregados pela estação coberta de neve, junto à árvore iluminada.\n\nDa primeira caixa de enfeites até à festa na estação de comboios da aldeia, cada página é um pequeno momento de alegria para tornares teu. São 40 ilustrações para colorir, com verso em branco: a história completa num só livro.",
+        "en": "A little color, a lot of Christmas magic. Lia, Tom and their playful ghost friend, Lumi, fill their home and the railway station with decorations for a magical Christmas: wreaths, red bows, glowing lanterns and lights in the snow. Then they bake festive treats, wrap thoughtful gifts and pull loaded sleds through the snowy station, past the glowing tree.\n\nFrom the first box of ornaments to a celebration at the village railway station, every page is a little moment of joy to make your own. There are 40 illustrations to color, with blank reverse pages: the whole story in one book."
       },
       "coverAlt": "Lia, Tom & Lumi: A Christmas to Share",
       "cover": "assets/natal-share/cover.jpg",
@@ -739,7 +734,7 @@
           }
         }
       ],
-      "amazon": null,
+      "amazon": "https://amzn.eu/d/0h7Wp1I4",
       "pages": 90,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
@@ -749,7 +744,7 @@
       "legacyCopyKey": "b24",
       "ages": null,
       "illustrations": 40,
-      "note": "2026-10-12: Book One + Book Two merged into one complete book (90 pages, 40 illustrations). Gallery from the final images (scenes 02, 20, 26, 33, 40). Colour pairs still from old Book One art (p13 ~ final scene 03, p37 ~ final scene 14; not exact). Final zip had truncated PNGs for scenes 06, 10, 18, 21, 32."
+      "note": "2026-10-12: Book One + Book Two merged into one complete book (90 pages, 40 illustrations). Gallery from the final images (scenes 02, 20, 26, 33, 40). Colour pairs still from old Book One art (p13 ~ final scene 03, p37 ~ final scene 14; not exact). Final zip had truncated PNGs for scenes 06, 10, 18, 21, 32. 2026-10-12: published, Amazon https://amzn.eu/d/0h7Wp1I4."
     },
     {
       "slug": "haunted-house-adventures-part-2",
