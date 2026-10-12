@@ -632,42 +632,39 @@
     },
     {
       "slug": "lia-tom-lumi-christmas-decorations",
-      "title": "Lia, Tom & Lumi: Christmas Decorations",
-      "subtitle": {
-        "pt": "Livro 1",
-        "en": "Book One"
-      },
+      "title": "Lia, Tom & Lumi: A Christmas to Share",
+      "subtitle": null,
       "collection": "natal",
       "themes": [
         "christmas"
       ],
-      "series": "xmas",
-      "seriesOrder": 1,
+      "series": null,
+      "seriesOrder": null,
       "status": "coming-soon",
       "release": {
-        "key": "rel2",
-        "pt": "18 de outubro",
-        "en": "October 18",
-        "date": "2026-10-18"
+        "key": "rel17",
+        "pt": "15 de outubro",
+        "en": "October 15",
+        "date": "2026-10-15"
       },
       "featured": true,
       "short": {
-        "pt": "A Lia, o Tom e o Lumi decoram a casa e a estação de comboios para um Natal mágico, com coroas, laços e luzes na neve. Vinte cenas para colorir.",
-        "en": "Lia, Tom and Lumi decorate their home and the railway station for a magical Christmas, with wreaths, bows and lights in the snow. Twenty scenes to color."
+        "pt": "A Lia, o Tom e o seu amigo fantasma brincalhão, o Lumi, vivem uma aventura de Natal acolhedora, cheia de decorações, doces e presentes pensados com carinho. São 40 ilustrações para colorir.",
+        "en": "Join Lia, Tom and their playful ghost friend, Lumi, for a cozy Christmas adventure filled with decorations, sweet treats and thoughtful gifts. 40 illustrations to color."
       },
       "card": {
-        "pt": "Livro 1. A Lia, o Tom e o Lumi decoram a casa e a estação de comboios para um Natal mágico, com coroas, laços e luzes na neve. Vinte cenas para colorir. Em breve.",
-        "en": "Book One. Lia, Tom and Lumi decorate their home and the railway station for a magical Christmas, with wreaths, bows and lights in the snow. Twenty scenes to color. Coming soon."
+        "pt": "A Lia, o Tom e o seu amigo fantasma brincalhão, o Lumi, vivem uma aventura de Natal acolhedora, cheia de decorações, doces e presentes pensados com carinho. São 40 ilustrações para colorir. Em breve.",
+        "en": "Join Lia, Tom and their playful ghost friend, Lumi, for a cozy Christmas adventure filled with decorations, sweet treats and thoughtful gifts. 40 illustrations to color. Coming soon."
       },
       "long": {
-        "pt": "Que comecem as decorações! A Lia, o Tom e o Lumi enchem a casa e a estação de comboios de enfeites para um Natal mágico: coroas de Natal, laços vermelhos, lanternas acesas e comboios cobertos de neve. São vinte cenas festivas para colorir, e a história continua no Livro 2, com doces e presentes. Em breve.",
-        "en": "Let the decorating begin! Lia, Tom and Lumi fill their home and the railway station with decorations for a magical Christmas: wreaths, red bows, glowing lanterns and snow-covered trains. There are twenty festive scenes to color, and the story continues in Book Two with treats and gifts. Coming soon."
+        "pt": "Um pouco de cor, muita magia de Natal. A Lia, o Tom e o seu amigo fantasma brincalhão, o Lumi, enchem a casa e a estação de comboios de enfeites para um Natal mágico, com coroas, laços vermelhos, lanternas acesas e luzes na neve. Depois fazem doces de Natal, embrulham presentes pensados para cada pessoa e levam trenós carregados pela estação coberta de neve, junto à árvore iluminada.\n\nDa primeira caixa de enfeites até à festa na estação de comboios da aldeia, cada página é um pequeno momento de alegria para tornares teu. São 40 ilustrações para colorir, com verso em branco: a história completa num só livro. Em breve.",
+        "en": "A little color, a lot of Christmas magic. Lia, Tom and their playful ghost friend, Lumi, fill their home and the railway station with decorations for a magical Christmas: wreaths, red bows, glowing lanterns and lights in the snow. Then they bake festive treats, wrap thoughtful gifts and pull loaded sleds through the snowy station, past the glowing tree.\n\nFrom the first box of ornaments to a celebration at the village railway station, every page is a little moment of joy to make your own. There are 40 illustrations to color, with blank reverse pages: the whole story in one book. Coming soon."
       },
-      "coverAlt": "Lia, Tom & Lumi: Christmas Decorations Book One",
-      "cover": "assets/halloween/xmas1-cover.jpg?v=20261007",
+      "coverAlt": "Lia, Tom & Lumi: A Christmas to Share",
+      "cover": "assets/natal-share/cover.jpg",
       "coverSize": [
-        1087,
-        1087
+        1500,
+        1500
       ],
       "slides": [
         {
@@ -692,7 +689,22 @@
           ]
         }
       ],
-      "interior": [],
+      "interior": [
+        {
+          "src": "assets/slides/xmas2-1.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/slides/xmas2-2.jpg?v=20261007",
+          "size": [
+            1105,
+            1105
+          ]
+        }
+      ],
       "colorExamples": [
         {
           "lineart": {
@@ -728,14 +740,16 @@
         }
       ],
       "amazon": null,
-      "pages": 50,
+      "pages": 90,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
-      "searchTerms": "lia tom and lumi christmas decorations book one natal christmas",
+      "searchTerms": "lia tom and lumi a christmas to share natal christmas",
       "legacyCopyKey": "b24",
-      "ages": null
+      "ages": null,
+      "illustrations": 40,
+      "note": "2026-10-12: Book One + Book Two merged into one complete book (cover PDF 90 pages, 40 illustrations). Gallery still uses the old Book One/Two images and colour pairs until the final page images are copied from Wilneidy's PC."
     },
     {
       "slug": "haunted-house-adventures-part-2",
@@ -953,8 +967,9 @@
       "format": null,
       "searchTerms": "lia tom and lumi christmas gifts and treats book two natal christmas",
       "legacyCopyKey": "b25",
-      "note": "Page count not applied: summary says \"Natal 50p\" — confirm it also applies to Book Two.",
-      "ages": null
+      "note": "2026-10-12: merged into lia-tom-lumi-christmas-decorations (A Christmas to Share); retired (hidden, noindex, files kept).",
+      "ages": null,
+      "retired": true
     },
     {
       "slug": "brambleboos-little-lanterns-part-2",
@@ -1076,10 +1091,10 @@
       "seriesOrder": null,
       "status": "coming-soon",
       "release": {
-        "key": "rel4",
-        "pt": "1 de novembro",
-        "en": "November 1",
-        "date": "2026-11-01"
+        "key": "rel2",
+        "pt": "18 de outubro",
+        "en": "October 18",
+        "date": "2026-10-18"
       },
       "featured": false,
       "short": {
@@ -2261,10 +2276,10 @@
       "seriesOrder": null,
       "status": "coming-soon",
       "release": {
-        "key": "rel9",
-        "pt": "6 de dezembro",
-        "en": "December 6",
-        "date": "2026-12-06"
+        "key": "rel2",
+        "pt": "18 de outubro",
+        "en": "October 18",
+        "date": "2026-10-18"
       },
       "featured": false,
       "short": {

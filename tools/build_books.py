@@ -233,7 +233,7 @@ def render_page(b, tpl):
     return out
 
 # ---------------------------------------------------------------- homepage stamping
-FEATURED_UPCOMING = 4  # how many upcoming releases the homepage features (the rest sit under "See all upcoming releases")
+FEATURED_UPCOMING = 3  # (3 since 2026-10-12, Wilneidy's request) how many upcoming releases the homepage features (the rest sit under "See all upcoming releases")
 
 def lisbon_today():
     import datetime
@@ -292,8 +292,8 @@ def stamp_homepage():
         strip = r'\s+data-(slug|status|themes|theme-names|date|feat|hide)="[^"]*"|\s+hidden(?=[\s>])' if soon else r'\s+data-(slug|status|themes|theme-names)="[^"]*"'
         new_head = re.sub(strip, "", head)
         names = " ".join(THEMES[t]["pt"] + " " + THEMES[t]["en"] for t in b["themes"])
-        # upcoming cards: data-date (YYYY-MM-DD) drives the automatic "next 4 releases" rotation in index.html;
-        # data-feat="1" on the 4 nearest future releases at build time is the no-JS fallback.
+        # upcoming cards: data-date (YYYY-MM-DD) drives the automatic "next 3 releases" rotation in index.html;
+        # data-feat="1" on the 3 nearest future releases at build time is the no-JS fallback.
         upc = (f' data-date="{b["release"]["date"]}"' + (' data-feat="1"' if b["slug"] in next_up else ' data-hide="1" hidden')) if soon else ""
         st = "published" if b["status"] == "published" else "soon"
         if b.get("retired"):  # merged book: no data-date (so the rotation never counts it), always hidden
