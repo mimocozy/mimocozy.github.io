@@ -668,21 +668,21 @@
       ],
       "slides": [
         {
-          "src": "assets/slides/xmas1-1.jpg?v=20261007",
+          "src": "assets/natal-share/slide-1.jpg",
           "size": [
             1105,
             1105
           ]
         },
         {
-          "src": "assets/slides/xmas1-2.jpg?v=20261007",
+          "src": "assets/natal-share/slide-2.jpg",
           "size": [
             1105,
             1105
           ]
         },
         {
-          "src": "assets/slides/xmas1-3.jpg?v=20261007",
+          "src": "assets/natal-share/slide-3.jpg",
           "size": [
             1105,
             1105
@@ -691,14 +691,14 @@
       ],
       "interior": [
         {
-          "src": "assets/slides/xmas2-1.jpg?v=20261007",
+          "src": "assets/natal-share/page-1.jpg",
           "size": [
             1105,
             1105
           ]
         },
         {
-          "src": "assets/slides/xmas2-2.jpg?v=20261007",
+          "src": "assets/natal-share/page-2.jpg",
           "size": [
             1105,
             1105
@@ -749,7 +749,7 @@
       "legacyCopyKey": "b24",
       "ages": null,
       "illustrations": 40,
-      "note": "2026-10-12: Book One + Book Two merged into one complete book (cover PDF 90 pages, 40 illustrations). Gallery still uses the old Book One/Two images and colour pairs until the final page images are copied from Wilneidy's PC."
+      "note": "2026-10-12: Book One + Book Two merged into one complete book (90 pages, 40 illustrations). Gallery from the final images (scenes 02, 20, 26, 33, 40). Colour pairs still from old Book One art (p13 ~ final scene 03, p37 ~ final scene 14; not exact). Final zip had truncated PNGs for scenes 06, 10, 18, 21, 32."
     },
     {
       "slug": "haunted-house-adventures-part-2",
