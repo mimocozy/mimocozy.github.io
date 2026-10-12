@@ -79,6 +79,88 @@
   },
   "books": [
     {
+      "slug": "love-in-seoul",
+      "title": "Love in Seoul",
+      "subtitle": {
+        "pt": "Um livro para colorir inspirado em K-drama",
+        "en": "A K-Drama Inspired Coloring Book"
+      },
+      "collection": "kdrama",
+      "themes": [
+        "city"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "published",
+      "release": null,
+      "featured": true,
+      "short": {
+        "pt": "Um piquenique debaixo das cerejeiras junto ao rio Han, um guarda-chuva para dois e a confissão no terraço. São 36 cenas originais de K-drama em traço fino, inspiradas nos momentos que qualquer fã reconhece.",
+        "en": "A picnic under the cherry blossoms by the Han River, one umbrella for two and a rooftop confession. 36 original K-drama line-art scenes built from the moments every fan recognizes."
+      },
+      "card": {
+        "pt": "Um piquenique debaixo das cerejeiras junto ao rio Han, um guarda-chuva para dois e a confissão no terraço. São 36 cenas originais de K-drama em traço fino, inspiradas nos momentos que qualquer fã reconhece.",
+        "en": "A picnic under the cherry blossoms by the Han River, one umbrella for two and a rooftop confession. 36 original K-drama line-art scenes built from the moments every fan recognizes."
+      },
+      "long": {
+        "pt": "No primeiro livro da série Love in Seoul, a história passa pelas cerejeiras junto ao rio Han, por um guarda-chuva partilhado, pela Namsan Tower à noite, por um passeio de hanbok no palácio e pela primeira neve. Há uma loja de conveniência à meia-noite, uma chegada ao aeroporto, uma confissão no terraço, uma boleia às cavalitas e um terraço de hospital.\n\nPelo caminho há uma pojangmacha à chuva, o jantar com os pais, um dia de doença, cadeados do amor, uma foto de quatro tiras, frango e cerveja, um noraebang, uma despedida na plataforma, a praia de Jeju e as lanternas de lótus. São 36 cenas originais, cheias de ruas, interiores e pequenos detalhes para colorires ao teu ritmo.",
+        "en": "In the first Love in Seoul book, the story moves through cherry blossoms by the Han River, a shared umbrella, Namsan Tower after dark, a hanbok walk at the palace and the first snow. There is a midnight convenience store, an airport hello, a rooftop confession, a piggyback ride and a hospital rooftop.\n\nAlong the way there is a pojangmacha in the rain, meeting the parents, a sick day, love locks, a four-cut photo, chicken and beer, a noraebang night, a platform goodbye, the Jeju shore and lotus lanterns. That is 36 original scenes, full of streets, interiors and small details to color at your own pace."
+      },
+      "coverAlt": "Love in Seoul",
+      "cover": "assets/seoul-s1/cover.jpg",
+      "coverSize": [
+        1159,
+        1500
+      ],
+      "slides": [
+        {
+          "src": "assets/seoul-s1/slide-1.jpg",
+          "size": [
+            1105,
+            1658
+          ]
+        },
+        {
+          "src": "assets/seoul-s1/slide-2.jpg",
+          "size": [
+            1105,
+            1647
+          ]
+        },
+        {
+          "src": "assets/seoul-s1/slide-3.jpg",
+          "size": [
+            1105,
+            1648
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/seoul-s1/interior-1.jpg",
+          "size": [
+            1105,
+            1647
+          ]
+        },
+        {
+          "src": "assets/seoul-s1/interior-2.jpg",
+          "size": [
+            1105,
+            1648
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": "https://amzn.eu/d/02a8jcVK",
+      "pages": 82,
+      "format": null,
+      "searchTerms": "love in seoul k-drama",
+      "legacyCopyKey": "b36",
+      "note": "Amazon B0HLFZDXV4 (published 2026-09-20) lists 41 print pages; files are 82p (82 pages, 36 illustrations). Images from the Season 1 files (2026-10-12).",
+      "ages": null
+    },
+    {
       "slug": "seoul-between-scenes",
       "title": "Seoul Between Scenes",
       "subtitle": null,
