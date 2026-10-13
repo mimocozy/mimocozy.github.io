@@ -79,6 +79,88 @@
   },
   "books": [
     {
+      "slug": "seoul-after-the-last-train",
+      "title": "Seoul After the Last Train",
+      "subtitle": {
+        "pt": "Um livro para colorir inspirado em K-drama",
+        "en": "A K-Drama Inspired Coloring Book"
+      },
+      "collection": "kdrama",
+      "themes": [
+        "city"
+      ],
+      "series": null,
+      "seriesOrder": null,
+      "status": "published",
+      "release": null,
+      "featured": true,
+      "short": {
+        "pt": "Uma noite de hanbok à porta do palácio, um táxi para casa depois de beber demais e uma confissão à chuva. São 36 cenas originais de K-drama em traço fino, até ao último comboio para casa.",
+        "en": "A hanbok night at the palace gate, a drunk taxi ride home and a confession in the rain. 36 original K-drama line-art scenes, all the way to the last train home."
+      },
+      "card": {
+        "pt": "Uma noite de hanbok à porta do palácio, um táxi para casa depois de beber demais e uma confissão à chuva. São 36 cenas originais de K-drama em traço fino, até ao último comboio para casa.",
+        "en": "A hanbok night at the palace gate, a drunk taxi ride home and a confession in the rain. 36 original K-drama line-art scenes, all the way to the last train home."
+      },
+      "long": {
+        "pt": "No terceiro livro da série Love in Seoul, a história começa num pátio do palácio à hora azul, com hanbok à porta do palácio. Há um táxi para casa depois de beber demais, uma tenda da sorte que já sabia tudo, sussurros na Starfield Library e uma conferência de imprensa.\n\nPelo caminho há o segundo protagonista a afastar-se à chuva, um passeio de bicicleta a dois junto ao rio, um guarda-chuva partilhado, um anel entre lanternas de pedra no pátio e o último comboio, quase vazio. São 36 cenas originais, cheias de ruas, interiores e pequenos detalhes para colorires ao teu ritmo.",
+        "en": "In the third Love in Seoul book, the story opens in a palace courtyard at blue hour, with hanbok at the palace gate. There is a drunk taxi ride home, a fortune tent that already knew, whispers in the Starfield Library and a press conference.\n\nAlong the way the second lead walks away in the rain, a couple rides a tandem bike by the river, an umbrella is shared, a ring appears between stone lanterns in the courtyard and the last train runs almost empty. That is 36 original scenes, full of streets, interiors and small details to color at your own pace."
+      },
+      "coverAlt": "Seoul After the Last Train",
+      "cover": "assets/seoul-s3/cover.jpg",
+      "coverSize": [
+        1159,
+        1500
+      ],
+      "slides": [
+        {
+          "src": "assets/seoul-s3/slide-1.jpg",
+          "size": [
+            1105,
+            1649
+          ]
+        },
+        {
+          "src": "assets/seoul-s3/slide-2.jpg",
+          "size": [
+            1105,
+            1385
+          ]
+        },
+        {
+          "src": "assets/seoul-s3/slide-3.jpg",
+          "size": [
+            1105,
+            1657
+          ]
+        }
+      ],
+      "interior": [
+        {
+          "src": "assets/seoul-s3/interior-1.jpg",
+          "size": [
+            1105,
+            1671
+          ]
+        },
+        {
+          "src": "assets/seoul-s3/interior-2.jpg",
+          "size": [
+            1105,
+            1650
+          ]
+        }
+      ],
+      "colorExamples": [],
+      "amazon": "https://amzn.eu/d/08SSbS4s",
+      "pages": 41,
+      "format": null,
+      "searchTerms": "seoul after the last train k-drama love in seoul",
+      "legacyCopyKey": "b37",
+      "note": "Book Three of Love in Seoul. Amazon B0HLFWS4ZJ. Files 82p; 41 non-blank pages, 36 illustrations. Images from the Season 3 files (2026-10-13).",
+      "ages": null
+    },
+    {
       "slug": "love-in-seoul",
       "title": "Love in Seoul",
       "subtitle": {
