@@ -151,7 +151,40 @@
           ]
         }
       ],
-      "colorExamples": [],
+      "colorExamples": [
+        {
+          "lineart": {
+            "src": "assets/seoul-s3/c14-lineart.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          },
+          "colored": {
+            "src": "assets/seoul-s3/c14-colored.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          }
+        },
+        {
+          "lineart": {
+            "src": "assets/seoul-s3/c33-lineart.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          },
+          "colored": {
+            "src": "assets/seoul-s3/c33-colored.jpg",
+            "size": [
+              1105,
+              1430
+            ]
+          }
+        }
+      ],
       "amazon": "https://amzn.eu/d/08SSbS4s",
       "pages": 41,
       "format": null,
