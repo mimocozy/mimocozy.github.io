@@ -153,11 +153,11 @@
       ],
       "colorExamples": [],
       "amazon": "https://amzn.eu/d/02a8jcVK",
-      "pages": 82,
+      "pages": 41,
       "format": null,
       "searchTerms": "love in seoul k-drama",
       "legacyCopyKey": "b36",
-      "note": "Amazon B0HLFZDXV4 (published 2026-09-20) lists 41 print pages; files are 82p (82 pages, 36 illustrations). Images from the Season 1 files (2026-10-12).",
+      "note": "Amazon B0HLFZDXV4 (published 2026-09-20) lists 41 print pages; files are 82p (82 pages, 36 illustrations). Images from the Season 1 files (2026-10-12). | 2026-10-13: pages recounted without blank pages (82 -> 41).",
       "ages": null
     },
     {
@@ -265,11 +265,11 @@
         }
       ],
       "amazon": "https://amzn.eu/d/078evWEV",
-      "pages": 82,
+      "pages": 41,
       "format": null,
       "searchTerms": "seoul between scenes",
       "legacyCopyKey": "b1",
-      "note": "Page count 82 per Amazon B0HLG46WSH and the new cover file (2026-10-11; earlier 42); format not verified. Images from the Season 2 files (2026-10-11).",
+      "note": "Page count 82 per Amazon B0HLG46WSH and the new cover file (2026-10-11; earlier 42); format not verified. Images from the Season 2 files (2026-10-11). | 2026-10-13: pages recounted without blank pages (82 -> 41).",
       "ages": null
     },
     {
@@ -377,12 +377,13 @@
         }
       ],
       "amazon": "https://amzn.eu/d/09oG4UHr",
-      "pages": 42,
+      "pages": 41,
       "format": null,
       "searchTerms": "seoul after the cut",
       "legacyCopyKey": "b2",
-      "note": "Page count 42 confirmed by Wilneidy (2026-10-08); format not verified.",
-      "ages": null
+      "note": "Page count 42 confirmed by Wilneidy (2026-10-08); format not verified. | 2026-10-13: pages recounted without blank pages (42 -> 41). 2026-10-13: retired at Wilneidy's request (hidden, noindex, files kept).",
+      "ages": null,
+      "retired": true
     },
     {
       "slug": "haunted-house-adventures",
@@ -489,7 +490,7 @@
         }
       ],
       "amazon": "https://amzn.eu/d/0brNbPj5",
-      "pages": 92,
+      "pages": 46,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
@@ -498,7 +499,7 @@
       "legacyCopyKey": "b3",
       "ages": null,
       "illustrations": 40,
-      "note": "2026-10-11: Part 1 and Part 2 merged into one book (92 pages, 40 illustrations, final files of 11 Oct). Amazon link still the Part One listing (B0HLXBS7JX) until Wilneidy sends the new one. Colour pairs are from the old art (do not match the final pages exactly)."
+      "note": "2026-10-11: Part 1 and Part 2 merged into one book (92 pages, 40 illustrations, final files of 11 Oct). Amazon link still the Part One listing (B0HLXBS7JX) until Wilneidy sends the new one. Colour pairs are from the old art (do not match the final pages exactly). | 2026-10-13: pages recounted without blank pages (92 -> 46)."
     },
     {
       "slug": "brambleboos-little-lanterns",
@@ -599,14 +600,15 @@
         }
       ],
       "amazon": null,
-      "pages": 58,
+      "pages": 29,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "brambleboo little lanterns part one",
       "legacyCopyKey": "b19",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 29)."
     },
     {
       "slug": "slow-life-tropical-days",
@@ -703,14 +705,15 @@
         }
       ],
       "amazon": null,
-      "pages": 108,
+      "pages": 58,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "slow life tropical days",
       "legacyCopyKey": "b11",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (108 -> 58)."
     },
     {
       "slug": "lia-tom-lumi-christmas-decorations",
@@ -817,7 +820,7 @@
         }
       ],
       "amazon": "https://amzn.eu/d/0h7Wp1I4",
-      "pages": 90,
+      "pages": 45,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
@@ -826,7 +829,7 @@
       "legacyCopyKey": "b24",
       "ages": null,
       "illustrations": 40,
-      "note": "2026-10-12: Book One + Book Two merged into one complete book (90 pages, 40 illustrations). Gallery from the final images (scenes 02, 20, 26, 33, 40). Colour pairs still from old Book One art (p13 ~ final scene 03, p37 ~ final scene 14; not exact). Final zip had truncated PNGs for scenes 06, 10, 18, 21, 32. 2026-10-12: published, Amazon https://amzn.eu/d/0h7Wp1I4."
+      "note": "2026-10-12: Book One + Book Two merged into one complete book (90 pages, 40 illustrations). Gallery from the final images (scenes 02, 20, 26, 33, 40). Colour pairs still from old Book One art (p13 ~ final scene 03, p37 ~ final scene 14; not exact). Final zip had truncated PNGs for scenes 06, 10, 18, 21, 32. 2026-10-12: published, Amazon https://amzn.eu/d/0h7Wp1I4. | 2026-10-13: pages recounted without blank pages (90 -> 45)."
     },
     {
       "slug": "haunted-house-adventures-part-2",
@@ -1147,14 +1150,15 @@
         }
       ],
       "amazon": null,
-      "pages": 58,
+      "pages": 29,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "brambleboo little lanterns part two",
       "legacyCopyKey": "b20",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 29)."
     },
     {
       "slug": "pumpkin-parade",
@@ -1259,14 +1263,15 @@
         }
       ],
       "amazon": null,
-      "pages": 64,
+      "pages": 32,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "pumpkin parade halloween",
       "legacyCopyKey": "b5",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (64 -> 32)."
     },
     {
       "slug": "slow-life-cozy-spring-days",
@@ -1363,14 +1368,15 @@
         }
       ],
       "amazon": null,
-      "pages": 58,
+      "pages": 31,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "slow life cozy spring days",
       "legacyCopyKey": "b12",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 31)."
     },
     {
       "slug": "brambleboo-and-the-snowglow-trail",
@@ -1467,14 +1473,15 @@
         }
       ],
       "amazon": null,
-      "pages": 36,
+      "pages": 18,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "brambleboo and the snowglow trail",
       "legacyCopyKey": "b26",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (36 -> 18)."
     },
     {
       "slug": "slow-life-golden-autumn-days",
@@ -1571,14 +1578,15 @@
         }
       ],
       "amazon": null,
-      "pages": 58,
+      "pages": 31,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "slow life golden autumn days",
       "legacyCopyKey": "b13",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 31)."
     },
     {
       "slug": "pipkins-pumpkin-pajama-party",
@@ -1683,14 +1691,15 @@
         }
       ],
       "amazon": null,
-      "pages": 76,
+      "pages": 38,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "pipkin pumpkin pajama party halloween",
       "legacyCopyKey": "b6",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (76 -> 38)."
     },
     {
       "slug": "brambleboo-and-the-forest-playday",
@@ -1787,14 +1796,15 @@
         }
       ],
       "amazon": null,
-      "pages": 68,
+      "pages": 34,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "brambleboo and the forest playday",
       "legacyCopyKey": "b29",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (68 -> 34)."
     },
     {
       "slug": "midnight-magic",
@@ -2008,14 +2018,15 @@
         }
       ],
       "amazon": null,
-      "pages": 58,
+      "pages": 31,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "slow life lazy summer days",
       "legacyCopyKey": "b14",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 31)."
     },
     {
       "slug": "midnight-magic-part-2",
@@ -2228,14 +2239,15 @@
         }
       ],
       "amazon": null,
-      "pages": 68,
+      "pages": 34,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "brambleboo and the golden acorn wagon",
       "legacyCopyKey": "b30",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (68 -> 34)."
     },
     {
       "slug": "brambleboo-and-the-lantern-cake",
@@ -2332,14 +2344,15 @@
         }
       ],
       "amazon": null,
-      "pages": 68,
+      "pages": 34,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "brambleboo and the lantern cake",
       "legacyCopyKey": "b31",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (68 -> 34)."
     },
     {
       "slug": "slow-life-quiet-winter-days",
@@ -2436,14 +2449,15 @@
         }
       ],
       "amazon": null,
-      "pages": 58,
+      "pages": 31,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "slow life quiet winter days",
       "legacyCopyKey": "b15",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 31)."
     },
     {
       "slug": "the-ghostlight-railway-rescue",
@@ -2551,14 +2565,15 @@
         }
       ],
       "amazon": null,
-      "pages": 64,
+      "pages": 32,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "ghostlight railway rescue halloween",
       "legacyCopyKey": "b9",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (64 -> 32)."
     },
     {
       "slug": "the-letter-the-tide-kept",
@@ -2673,11 +2688,11 @@
         }
       ],
       "amazon": null,
-      "pages": 42,
+      "pages": 41,
       "format": null,
       "searchTerms": "the letter the tide kept book six",
       "legacyCopyKey": "b23",
-      "note": "Cover = front panel of The-Letter-the-Tide-Kept_Book-6_COVER_FINAL_KDP_42p.pdf; slides/interior = PDF pages 7, 9, 19, 33, 65 of The_Letter_the_Tide_Kept_Book6_verso_branco.pdf. Page count 42 confirmed by Wilneidy (2026-10-08); format not verified.",
+      "note": "Cover = front panel of The-Letter-the-Tide-Kept_Book-6_COVER_FINAL_KDP_42p.pdf; slides/interior = PDF pages 7, 9, 19, 33, 65 of The_Letter_the_Tide_Kept_Book6_verso_branco.pdf. Page count 42 confirmed by Wilneidy (2026-10-08); format not verified. | 2026-10-13: pages recounted without blank pages (42 -> 41).",
       "ages": null
     },
     {
@@ -2888,14 +2903,15 @@
         }
       ],
       "amazon": null,
-      "pages": 68,
+      "pages": 34,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "brambleboo and the missing star",
       "legacyCopyKey": "b32",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (68 -> 34)."
     },
     {
       "slug": "the-broomstick-repair-brigade",
@@ -2995,14 +3011,15 @@
         }
       ],
       "amazon": null,
-      "pages": 60,
+      "pages": 30,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "broomstick repair brigade part one halloween",
       "legacyCopyKey": "b21",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (60 -> 30)."
     },
     {
       "slug": "slow-life-island-hideaways",
@@ -3099,14 +3116,15 @@
         }
       ],
       "amazon": null,
-      "pages": 58,
+      "pages": 31,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "slow life island hideaways",
       "legacyCopyKey": "b16",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 31)."
     },
     {
       "slug": "brambleboo-and-the-moonlit-picnic",
@@ -3204,14 +3222,15 @@
         }
       ],
       "amazon": null,
-      "pages": 68,
+      "pages": 34,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "brambleboo and the moonlit picnic",
       "legacyCopyKey": "b33",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (68 -> 34)."
     },
     {
       "slug": "slow-life-seaside-cottage-days",
@@ -3308,14 +3327,15 @@
         }
       ],
       "amazon": null,
-      "pages": 58,
+      "pages": 31,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "slow life seaside cottage days",
       "legacyCopyKey": "b17",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 31)."
     },
     {
       "slug": "the-broomstick-repair-brigade-part-2",
@@ -3518,14 +3538,15 @@
         }
       ],
       "amazon": null,
-      "pages": 68,
+      "pages": 34,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "brambleboo and the puddle parade",
       "legacyCopyKey": "b34",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (68 -> 34)."
     },
     {
       "slug": "midnight-magic-the-dream-lantern",
@@ -3633,7 +3654,8 @@
       },
       "searchTerms": "midnight magic the dream lantern book two halloween",
       "legacyCopyKey": "b27",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (32 -> 32)."
     },
     {
       "slug": "slow-life-tropical-cafe-days",
@@ -3730,14 +3752,15 @@
         }
       ],
       "amazon": null,
-      "pages": 58,
+      "pages": 31,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "slow life tropical cafe days",
       "legacyCopyKey": "b18",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 31)."
     },
     {
       "slug": "spooky-cuties",
@@ -3834,7 +3857,7 @@
         }
       ],
       "amazon": null,
-      "pages": 110,
+      "pages": 55,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
@@ -3844,7 +3867,8 @@
       "ages": {
         "pt": "Dos 3 aos 6 anos",
         "en": "Ages 3 to 6"
-      }
+      },
+      "note": "2026-10-13: pages recounted without blank pages (110 -> 55)."
     },
     {
       "slug": "brambleboo-and-the-whispering-bridge",
@@ -3941,14 +3965,15 @@
         }
       ],
       "amazon": null,
-      "pages": 68,
+      "pages": 34,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
       "searchTerms": "brambleboo and the whispering bridge",
       "legacyCopyKey": "b35",
-      "ages": null
+      "ages": null,
+      "note": "2026-10-13: pages recounted without blank pages (68 -> 34)."
     }
   ]
 }
