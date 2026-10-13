@@ -1842,17 +1842,14 @@
     {
       "slug": "midnight-magic",
       "title": "Midnight Magic",
-      "subtitle": {
-        "pt": "Parte 1",
-        "en": "Part One"
-      },
+      "subtitle": null,
       "collection": "halloween",
       "themes": [
         "halloween",
         "night"
       ],
-      "series": "midnight",
-      "seriesOrder": 1,
+      "series": null,
+      "seriesOrder": null,
       "status": "coming-soon",
       "release": {
         "key": "rel7",
@@ -1862,40 +1859,40 @@
       },
       "featured": false,
       "short": {
-        "pt": "Treze minutos antes da meia-noite, o relógio de Nocturna para e o prisma do festival desaparece. A Luna, a Vega, o Mimo e o Nox seguem as primeiras pistas pela torre do relógio, pela biblioteca da lua e pelo mercado das lanternas.",
-        "en": "Thirteen minutes before midnight, Nocturna's clock stops and the festival prism disappears. Luna, Vega, Mimo and Nox follow the first clues through the clocktower, the moon library and the lantern market."
+        "pt": "Treze minutos antes da meia-noite, o relógio de Nocturna para e o prisma do festival desaparece. A Luna, a Vega, o Mimo e o Nox seguem as pistas da torre do relógio ao lago das estrelas, para salvar a noite mágica.",
+        "en": "Thirteen minutes before midnight, Nocturna's clock stops and the festival prism disappears. Luna, Vega, Mimo and Nox follow the clues from the clock tower to the lake of stars to save the magical night."
       },
       "card": {
-        "pt": "Parte 1. Treze minutos antes da meia-noite, o relógio de Nocturna para e o prisma do festival desaparece. A Luna, a Vega, o Mimo e o Nox seguem as primeiras pistas pela torre do relógio, pela biblioteca da lua e pelo mercado das lanternas. Em breve.",
-        "en": "Part One. Thirteen minutes before midnight, Nocturna's clock stops and the festival prism disappears. Luna, Vega, Mimo and Nox follow the first clues through the clocktower, the moon library and the lantern market. Coming soon."
+        "pt": "Treze minutos antes da meia-noite, o relógio de Nocturna para e o prisma do festival desaparece. A Luna, a Vega, o Mimo e o Nox seguem as pistas da torre do relógio ao lago das estrelas, para salvar a noite mágica. Em breve.",
+        "en": "Thirteen minutes before midnight, Nocturna's clock stops and the festival prism disappears. Luna, Vega, Mimo and Nox follow the clues from the clock tower to the lake of stars to save the magical night. Coming soon."
       },
       "long": {
-        "pt": "O relógio parou e a aventura começou. Treze minutos antes da meia-noite, o relógio de Nocturna para e o prisma do festival desaparece. Acompanha a Luna, a Vega, o Mimo e o Nox enquanto seguem as primeiras pistas pela torre do relógio, pela biblioteca da lua e pelo mercado das lanternas. Colore uma noite mágica cheia de descobertas e resolve três pequenos enigmas pelo caminho, com verso em branco em cada página. A aventura continua na Parte 2. Em breve.",
-        "en": "The clock stopped and the adventure began. Thirteen minutes before midnight, Nocturna's clock stops and the festival prism disappears. Join Luna, Vega, Mimo and Nox as they follow the first clues through the clocktower, the moon library and the lantern market. Color a magical night of curious discoveries and solve three short puzzles along the way, with blank reverse pages. The adventure continues in Part Two. Coming soon."
+        "pt": "O relógio parou e a aventura começou. Treze minutos antes da meia-noite, o relógio de Nocturna para e o prisma do festival desaparece. A Luna, a Vega, o gato Mimo e o corvo Nox seguem as pistas pela torre do relógio, pela biblioteca da lua e pelo mercado das lanternas, atravessam a estufa de vidro e o salão dos espelhos e das máscaras, e reman de barco pelo lago das estrelas até ao observatório. Ao amanhecer, a festa de Nocturna pode finalmente começar.\n\nSão 51 ilustrações detalhadas para colorir, com verso em branco em cada cena. A história completa num só livro. Em breve.",
+        "en": "The clock stopped and the adventure began. Thirteen minutes before midnight, Nocturna's clock stops and the festival prism disappears. Luna, Vega, Mimo the cat and Nox the raven follow the clues through the clock tower, the moon library and the lantern market, cross the glass greenhouse and the hall of mirrors and masks, and row across the lake of stars to the observatory. By dawn, Nocturna's festival can finally begin.\n\nThere are 51 detailed illustrations to color, with a blank reverse behind every scene. The whole story in one book. Coming soon."
       },
-      "coverAlt": "Midnight Magic Part One",
-      "cover": "assets/halloween/midnight-cover.jpg?v=20261007",
+      "coverAlt": "Midnight Magic",
+      "cover": "assets/midnight-final/cover.jpg",
       "coverSize": [
-        1087,
-        1087
+        1500,
+        1500
       ],
       "slides": [
         {
-          "src": "assets/slides/midnight-1.jpg?v=20261008",
+          "src": "assets/midnight-final/slide-1.jpg",
           "size": [
             1105,
             1105
           ]
         },
         {
-          "src": "assets/slides/midnight-2.jpg?v=20261008",
+          "src": "assets/midnight-final/slide-2.jpg",
           "size": [
             1105,
             1105
           ]
         },
         {
-          "src": "assets/slides/midnight-3.jpg?v=20261008",
+          "src": "assets/midnight-final/slide-3.jpg",
           "size": [
             1105,
             1105
@@ -1904,10 +1901,17 @@
       ],
       "interior": [
         {
-          "src": "assets/halloween/midnight-page.jpg",
+          "src": "assets/midnight-final/page-1.jpg",
           "size": [
-            425,
-            425
+            1105,
+            1105
+          ]
+        },
+        {
+          "src": "assets/midnight-final/page-2.jpg",
+          "size": [
+            1105,
+            1105
           ]
         }
       ],
@@ -1946,14 +1950,16 @@
         }
       ],
       "amazon": null,
-      "pages": 74,
+      "pages": 55,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
         "en": "8.5 × 8.5 in (21.6 × 21.6 cm)"
       },
-      "searchTerms": "midnight magic part one halloween",
+      "searchTerms": "midnight magic halloween",
       "legacyCopyKey": "b7",
-      "ages": null
+      "ages": null,
+      "illustrations": 51,
+      "note": "2026-10-13: Part 1 and Part 2 merged into one book (55 non-blank pages, 51 illustrations; files of 11 Oct: Midnight_Magic_Capa_Mimocozy_110p.pdf + Mimocozy_Midnight_Magic_Sem_Capitulos_360dpi_110p.pdf). Colour pairs p05/p37 are from the old art (not in the new interior)."
     },
     {
       "slug": "slow-life-lazy-summer-days",
@@ -2175,7 +2181,9 @@
       },
       "searchTerms": "midnight magic part two halloween",
       "legacyCopyKey": "b8",
-      "ages": null
+      "ages": null,
+      "retired": true,
+      "note": "2026-10-13: merged into midnight-magic; retired (hidden everywhere, noindex, files kept)."
     },
     {
       "slug": "brambleboo-and-the-golden-acorn-wagon",
