@@ -2515,25 +2515,20 @@
       ],
       "series": null,
       "seriesOrder": null,
-      "status": "coming-soon",
-      "release": {
-        "key": "rel2",
-        "pt": "18 de outubro",
-        "en": "October 18",
-        "date": "2026-10-18"
-      },
+      "status": "published",
+      "release": null,
       "featured": false,
       "short": {
         "pt": "Casas cobertas de neve, cantos junto à lareira e cozinhas de inverno reconfortantes. Vinte e cinco cenas tranquilas para colorir devagar.",
         "en": "Snow-covered cottages, fireside corners and comforting winter kitchens. Twenty-five quiet scenes to color slowly."
       },
       "card": {
-        "pt": "Casas cobertas de neve, cantos junto à lareira e cozinhas de inverno reconfortantes. Vinte e cinco cenas tranquilas para colorir devagar. Em breve.",
-        "en": "Snow-covered cottages, fireside corners and comforting winter kitchens. Twenty-five quiet scenes to color slowly. Coming soon."
+        "pt": "Casas cobertas de neve, cantos junto à lareira e cozinhas de inverno reconfortantes. Vinte e cinco cenas tranquilas para colorir devagar.",
+        "en": "Snow-covered cottages, fireside corners and comforting winter kitchens. Twenty-five quiet scenes to color slowly."
       },
       "long": {
-        "pt": "Encontra o calor nos momentos tranquilos. Explora casas cobertas de neve, cantos à lareira e cozinhas de inverno reconfortantes, e leva as tuas cores a vinte e cinco cenas calmas feitas para abrandar, com verso em branco, uma página para testar as cores e dicas simples. Em breve.",
-        "en": "Find warmth in the quiet moments. Explore snow-covered cottages, fireside corners and comforting winter kitchens, and bring your colors to twenty-five peaceful scenes made for slowing down, with blank backs, a color-test page and simple tips. Coming soon."
+        "pt": "Encontra o calor nos momentos tranquilos. Explora casas cobertas de neve, cantos à lareira e cozinhas de inverno reconfortantes, e leva as tuas cores a vinte e cinco cenas calmas feitas para abrandar, com verso em branco, uma página para testar as cores e dicas simples.",
+        "en": "Find warmth in the quiet moments. Explore snow-covered cottages, fireside corners and comforting winter kitchens, and bring your colors to twenty-five peaceful scenes made for slowing down, with blank backs, a color-test page and simple tips."
       },
       "coverAlt": "Slow Life: Quiet Winter Days",
       "cover": "assets/slow/winter-cover.jpg?v=20261007",
@@ -2599,7 +2594,7 @@
           }
         }
       ],
-      "amazon": null,
+      "amazon": "https://amzn.eu/d/0hvV1ydD",
       "pages": 31,
       "format": {
         "pt": "21,6 × 21,6 cm (8.5 × 8.5 in)",
@@ -2608,7 +2603,7 @@
       "searchTerms": "slow life quiet winter days",
       "legacyCopyKey": "b15",
       "ages": null,
-      "note": "2026-10-13: pages recounted without blank pages (58 -> 31)."
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 31). 2026-11-09: published, Amazon https://amzn.eu/d/0hvV1ydD (B0HQZJV3TH)."
     },
     {
       "slug": "the-ghostlight-railway-rescue",
