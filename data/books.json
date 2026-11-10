@@ -2538,21 +2538,21 @@
       ],
       "slides": [
         {
-          "src": "assets/slides/winter-1.jpg?v=20261007",
+          "src": "assets/slides/winter-1.jpg?v=20261110",
           "size": [
             1105,
             1105
           ]
         },
         {
-          "src": "assets/slides/winter-2.jpg?v=20261007",
+          "src": "assets/slides/winter-2.jpg?v=20261110",
           "size": [
             1105,
             1105
           ]
         },
         {
-          "src": "assets/slides/winter-3.jpg?v=20261007",
+          "src": "assets/slides/winter-3.jpg?v=20261110",
           "size": [
             1105,
             1105
@@ -2560,40 +2560,7 @@
         }
       ],
       "interior": [],
-      "colorExamples": [
-        {
-          "lineart": {
-            "src": "assets/slow/slow-life-quiet-winter-days-p09-lineart.jpg",
-            "size": [
-              1105,
-              1105
-            ]
-          },
-          "colored": {
-            "src": "assets/slow/slow-life-quiet-winter-days-p09-colored.jpg",
-            "size": [
-              1105,
-              1105
-            ]
-          }
-        },
-        {
-          "lineart": {
-            "src": "assets/slow/slow-life-quiet-winter-days-p19-lineart.jpg",
-            "size": [
-              1105,
-              1105
-            ]
-          },
-          "colored": {
-            "src": "assets/slow/slow-life-quiet-winter-days-p19-colored.jpg",
-            "size": [
-              1105,
-              1105
-            ]
-          }
-        }
-      ],
+      "colorExamples": [],
       "amazon": "https://amzn.eu/d/0hvV1ydD",
       "pages": 31,
       "format": {
@@ -2603,7 +2570,7 @@
       "searchTerms": "slow life quiet winter days",
       "legacyCopyKey": "b15",
       "ages": null,
-      "note": "2026-10-13: pages recounted without blank pages (58 -> 31). 2026-11-09: published, Amazon https://amzn.eu/d/0hvV1ydD (B0HQZJV3TH)."
+      "note": "2026-10-13: pages recounted without blank pages (58 -> 31). 2026-11-09: published, Amazon https://amzn.eu/d/0hvV1ydD (B0HQZJV3TH). 2026-11-10: interior slides replaced with simpler illustrations from Quiet_Winter_Days_Miolo_Corrigido.pdf (15 Oct 2026); old colour examples removed (line art no longer matches)."
     },
     {
       "slug": "the-ghostlight-railway-rescue",
